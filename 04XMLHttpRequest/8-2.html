@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XMLHttpRequest</title>
+	<style>
+		p {
+			font-size: 30px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<p>学习XMLHttpRequest</p>
+	<p class="result"></p>
+	<script>
+		
+		var xhr = new XMLHttpRequest;
+
+		// 设置请求行
+		// 可以设置第三个参数，来调整是以异步方式还是同步方式
+		xhr.open('post', '8-2.php', false);
+
+		// 设置请求头
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+		// 请求主体
+		xhr.send('itcast=小明');
+
+		// 监听并处理响应结果
+		// 当我们以同步的方式发起请求就不必再使用事件来监听响应了
+		// xhr.onreadystatechange = function () {
+		// 	if(xhr.readyState == 4) {
+		// 		console.log(xhr.responseText);
+		// 	}
+		// }
+
+		// 以同步方式发起的请求，我们只能等待响应完成才能执行后面代码
+		// 所以我们直接打印结果即可
+		console.log(xhr.responseText);
+		// 根据请求方式（异步或同步）不同，其执行的顺序也会发生改变
+
+		console.log('立即执行了');
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xml传数据</title>
+</head>
+<body>
+	<div class="contain">
+		
+	</div>
+	<script>
+		//获取XMLHttpRequest对象
+		var xhr  = new XMLHttpRequest();
+		//设置请求行
+		xhr.open("get","./xml.php?name=xiaoming&age=12");
+		//设置消息体
+		xhr.send();
+		//监听响应
+		xhr.onreadystatechange = function () {
+			//接到响应,状态OK
+			if (xhr.readyState==4&&xhr.status==200) {
+				//拿到响应
+				var xmlDate = xhr.responseXML;
+				//test:在控制台拿到数据
+				// console.log(xmlDate);
+				//将拿具体数据
+				// document.selectElementsByTagName();
+				var name = xmlDate.querySelector("name").innerHTML;
+				// test:name有值
+				// console.log(name);
+				// 创建页面元素
+				var span = document.createElement("span");
+				// test:span创建成功
+				// console.log(span);
+				span.innerHTML = name;
+				//获取contain容器
+				var contain = document.querySelector(".contain");
+				//test:contain存在
+				// console.log(contain);
+				//想容器添加span
+				contain.appendChild(span);
+			}
+		}
+	</script>
+</body>
+</html>

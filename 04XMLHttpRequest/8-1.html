@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XMLHttpRequest</title>
+	<style>
+		p {
+			font-size: 30px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<p>学习XMLHttpRequest</p>
+	<p class="result"></p>
+	<script>
+		
+		// var date = new Date();
+
+		// 基于HTTP协议的
+		var xhr = new XMLHttpRequest;
+
+		// 用来设置请求行的
+		xhr.open('post', '8-1.php');
+
+		// 设置一个请求头
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+		// 请求主体
+		xhr.send('name=itcast&age=123456');
+
+		xhr.onreadystatechange = function () {
+			console.log(xhr.readyState);
+			if(xhr.readyState == 4) {
+				console.log('响应完成');
+
+				console.log(xhr.responseText);
+
+				document.querySelector('.result').innerHTML = xhr.responseText;
+			}
+		}
+
+	</script>
+</body>
+</html>

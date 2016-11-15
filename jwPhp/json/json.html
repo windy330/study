@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>json</title>
+</head>
+<body>
+	<script>
+		//创建对象
+		var obj = {
+			"name":"小明",
+			"age" :12
+		}
+		// console.log(obj);//test:obj有效
+		// // 转成json
+		// var json = JSON.stringify(obj);
+		// console.log(json);//test:json有效
+		// 创建对象
+		var xhr = new XMLHttpRequest;
+		// console.log(xhr);//test:有效
+		// 设置请求行
+		xhr.open("post", "./json.php");
+		// 设置请求头
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		// 设置消息体
+		var msg = paramar(obj);
+		// console.log(msg);//test:true
+		xhr.send(msg);
+		//接收处理一个json数据
+		xhr.onreadystatechange = function () {
+			//判断ok
+			if (xhr.readyState==4&&xhr.status==200) {
+				var resMsg = xhr.responseText;
+				// console.log(resMsg);//test:true
+				// 对获取的json数据转js对象
+				var jsonMsg = JSON.parse(resMsg);//JSON.stringify()是将json数据转成js对象
+				// console.log(jsonMsg);//test:true
+			}
+		}
+		// **********************************************************
+		//json数据转换成消息体的工具方法
+		function paramar(data) {
+			//初始化字符串
+			var o ="";
+			//取值
+			for(var k in data){
+				// console.log(data[k]);//test:true
+				o += k+"="+data[k]+"&";
+			}
+			o = o.slice(0, -1);//-1以最后一个字符结束
+			// console.log(o);//test:true
+			return o;
+		}
+		
+	</script>		
+</body>
+</html>

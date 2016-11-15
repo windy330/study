@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XMLHttRequest</title>
+	<style>
+		p {
+			margin: 100px auto;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<p><input type="text"><button>提交</button></p>
+	<p class="result"></p>
+	<script>
+
+		// 获取按钮
+		var btn = document.querySelector('button');
+		var input = document.querySelector('input');
+		input.onblur = function () {
+			// 获取输入元素
+			
+			// 得到输入值
+			var val = input.value;
+
+			// 实例化
+			var xhr = new XMLHttpRequest;
+			// 设置请求行
+			xhr.open('post', '8-3.php');
+			// 设置请求头
+			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+			// 发送主体
+			xhr.send('itcast=' + val);
+
+			// 监听并处理响应
+			xhr.onreadystatechange = function () {
+				if(xhr.readyState == 4) {
+					var result = xhr.responseText;
+
+					console.log(result);
+
+					document.querySelector('.result').innerHTML = result;
+				}
+			}
+		}
+
+
+	</script>
+</body>
+</html>

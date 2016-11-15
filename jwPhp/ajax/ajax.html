@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>封装一个自定义的ajax工具函数</title>
+</head>
+<body>
+	<script>
+	// ====================请求数据===================
+	//定义options变量
+	var options = {
+		"type" :"post",
+		"url"  :"./ajax.php",
+		"data" :{"name":"xiaofang","age":12},
+		success:function(ajaxMsg){
+			console.log(ajaxMsg);
+		}
+	};
+	var options2 = {
+		"type" :"get",
+		"url"  :"./ajax.php",
+		"data" :{"name":"xiaofang","age":12},
+		success:function(ajaxMsg){
+			console.log(ajaxMsg);
+		}
+	};
+	// console.log(options);//test:true
+	// ======================自定义AJAX===================
+	var $ ={
+		//定义json字符串编码函数
+		params:function(data){
+			//初始化字符串
+			var o = "";
+			//取值
+			for(var key in data){
+				//拼接
+				o += key + "=" + data[key]+"&";
+			}
+			//删除末端符号"&"
+			o = o.slice(0,-1);
+			// console.log(o);//test:true
+			return o;
+		},
+		//定义ajax函数
+		ajax:function (options) {
+			//new XMLHttpRequest
+			var xhr = new XMLHttpRequest;
+			// console.log(xhr);//test:true
+			// 处理options.data
+			var data = this.params(options.data);
+			//请求行
+			if (options.type=="post") {
+				//请求行
+				xhr.open(options.type,options.url);
+				//请求头
+				//xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+				xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+				//消息体
+				// xhr.send("name=xiaoming&age=12");//test:true
+				xhr.send(data);
+				//响应
+				xhr.onreadystatechange = function () {
+					if (xhr.readyState==4&&xhr.status==200) {
+						//拿到响应体
+						var ajaxMsg = xhr.responseText;
+						// console.log(ajaxMsg);//test:true
+						options.success(ajaxMsg);
+					}
+				};
+			}else if (options.type=="get") {
+				//请求行
+				xhr.open(options.type,options.url+"?"+data);
+				//触发
+				xhr.send(null);
+				//响应
+				xhr.onreadystatechange = function () {
+					if (xhr.readyState==4&&xhr.status==200) {
+						//拿到响应体
+						var ajaxMsg = xhr.responseText;
+						// console.log(ajaxMsg);//test:true
+						options.success(ajaxMsg);
+					}
+				};
+			}else {
+				alert("请求行错误!");
+			}
+			
+		}
+	}
+	$.ajax(options);//test:true
+	$.ajax(options2);//test:true
+	// // ===================test:post======================
+	// 	//new XMLHttpRequest
+	// 	var xhr = new XMLHttpRequest;
+	// 	// console.log(xhr);//test:true
+	// 	//请求行
+	// 	xhr.open("post","./ajax.php");
+	// 	//请求头
+	// 	//xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	// 	xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+	// 	//消息体
+	// 	// xhr.send("name=xiaoming&age=12");//test:true
+	// 	xhr.send("name=xiaoming&age=12");
+	// 	//响应
+	// 	xhr.onreadystatechange = function () {
+	// 		if (xhr.readyState==4&&xhr.status==200) {
+	// 			//拿到响应体
+	// 			var ajaxMsg = xhr.responseText;
+	// 			// console.log(ajaxMsg);//test:true
+	// 		}
+	// 	};
+	// //=====================test:get=======================
+	// 	//new XMLHttpRequest
+	// 	var xhr = new XMLHttpRequest;
+	// 	// console.log(xhr);//test:true
+	// 	//请求行
+	// 	xhr.open("get","./ajax.php?name=xiaohong&age=12");
+	// 	//触发
+	// 	xhr.send(null);//test:true
+	// 	//接收
+	// 	xhr.onreadystatechange = function(){
+	// 		if (xhr.readyState==4&&xhr.status==200) {
+	// 			//取内容
+	// 			var ajaxMsg = xhr.responseText;
+	// 			// console.log(ajaxMsg);//test:true
+	// 		}
+	// 	};
+		
+	</script>
+
+</body>
+</html>

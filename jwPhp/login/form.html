@@ -1,0 +1,97 @@
+<!-- version 2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	html,body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.stage {
+		height: 100%;
+		background: #FFB9B9;
+	}
+	.contain {
+		height: 100%;
+	}
+	.contain .header {
+		width: 200px;
+		height: 100px;
+		color: white;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.contain .form {
+		background: skyblue;
+		width: 242px;
+		color: white;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.form td {
+		text-align: center;
+	}
+	.file {
+		margin-left: 30px;
+	}
+	</style>
+</head>
+<body>
+	<div class="stage">
+		<div class="contain">
+			
+			<h1 class="header">表单提交</h1>
+			
+			<div class="form">
+				<form action="./form.php" method="post" enctype="multipart/form-data">
+					<table>
+					<tr>
+						<td>用户名:</td>
+						<td><input id="username" type="text" name="username"></td>
+						<span class="result"></span>		
+					</tr>
+					<tr>
+						<td>密&nbsp;码:</td>
+						<td><input type="password" name="password"></td>
+					</tr>
+					</table>
+					<td><input class="file" type="file" name="file"></td>
+					<td><input type="submit"></td>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+	//检查用户名是否重名
+	//获取DOM
+	var username = document.querySelector("#username");
+	//添加失去焦点的事件
+	// console.log(username);
+	username.onblur = function () {
+		//AJAX
+		//JS创建XMLHttpRequest对象
+		var xhr = new XMLHttpRequest();
+		//设置请求行
+		xhr.open("post","./form.php");
+		//设置请求头
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		//设置消息体
+		xhr.send('username='+this.value);
+		//接受消息
+		xhr.onreadystatechange = function () {
+			console.log(xhr.readyState);
+			if(xhr.readyState == 4) {
+				console.log('响应完成');
+
+				console.log(xhr.responseText);
+
+				document.querySelector('.result').innerHTML = xhr.responseText;
+			}
+		}
+	}
+	</script>
+</body>
+</html>
