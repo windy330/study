@@ -44,7 +44,11 @@
     </div>
 </div>
 <!--other end-->
-
+<!--transition begin-->
+<div class="transition">
+    <div class="car"></div>
+</div>
+<!--transition end-->
 <!--============-->
 <!--= js begin =-->
 <!--============-->
@@ -54,7 +58,9 @@
     //inputs begin
     var username = document.querySelector("#username");
     var pwd = document.querySelector("#pwd");
-    var submit = document.querySelector("#submit")
+    var submit = document.querySelector("#submit");
+    var transition = document.querySelector(".transition");
+    var timer = null;
 
     jw.tap(username,function(){
         $("#username").addClass("inp-respond");
@@ -67,6 +73,19 @@
         $("#pwd").attr("value","");
     });
     //inputs end
+    //car begin
+    //不断行驶的小汽车
+    window.onload = function(){
+        var car = document.querySelector(".car");
+        var n=0;
+        timer = setInterval(function(){
+            n++;
+            var offset = -270;
+            car.style.backgroundPosition= (-78+n*offset)/75 +"rem 0rem";
+            if(n >= 64) n = 0;
+        },15);
+    };
+    //car end
     //============
     //=   AJAX   =
     //============
@@ -78,16 +97,20 @@
         //console.log(msg);//@T:true
         //dom对象绑定的事件也能调用jQuery的ajax
         $.ajax({
-            type: 'post',
-            url: 'back/back.php',
+            type      : 'post',
+            url       : 'back/back.php',
             // data to be added to query string,form must be true:
-            data: msg,
+            data      : msg,
             // type of data we are expecting in return:
-            dataType: 'json',
-            timeout: 2000,
+            dataType  : 'json',
+            timeout   : 8000,
             //The context of callback functions,this指向
             //context: $('body'),
-            success: function (info) {
+            beforeSend: function () {
+                transition.style.display = "block";
+                console.log($(".transition").attr("display")+"beforeSend@do");
+            },
+            success   : function (info) {
                 console.log(info);//test:true
                 //跳转
                 location.href = info.result;

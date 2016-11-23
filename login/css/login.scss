@@ -13,6 +13,28 @@
 %ml {
   margin-left: torem(10px);
 }
+/*animation begin*/
+@keyframes a {
+  0% {
+    background-position: torem(-750px) torem(475px);
+    opacity: 0;
+  }
+  50% {
+    background-position: 0 0;
+    opacity: 0.7;
+  }
+  100% {
+    background-position: torem(750px) torem(-475px);
+    opacity: 0;
+  }
+}
+/*animation end*/
+/*common css start*/
+.inp-respond {
+  box-shadow: torem(0px) torem(0px) torem(10px) #417CDA inset;
+  border-color: #000;
+}
+/*common css end*/
 body {
   background: #FFFFDD;
   .inputs {
@@ -53,7 +75,7 @@ body {
     width: torem(435px);
     height: torem(79px);
     border-radius: torem(18px);
-    border: solid torem(1px) #417CDA;
+    border: solid torem(1px) black;
     background: transparent;
     float: left;
     padding-left: torem(77px);
@@ -164,25 +186,25 @@ body {
   }
 }
 /*other end*/
-/*animation begin*/
-@keyframes a {
-  0% {
-    background-position: torem(-750px) torem(475px);
-    opacity: 0;
-  }
-  50% {
+/*transition beging*/
+div.transition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,221,1);
+  display: none;
+  div.car {
+    background-image: url(../images/car.png);
+    width: torem(200px);
+    height: torem(200px);
+    margin: torem(480px) auto;
+    border-radius: torem(100px);
+    background-size: torem(17280px) torem(200px);
+    //background: white;
     background-position: 0 0;
-    opacity: 0.7;
-  }
-  100% {
-    background-position: torem(750px) torem(-475px);
-    opacity: 0;
+    box-shadow: torem(2px) torem(2px) torem(100px) #417CDA ;
   }
 }
-/*animation end*/
-/*common css start*/
-.inp-respond {
-  box-shadow: torem(0px) torem(0px) torem(10px) #417CDA inset;
-  border-color: #000;
-}
-/*common css end*/
+/*transition end*/
