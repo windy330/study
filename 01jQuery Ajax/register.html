@@ -99,23 +99,23 @@
 			<ul>
 				<li>
 					<label for="">用户名</label>
-					<input type="text" name="name" title="用户名" class="name inp">
+					<input type="text" name="name" class="name">
 				</li>
 				<li>
 					<label for="">请设置密码</label>
-					<input type="password" name="pass" title="请设置密码" class="pass inp">
+					<input type="password" name="pass" class="pass">
 				</li>
 				<li>
 					<label for="">请确认密码</label>
-					<input type="password" name="repass" title="请确认密码" class="repass inp">
+					<input type="password" name="repass" class="repass">
 				</li>
 				<li>
 					<label for="">验证手机</label>
-					<input type="text" name="mobile" title="验证手机" class="mobile inp">
+					<input type="text" name="mobile" class="mobile">
 				</li>
 				<li>
 					<label for="">短信验证码</label>
-					<input type="text" name="code" title="短信验证码" class="code inp">
+					<input type="text" name="code" class="code">
 					<input type="button" value="获取验证码" class="verify">
 				</li>
 				<li>
@@ -133,69 +133,68 @@
 	<script src="./js/jquery.min.js"></script>
 	<script>
 		// 提交
-		 $(".submit").on("click",function(){
-		 	//缓存外部this
-		 	var _this = $(this);
-		 	//禁止重复提交
-		 	if (_this.hasClass("disabled")) {
-		 		return false;
-		 	}
-			//表单数据
-			var formData = $("#ajaxForm").serialize();//serialize使用要求表单项必须有name属性
-			//console.log("formData"+formData);//test:true
-			// AJAX
+		$('.submit').on('click', function () {
+			// 缓存外部this
+			var _this = $(this);
+			// var self = $(this);
+			// var that = $(this);
+
+			// 禁止重复提交
+			if(_this.hasClass('disabled')) {
+				return false;
+			}
+
+			// 获取表单数据
+			// 表单必须要name属性值，否则会被忽略
+			var formData = $('#ajaxForm').serialize();
+		
+
+			// console.log(formData);
+
+			// 发起请求行
 			$.ajax({
-				type       : "post",
-				url  	   : "./register.php",
-				data       : formData,
-				beforeSend : function () {
-					// console.log(btn);//test:true
-					//输入框
-					var inps = $(".inp");
-					// console.log(inps);//test:true
-					//假设全不为空
-					var flag = true;
-					//空的元素
-					var eleNull = null;
-					for (var i = 0; i < inps.length; i++) {
-						// console.log(inps[i].value);//test:true
-						if (inps[i].value=="") {
-							flag = false;
-							eleNull = inps[i];
-							break;
-						}	
-					}
-					//弹窗
-					if (!flag) {
-						$(".tips p").text(eleNull.title+"不能为空")
-						.fadeIn(1000)
-						.delay(1000)
-						.fadeOut(1000);
-						// console.log(flag);//test:true
-						// 终止请求
+				type: 'post',
+				url: 'register.php',
+				data: formData,
+				// 发起请求前就调用
+				beforeSend: function () {
+					
+					if($('.name').val() == '') {
+						// 友好提示
+						$('.tips p')
+						.text('用户名不能为空')
+						.fadeIn(500)
+						.delay(1500)
+						.fadeOut(500);
+
+						// 可终止请求发起
 						return false;
 					}
-					_this.val("正在提交...").addClass("disabled");
+
+					// Loading状态
+					_this.val('正在提交...').addClass('disabled');
+
 				},
-				success    : function (info) {
-					// console.log(info);//test:true
-					if (info.code=="10001") {
+				success: function (info) {
+					// console.log(info);
+					console.log(1);
+
+					if(info.code != 10000) {
 						alert(info.msg);
-						//跳出
 						return;
-					} else if (info.code=="10000") {
-						alert(info.msg);
-						//跳转
-						location.href = info.result;
 					}
+
+					location.href = info.result;
 				},
-				complete   : function () {
+				complete: function () { // 请求完成时会调用
+					console.log(2);
 					// 还原状态
 					_this.val('立即注册').removeClass('disabled');
 				}
 			});
-		});																	
-		//验证
+		});
+
+		// 获取验证码
 		$('.verify').on('click', function () {
 
 			// 缓存外部this
@@ -245,16 +244,17 @@
 					console.log(info);
 					console.log(1);
 				},
-				error: function (err, errmsg) {
+				error: function (err, errmsg) { // 当请求失败
 					// 逻辑失败
-					console.log("1"+err);
-					console.log("2"+errmsg);
+					console.log(err)
+					console.log(errmsg)
 				},
 				complete: function() {
 					// code
 				}
 			});
-		});
+		})
+
 	</script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模板引擎原理</title>
+</head>
+<body>
+	<script>
+		// 测试字符串
+		var strTest = "我叫<% name %>,今年<% age %>岁";
+		// 测试对象
+		var testObj = {
+			name : "小明",
+			age  : 12
+		};
+		// 正则表达式
+		var reg = /<%\s*([^%>]\S+)\s*%>/;//\s:空格,(^%>]\S+):非字符串非空格,括号很重要
+		// 正则校验
+		var match = reg.exec(strTest);
+		// console.log(match);//test:0=><% name %>,1=>name
+		// console.log(testObj);//test:true
+		// console.log(match[0]+match[1]);//test:<% name %>name
+		// console.log(typeof match[0]); //test:string
+		var str = match[1];
+		// console.log(testObj[str]);//test:标识符不是数据类型,更不可能是字符串,所以不能用点语法,要用中括号取对象的值
+		// 替换字符
+		strTest = strTest.replace(match[0],testObj[str]);
+		// 重复这个步骤
+		var match = reg.exec(strTest);
+		// console.log(match);//test:0=><% name %>,1=>name
+		// console.log(testObj);//test:true
+		// console.log(match[0]+match[1]);//test:<% name %>name
+		// console.log(typeof match[0]); //test:string
+		var str = match[1];
+		// console.log(testObj[str]);//test:标识符不是数据类型,更不可能是字符串,所以不能用点语法,要用中括号取对象的值
+		// 替换字符
+		strTest = strTest.replace(match[0],testObj[str]);
+		console.log(strTest);
+	</script>
+</body>
+</html>

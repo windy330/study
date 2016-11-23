@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button>按钮</button>
+	<!-- 引入jQuery -->
+	<script src="./js/jquery.min.js"></script>
+	<script>
+		
+		// 快捷方法
+		// $('button').click(function () {});
+
+		// 底层的方法
+		// $('button').on('click', function () {});
+
+		// 伪代码
+		// $('button').click = function () {
+		// 	$(this).on('click', function () {
+		// 		// 
+		// 	})
+		// }
+
+		// 底层的写法
+		// $.ajax({
+		// 	type: 'post'
+		// });
+
+		// $.get();
+
+		// $.post();
+
+		// 可以 get 方法发起请求
+		$.get('get.php', {name: 'itcast', age: 10}, function (info) {
+			console.log(info);
+		});
+
+		$.post('post.php', {name: 'itcast', age: 10}, function (info) {
+			console.log(info)
+		});
+
+		// 快捷方法使用非常方便，但是并不能精确控制我们请求
+		// 比如不能指定beforeSend timeout 等参数
+
+		// $.getJSON(); 
+		// 相当于
+		$.ajax({
+			dataType: 'json'
+		});
+
+		$.getScript();
+
+		$.ajax({
+			dataType: 'script'
+		});
+	</script>
+</body>
+</html>

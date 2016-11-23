@@ -1,0 +1,181 @@
+body {
+  background: #FFFFDD; }
+  body .inputs {
+    height: 12.72rem;
+    margin-bottom: 0.26667rem; }
+  body img.bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12.2rem; }
+  body div.fg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6.33333rem;
+    background: url(../images/fg2.png);
+    background-size: 10rem 6.33333rem;
+    animation: a 4s linear 0s infinite; }
+  body .inp {
+    position: absolute;
+    top: 9.14667rem;
+    left: 50%;
+    margin-left: -2.9rem;
+    width: 5.8rem; }
+
+/*input*/
+.inp input {
+  overflow: hidden;
+  width: 5.8rem;
+  height: 1.05333rem;
+  border-radius: 0.24rem;
+  border: solid 0.01333rem #417CDA;
+  background: transparent;
+  float: left;
+  padding-left: 1.02667rem;
+  font-size: 0.42667rem;
+  color: #999999; }
+.inp .icon-user {
+  position: absolute;
+  left: 0.32rem;
+  top: 0.24rem;
+  background: url("../images/l2.png") no-repeat 0 0;
+  width: 0.44rem;
+  height: 0.62667rem;
+  background-size: contain; }
+.inp .icon-pwd {
+  position: absolute;
+  left: 0.32rem;
+  bottom: 1.50667rem;
+  background: url("../images/l3.png") no-repeat 0 0;
+  width: 0.44rem;
+  height: 0.62667rem;
+  background-size: contain; }
+.inp input:nth-child(2) {
+  margin-bottom: 0.21333rem; }
+.inp input:nth-child(4) {
+  margin-bottom: 0.21333rem; }
+.inp input.submit {
+  background: #4788ee;
+  color: white;
+  font-size: 0.48rem;
+  font-family: STXihei;
+  padding-left: 0;
+  text-align: center;
+  border: solid 0.01333rem #00163B;
+  background: -webkit-linear-gradient(#4788ee, #376CB5);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#4788ee, #376CB5);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#4788ee, #376CB5);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(#4788ee, #376CB5);
+  box-shadow: 0rem -0.02667rem 0.13333rem #376CB5 inset;
+  z-index: 2; }
+
+/*other begin*/
+.ispwd {
+  width: 5.33333rem;
+  margin: 0 auto; }
+  .ispwd a {
+    display: inline-block;
+    font: 0.34667rem STXihei;
+    color: #969696; }
+  .ispwd a:nth-child(1) {
+    float: left; }
+  .ispwd a:nth-child(2) {
+    float: right; }
+
+.third-part {
+  margin: 0 auto;
+  width: 5.78667rem;
+  padding-top: 0.56rem; }
+  .third-part .title {
+    width: 5.78667rem;
+    height: 0.33333rem;
+    position: relative; }
+    .third-part .title .line {
+      position: absolute;
+      width: 100%;
+      height: 0.01333rem;
+      background: #417CDA;
+      margin-top: 0.16rem; }
+    .third-part .title .text {
+      position: absolute;
+      left: 50%;
+      margin-left: -1.46667rem;
+      top: 0;
+      display: inline-block;
+      width: 2.93333rem;
+      text-align: center;
+      font: 0.37333rem STXihei;
+      color: #969696;
+      background: #FFFFDD; }
+  .third-part .entrance {
+    margin-top: 0.4rem; }
+    .third-part .entrance .item-0 {
+      background: url(../images/sprite.png);
+      display: inline-block;
+      width: 0.81333rem;
+      height: 0.81333rem;
+      -webkit-background-size: 3.25333rem 0.81333rem;
+      background-size: 3.25333rem 0.81333rem;
+      background-position-x: 0rem;
+      background-position-y: 0;
+      margin: 0 0.29333rem; }
+    .third-part .entrance .item-1 {
+      background: url(../images/sprite.png);
+      display: inline-block;
+      width: 0.81333rem;
+      height: 0.81333rem;
+      -webkit-background-size: 3.25333rem 0.81333rem;
+      background-size: 3.25333rem 0.81333rem;
+      background-position-x: 0.81333rem;
+      background-position-y: 0;
+      margin: 0 0.29333rem; }
+    .third-part .entrance .item-2 {
+      background: url(../images/sprite.png);
+      display: inline-block;
+      width: 0.81333rem;
+      height: 0.81333rem;
+      -webkit-background-size: 3.25333rem 0.81333rem;
+      background-size: 3.25333rem 0.81333rem;
+      background-position-x: 1.62667rem;
+      background-position-y: 0;
+      margin: 0 0.29333rem; }
+    .third-part .entrance .item-3 {
+      background: url(../images/sprite.png);
+      display: inline-block;
+      width: 0.81333rem;
+      height: 0.81333rem;
+      -webkit-background-size: 3.25333rem 0.81333rem;
+      background-size: 3.25333rem 0.81333rem;
+      background-position-x: 2.44rem;
+      background-position-y: 0;
+      margin: 0 0.29333rem; }
+
+/*other end*/
+/*animation begin*/
+@keyframes a {
+  0% {
+    background-position: -10rem 6.33333rem;
+    opacity: 0; }
+  50% {
+    background-position: 0 0;
+    opacity: 0.7; }
+  100% {
+    background-position: 10rem -6.33333rem;
+    opacity: 0; } }
+/*animation end*/
+/*common css start*/
+.inp-respond {
+  box-shadow: 0rem 0rem 0.13333rem #417CDA inset;
+  border-color: #000; }
+
+/*common css end*/
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 引入jQuery -->
+	<script src="./js/jquery.min.js"></script>
+	<script>
+		//  全局设置
+		$.ajaxSetup({
+			type: 'post',
+			beforeSend: function () {
+				console.log('ajaxSetup');
+			}
+		});
+
+		// 单独设置，可覆盖全局(ajaxSetup)的设置
+		$.ajax({
+			type: 'get',
+			url: 'demo.php',
+			data: {},
+			beforeSend: function() {
+				console.log('覆盖');
+			}
+		});
+
+		$.ajax({
+			// type: 'get',
+			url: 'demo1.php',
+			data: {}
+		});
+	</script>
+</body>
+</html>
