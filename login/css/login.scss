@@ -206,5 +206,17 @@ div.transition {
     background-position: 0 0;
     box-shadow: torem(2px) torem(2px) torem(100px) #417CDA ;
   }
+  .log {
+    display: inline-block;
+    font-size: torem(30px);
+    font-family: "微软雅黑";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: torem(800px);
+    text-align: center;
+    line-height: torem(800px);
+  }
 }
 /*transition end*/

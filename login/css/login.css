@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*animation begin*/
 @keyframes a {
   0% {
@@ -195,6 +196,17 @@ div.transition {
     background-size: 230.4rem 2.66667rem;
     background-position: 0 0;
     box-shadow: 0.02667rem 0.02667rem 1.33333rem #417CDA; }
+  div.transition .log {
+    display: inline-block;
+    font-size: 0.4rem;
+    font-family: "微软雅黑";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10.66667rem;
+    text-align: center;
+    line-height: 10.66667rem; }
 
 /*transition end*/
 
