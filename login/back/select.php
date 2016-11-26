@@ -39,7 +39,7 @@
 		$result = array(
 		'code'=> 10000,
 		'msg'=>'OK',
-		'result'=> 'http://www.study.com/login/home.html'
+		'result'=> 'http://www.study.com/login/model/lt/poste.html'
 		);
 	    echo json_encode($result);
 	    sleep(3);

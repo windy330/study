@@ -193,13 +193,13 @@ div.transition {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255,255,221,1);
+  background: rgba(40,40,40,0.9);
   display: none;
   div.car {
     background-image: url(../images/car.png);
     width: torem(200px);
     height: torem(200px);
-    margin: torem(480px) auto;
+    margin: torem(400px) auto;
     border-radius: torem(100px);
     background-size: torem(17280px) torem(200px);
     //background: white;
@@ -208,15 +208,28 @@ div.transition {
   }
   .log {
     display: inline-block;
-    font-size: torem(30px);
+    font-size: torem(28px);
     font-family: "微软雅黑";
+    color: #FFFFDD;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: torem(800px);
+    height: torem(600px);
     text-align: center;
-    line-height: torem(800px);
+    line-height: torem(900px);
   }
 }
 /*transition end*/
+.bug {
+  display: none;
+  font-size: torem(30px);
+  font-family: "微软雅黑";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: torem(400px);
+  text-align: center;
+  line-height: torem(400px);
+}

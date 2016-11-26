@@ -47,9 +47,10 @@
 <!--transition begin-->
 <div class="transition">
     <div class="car"></div>
-    <div><p class="log">糊糊马上就加载好了...</p></div>
+    <div><p class="log">糊糊正在拼命加载...</p></div>
 </div>
 <!--transition end-->
+<p class="bug">用户名密码不正确</p>
 <!--============-->
 <!--= js begin =-->
 <!--============-->
@@ -61,6 +62,7 @@
     var pwd = document.querySelector("#pwd");
     var submit = document.querySelector("#submit");
     var transition = document.querySelector(".transition");
+    var bug = document.querySelector(".bug");
     var timer = null;
 
     jw.tap(username,function(){
@@ -72,6 +74,7 @@
         $("#pwd").addClass("inp-respond");
         $("#username").removeClass("inp-respond");
         $("#pwd").attr("value","");
+        $("#pwd").attr("type","password");
     });
     //inputs end
     //car begin
@@ -115,9 +118,6 @@
                 console.log(info);//test:true
                 //跳转
                 location.href = info.result;
-                if(){
-                    
-                }
             }
         });
     });
