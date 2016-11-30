@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="js/fixScreen750.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>地图展示</title>
+    <link rel="stylesheet" href="css/less.css"/>
+    <style type="text/css">
+        body, html,#allmap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin:0;
+            font-family:"微软雅黑";
+        }
+        #allmap{
+            width:100%;
+        }
+        #r-result{
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width:100%;
+            margin-top:5px;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=98b04ff2e94568d767a4772ad8c3d334"></script>
+    <link rel="stylesheet" href="css/map.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+    <!-- 头部搜索框-->
+    <header class="map_head">
+        <!-- 搜索图标-->
+        <a href="javascript:"><span class="icon_img"></span></a>
+        <!-- 搜索框-->
+        <form action="#">
+            <input type="text" id="suggestId" class="yangsshi" placeholder="查找地点、公交、地铁"/>
+        </form>
+        <!-- 语音图标-->
+        <a class="you" href="javascript:"><b class="icon_imgs"><i class="icon_imgss"></i></b></a>
+    </header>
+    <!-- 中间部分图标-->
+    <section class="map_secti">
+        <!-- 指南针-->
+        <span class="icon_img"></span>
+        <!-- 右侧图标-->
+        <a href="javascript:" class="icon_imgs"></a>
+        <!-- 路况标识-->
+        <a href="javascript:" class="icon_imgss"></a>
+        <!-- 环保图标-->
+        <a href="javascript:" class="icon_imgsss"></a>
+        <!--&lt;!&ndash; 变大变小控件&ndash;&gt;-->
+        <!--<div id="r-result">-->
+        <!--</div>-->
+    </section>
+    <!-- 底部部分-->
+    <footer class="map_bottom">
+        <!-- 底部工具栏部分-->
+        <ul>
+            <li class="f_left"><a href="javascript:"><b class="icon_img"></b>附近</a></li>
+            <li class="f_left"><a href="javascript:"><b class="icon_imgs"></b>路线</a></li>
+            <li class="f_left"><a href="javascript:"><b class="icon_imgss"></b>导航</a></li>
+            <li class="f_left"><a href="javascript:"><b class="icon_imgsss"></b>更多<i class="icon_imgssss"></i></a></li>
+        </ul>
+        <!--<a href="javascript:" class="icon_imgsssss"></a>-->
+    </footer>
+    <!-- 百度地图显示功能-->
+    <div id="allmap"></div>
+    <!--自动查询关键词-->
+    <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+    <!-- 百度自动识别搜索框层级-->
+    <div class="tangram-suggestion-main" id="tangram-suggestion--TANGRAM__26-main" data-guid="TANGRAM__26" style="position: absolute; display: none; left: 16px; top: 38px; width: 380px; z-index: 10">
+        <div style="position: absolute; top: 0px; left: 0px; width: 1140px; height: 216px;">
+            <iframe src="javascript:void(0)" frameborder="0" scrolling="no" height="97%" style="width: 1140px; z-index: -1; display: none; border: 0px;"></iframe></div><div id="tangram-suggestion--TANGRAM__26" class="tangram-suggestion" style="position:relative; top:0px; left:0px"><table cellspacing="0" cellpadding="2"><tbody><tr><td id="tangram-suggestion--TANGRAM__26-item0" onmouseover="window['$BAIDU$']._instances['TANGRAM__26']._itemOver(event, 0)" onmouseout="window['$BAIDU$']._instances['TANGRAM__26']._itemOut(event, 0)" onmousedown="window['$BAIDU$']._instances['TANGRAM__26']._itemDown(event, 0)" onclick="window['$BAIDU$']._instances['TANGRAM__26']._itemClick(event, 0)" class=""><i class="route-icon">上海市浦东新区上海新国际博览中心</i></td></tr><tr><td id="tangram-suggestion--TANGRAM__26-item1" onmouseover="window['$BAIDU$']._instances['TANGRAM__26']._itemOver(event, 1)" onmouseout="window['$BAIDU$']._instances['TANGRAM__26']._itemOut(event, 1)" onmousedown="window['$BAIDU$']._instances['TANGRAM__26']._itemDown(event, 1)" onclick="window['$BAIDU$']._instances['TANGRAM__26']._itemClick(event, 1)" class=""><i class="route-icon"><b>s</b>oho复兴广场&nbsp;<span class="tangram-suggestion-grey">上海市卢湾区</span></i></td></tr><tr><td id="tangram-suggestion--TANGRAM__26-item2" onmouseover="window['$BAIDU$']._instances['TANGRAM__26']._itemOver(event, 2)" onmouseout="window['$BAIDU$']._instances['TANGRAM__26']._itemOut(event, 2)" onmousedown="window['$BAIDU$']._instances['TANGRAM__26']._itemDown(event, 2)" onclick="window['$BAIDU$']._instances['TANGRAM__26']._itemClick(event, 2)" class=""><i class="route-icon"><b>s</b>fc上影(上海影城店)&nbsp;<span class="tangram-suggestion-grey">上海市长宁区</span></i></td></tr><tr><td id="tangram-suggestion--TANGRAM__26-item3" onmouseover="window['$BAIDU$']._instances['TANGRAM__26']._itemOver(event, 3)" onmouseout="window['$BAIDU$']._instances['TANGRAM__26']._itemOut(event, 3)" onmousedown="window['$BAIDU$']._instances['TANGRAM__26']._itemDown(event, 3)" onclick="window['$BAIDU$']._instances['TANGRAM__26']._itemClick(event, 3)" class=""><i class="route-icon"><b>s</b>oho中山广场&nbsp;<span class="tangram-suggestion-grey">上海市长宁区</span></i></td></tr><tr><td id="tangram-suggestion--TANGRAM__26-item4" onmouseover="window['$BAIDU$']._instances['TANGRAM__26']._itemOver(event, 4)" onmouseout="window['$BAIDU$']._instances['TANGRAM__26']._itemOut(event, 4)" onmousedown="window['$BAIDU$']._instances['TANGRAM__26']._itemDown(event, 4)" onclick="window['$BAIDU$']._instances['TANGRAM__26']._itemClick(event, 4)" class=""><i class="route-icon">上海市黄浦区上海音乐厅</i></td></tr><tr><td id="tangram-suggestion--TANGRAM__26-item5" onmouseover="window['$BAIDU$']._instances['TANGRAM__26']._itemOver(event, 5)" onmouseout="window['$BAIDU$']._instances['TANGRAM__26']._itemOut(event, 5)" onmousedown="window['$BAIDU$']._instances['TANGRAM__26']._itemDown(event, 5)" onclick="window['$BAIDU$']._instances['TANGRAM__26']._itemClick(event, 5)" class=""><i class="route-icon"><b>s</b>oho东海广场&nbsp;<span class="tangram-suggestion-grey">上海市静安区</span></i></td></tr></tbody></table><div style="height:22px;line-height:22px;overflow:hidden;zoom:1;border-top:#E7E7E7 solid 1px;background:#F7F7F7;"><span style="float:right;color:#4B4B4B;border-left:1px solid #E7E7E7;padding:0 10px;font-size:14px;" onmousedown="window['$BAIDU$']._instances['TANGRAM__26']._close(event)">关闭</span></div></div></div>
+</body>
+</html>
+    <script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(121.48, 31.22), 11);  // 初始化地图,设置中心点坐标和地图级别
+//    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.setCurrentCity("上海");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+    var top_left_control = new BMap.ScaleControl({
+        anchor:BMAP_ANCHOR_BOTTOM_LEFT,
+        offset:new BMap.Size(60,64)
+    });// 左上角，添加比例尺
+    var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    var top_right_navigation = new BMap.NavigationControl({
+        anchor: BMAP_ANCHOR_BOTTOM_LEFT ,
+        type: BMAP_NAVIGATION_CONTROL_SMALL
+    }); //右上角，仅包含平移和缩放按钮
+    /*缩放控件type有四种类型:
+     BMAP_NAVIGATION_CONTROL_SMALL：仅包含平移和缩放按钮；BMAP_NAVIGATION_CONTROL_PAN:仅包含平移按钮；BMAP_NAVIGATION_CONTROL_ZOOM：仅包含缩放按钮*/
+    map.addControl(top_left_control);
+    map.addControl(top_left_navigation);
+
+
+    // 添加带有定位的导航控件erAndZoom(new BMap.Point
+    var navigationControl = new BMap.NavigationControl({
+        // 靠左上角位置
+//        anchor: BMAP_ANCHOR_TOP_LEFT,
+        // LARGE类型
+        type: BMAP_NAVIGATION_CONTROL_LARGE,
+        // 启用显示定位
+        enableGeolocation: true
+    });
+    map.addControl(navigationControl);
+    // 添加定位控件
+    var geolocationControl = new BMap.GeolocationControl(
+            {
+                offset:new BMap.Size(16,64)
+            }
+    );
+    geolocationControl.addEventListener("locationSuccess", function(e){
+        // 定位成功事件
+        var address = '';
+        address += e.addressComponent.province;
+        address += e.addressComponent.city;
+        address += e.addressComponent.district;
+        address += e.addressComponent.street;
+        address += e.addressComponent.streetNumber;
+        alert("当前定位地址为：" + address);
+    });
+    geolocationControl.addEventListener("locationError",function(e){
+        // 定位失败事件
+        alert(e.message);
+    });
+    map.addControl(geolocationControl);
+
+
+    // 百度地图API功能
+    function G(id) {
+        return document.getElementById(id);
+    }
+
+    map.centerAndZoom("上海",12);                   // 初始化地图,设置城市和地图级别。
+
+    var ac = new BMap.Autocomplete(    //建立一个自动完成的对象
+            {"input" : "suggestId"
+                ,"location" : map
+            });
+
+    ac.addEventListener("onhighlight", function(e) {  //鼠标放在下拉列表上的事件
+        var str = "";
+        var _value = e.fromitem.value;
+        var value = "";
+        if (e.fromitem.index > -1) {
+            value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        }
+        str = "FromItem<br />index = " + e.fromitem.index + "<br />value = " + value;
+
+        value = "";
+        if (e.toitem.index > -1) {
+            _value = e.toitem.value;
+            value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        }
+        str += "<br />ToItem<br />index = " + e.toitem.index + "<br />value = " + value;
+        G("searchResultPanel").innerHTML = str;
+    });
+
+    var myValue;
+    ac.addEventListener("onconfirm", function(e) {    //鼠标点击下拉列表后的事件
+        var _value = e.item.value;
+        myValue = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        G("searchResultPanel").innerHTML ="onconfirm<br />index = " + e.item.index + "<br />myValue = " + myValue;
+
+        setPlace();
+    });
+
+    function setPlace(){
+        map.clearOverlays(
+                {}
+        );    //清除地图上所有覆盖物
+        function myFun(){
+            var pp = local.getResults().getPoi(0).point;    //获取第一个智能搜索的结果
+            map.centerAndZoom(pp, 18);
+            map.addOverlay(new BMap.Marker(pp));    //添加标注
+        }
+        var local = new BMap.LocalSearch(map, { //智能搜索
+            onSearchComplete: myFun
+        });
+        local.search(myValue);
+    }
+    </script>
+

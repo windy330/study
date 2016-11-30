@@ -1,0 +1,203 @@
+@function p($px){//$px为需要转换的字号
+  @return $px / 75px * 1rem; //40px为根字体大小
+}
+
+body,html{
+  width: 100%;
+  height: 100%;
+  font-family: 'songti';
+}
+a:hover{
+  color: #fffdef;
+}
+.active{
+  color: #3B77DB;
+  border-bottom: p(4px) solid #3B77DB;
+}
+.check{
+  color: #3B77DB!important;
+}
+header{
+  padding: 0 p(50px);
+  height: p(90px);
+  background-color: #4DB9FF;
+  div{
+    width: 25%;
+    float: left;
+    text-align: center;
+  }
+  a{
+    margin: 0 auto;
+    font-size: p(34px);
+    color: #fff;
+    display: block;
+    height: p(90px);
+    line-height: p(90px);
+  }
+}
+.tr_header{
+  background-color: #E7E7E7;
+  height: p(54px);
+  padding: 0 p(50px);
+
+  div{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+  }
+  a{
+    display: block;
+    color: #333;
+    display: block;
+    height: p(54px);
+    width: 60%;
+    margin: 0 auto;
+    line-height: p(54px);
+    font-size: p(28px);
+  }
+}
+//必看景点
+.scenic{
+  display: block;
+  .scenic_box{
+    margin-top: p(37px);
+    height: p(250px);
+    padding: 0 p(50px);
+    .scenic_box_img{
+      float: left;
+      width: p(250px);
+      height: p(250px);
+      background-size: p(700px) p(700px)!important;
+    }
+    .sbImg1{
+      background: url("../images/scenic.png") no-repeat p(0px) p(0px);
+    }
+    .sbImg2{
+      background: url("../images/scenic.png") no-repeat p(0px) p(-299px);
+    }
+    .sbImg3{
+      background: url("../images/scenic.png") no-repeat p(-265px) p(-299px);
+    }
+    .sbImg4{
+      background: url("../images/scenic.png") no-repeat p(-265px) p(0px);
+    }
+    .scenic_box_info{
+      float: right;
+      width: p(400px);
+      padding-right: p(28px);
+      padding-left: p(16px);
+      p{
+        margin-top: p(16px);
+        display: inline-block;
+      }
+      p:nth-of-type(1){
+        width: 100%;
+        float: left;
+        margin-top: p(37px);
+        font-size: p(30px);
+        color: #333333;
+      }
+      p:nth-of-type(2){
+        float: left;
+        font-size: p(22px);
+        color: #333333;
+        background-color: #4DB9FF;
+        padding: p(12px) p(16px);
+        border-radius: p(10px);
+        color: #fffdef;
+      }
+      p:nth-of-type(3){
+        float: left;
+        font-size: p(22px);
+        color: #777777;
+      }
+    }
+  }
+}
+
+//热门路线
+.path{
+  display: none;
+  .arrange{
+    width: p(650px);
+    height: p(160px);
+    margin: 0 auto;
+    overflow: hidden;
+    div{
+      width: 100%;
+      height: p(28px);
+      line-height: p(28px);
+      margin-top: p(20px);
+      font-size: p(22px);
+    }
+    span{
+      margin-right: p(22px);
+    }
+    span:nth-of-type(1){
+      margin: 0;
+    }
+    span:nth-of-type(2){
+      background-color: #4DB9FF;
+      padding: p(3px) p(3px);
+      border-radius: p(5px);
+    }
+    span:hover,span:focus{
+      background-color: #4DB9FF;
+      padding: p(3px) p(0px);
+      border-radius: p(5px);
+    }
+    span:nth-child(1):hover,span:nth-child(1):focus{
+      background-color: transparent;
+      padding: 0;
+    }
+
+  }
+  .journey{
+    height: p(250px);
+    width: p(650px);
+    margin: p(25px) auto;
+    .journey_img{
+      float: left;
+      width: p(250px);
+      height: p(250px);
+      background-size: p(700px) p(700px)!important;
+    }
+    .jImg1{
+      background: url("../images/path.png") no-repeat p(0px) p(0px);
+    }
+    .jImg2{
+      background: url("../images/path.png") no-repeat p(-265px) p(0px);
+    }
+    .jImg3{
+      background: url("../images/path.png") no-repeat p(0px) p(-261px);
+    }
+    .journey_info{
+      float: right;
+      width: p(400px);
+      height: p(250px);
+      font-size: p(22px);
+      padding-left: p(20px);
+      p:nth-of-type(1){
+        font-size: p(30px);
+        color: #333333;
+        margin-top: p(24px);
+      }
+      p:nth-of-type(2){
+        color: #7E7E7E;
+        margin-top: p(28px);
+      }
+      p:nth-of-type(3){
+        color: #7E7E7E;
+        margin-top: p(28px);
+      }
+      p:nth-of-type(4){
+        float: right;
+        padding: p(8px) p(12px);
+        border-radius: p(8px);
+        color: #FFF;
+        margin-top: p(28px);
+        background-color: #4DB9FF;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+[class^="icon_"] {
+  background: url("img/paying-1.png") no-repeat;
+  background-size: 5.33333333rem 5.33333333rem;
+  position: absolute;
+}
+/*����ͨ��*/
+.top {
+  width: 100%;
+  height: 1.17333333rem;
+  background: #4DB9FF;
+  padding: 0.21333333rem 0.4rem;
+}
+.icon_back {
+  width: 0.18666667rem;
+  height: 0.37333333rem;
+  padding: 0.16rem 0.13333333rem;
+  left: 0.4rem;
+  top: 0.42666667rem;
+  background-position: 0 0;
+}
+.topBar form {
+  width: 100%;
+  position: relative;
+}
+.top form input {
+  width: 4.65333333rem;
+  height: 0.73333333rem;
+  margin-left: 2.66666667rem;
+  border: 0.01333333rem solid #e0e0e0;
+  border-radius: 0.13333333rem;
+  text-align: center;
+  min-width: 2.66666667rem;
+}
+.icon_search {
+  height: 0.38666667rem;
+  width: 0.38666667rem;
+  background-position: 0 -1.16rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 2.53333333rem;
+}
+.pic {
+  width: 100%;
+  height: 5.73333333rem;
+  background-size: 10rem 5.73333333rem;
+  position: relative;
+}
+.pic img {
+  width: 100%;
+}
+.pic .bac {
+  width: 7.68rem;
+  height: 1.33333333rem;
+  position: absolute;
+  right: 0;
+  top: 2.16rem;
+  background: rgba(75, 90, 90, 0.3);
+  padding-left: 0.74666667rem;
+}
+.pic .bac span {
+  line-height: 1.33333333rem;
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+.pic .bac .move {
+  color: #FFF;
+  transition: all 1s ease-in;
+  transform: translateX(1.01333333rem);
+}

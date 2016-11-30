@@ -1,0 +1,61 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+
+    /*在移动端特殊的设�?*/
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置�?有的盒子的宽度以边框�?始计�?*/
+    -webkit-box-sizing: border-box;
+    /*要兼�? webkit 浏览器内核厂�? 这种情况�?般是老的移动端浏览器*/
+    box-sizing: border-box;
+}
+body{
+    font-size: 14rem/@font-size;
+    color: #333;
+    font-family: "MicroSoft YaHei","sans-serif";/*是设备默认的字体*/
+}
+ul,ol,h3{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+i,b,s{
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    /*特殊的属性定�?  清除浏览器给input自带的样�?*/
+    -webkit-appearance: none;/*组件默认的样式空*/
+}
+/*common css  也就是我们公用的css*/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::after,
+.clearfix::before{
+    content: ".";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+[class^="icon"] {
+    background: url("../images/sprites.png") no-repeat;
+}

@@ -1,0 +1,189 @@
+@f:75px;
+//最大宽度与最小宽度
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  max-width: 750rem/@f;
+  min-width: 320rem/@f;
+  position: relative;
+}
+//主体内容宽度
+.top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+//父盒子
+ul{
+  width: 3000rem/@f;
+  height: 100%;
+}
+//设置li标签的高度,铺满整个屏幕的高度
+.top li{
+  height: 100%;
+}
+//设置第一个广告
+.top .di1 img{
+  width: 750rem/@f;
+  height: 100%;
+  //display: none;
+}
+//设置第二个广告
+.top .di2 img{
+  width: 750rem/@f;
+  height: 100%;
+  //display: none;
+}
+//设置第三个广告
+.top .di3 img{
+  width: 750rem/@f;
+  height: 100%;
+  //display: none;
+}
+//设置第四个广告
+.top .di4{
+  //display: none;
+  position: relative;
+}
+//点击跳过的样式
+.poste_1 p::after{
+  content: '';
+  display: block;
+  width: 120rem/@f;
+  height: 120rem/@f;
+  border: 1px solid #fff;
+  border-radius: 60rem/@f;
+  position: absolute;
+  top: -18rem/@f;
+  right: -18rem/@f;
+  z-index: 10;
+  animation: poo 1s infinite linear;
+}
+.poste_1 p{
+  display: block;
+  width: 88rem/@f;
+  height: 88rem/@f;
+  border: 2px solid #ccc;
+  border-radius: 44rem/@f;
+  position: absolute;
+  top: 40rem/@f;
+  right: -360rem/@f;
+  line-height: 88rem/@f;
+  text-align: center;
+  z-index: 10;
+  font-size: 30rem/@f;
+  color: #fff;
+  animation: poo 1s infinite linear;
+}
+//效果样式的动画效果
+@-webkit-keyframes poo {
+  0%{
+    border: 2rem/@f solid #ccc;
+    color: red;
+  }
+  35%{
+    border: 2rem/@f solid cornflowerblue;
+    color: gold;
+  }
+  70%{
+    border: 2rem/@f solid greenyellow;
+    color: coral;
+  }
+  100%{
+    border: 2rem/@f solid #ccc;
+    color: red;
+  }
+}
+//背景图片的效果
+.poste_4 img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800rem/@f;
+  height: 100%;
+}
+//logo标准的位置调整
+.poste_5 img{
+  width: 800rem/@f;
+  height:600rem/@f ;
+  position: absolute;
+  left: 0rem/@f;
+  top: 300rem/@f;
+  animation: po 2s linear infinite;
+}
+//logo左右晃动的效果
+@-webkit-keyframes po{
+  0%{
+    transform:translatex(-20rem/@f) ;
+  }
+  50%{
+    transform:translatex(20rem/@f) ;
+  }
+  100%{
+    transform:translatex(-20rem/@f) ;
+  }
+}
+//点击进入按钮
+.poste_2{
+  border: 4rem/@f solid #000;
+  width: 350rem/@f;
+  height: 125rem/@f;
+  z-index: 100;
+  position: absolute;
+  top: 900rem/@f;
+  left: 180rem/@f;
+  border-radius: 20rem/@f;
+  position: relative;
+  animation: poos 2s infinite linear;
+}
+.poste_2 a{
+  //padding: 20rem/@f 30rem/@f;
+  font-family: "微软雅黑";
+  padding-left: 30rem/@f;
+  padding-right: 26rem/@f;
+  padding-top: 10rem/@f;
+  padding-bottom: 10rem/@f;
+  font-size: 60rem/@f;
+  position: absolute;
+  top: 8rem/@f;
+  left: 20rem/@f;
+  border: 3px solid #000;
+  border-radius: 20rem/@f;
+  animation: pooos 2s infinite linear;
+}
+//点击进入的动画效果
+@-webkit-keyframes poos {
+  0%{
+    border: 4rem/@f solid #ccc;
+  }
+  35%{
+    border: 4rem/@f solid cornflowerblue;
+  }
+  70% {
+    border: 4rem/@f solid greenyellow;
+  }
+  100%{
+    border: 4rem/@f solid #ccc;
+  }
+}
+@-webkit-keyframes pooos {
+  0%{
+    border: 3rem/@f solid #ccc;
+    color: blue;
+  }
+  35%{
+    border: 3rem/@f solid cornflowerblue;
+    color: deepskyblue;
+  }
+  70%{
+    border: 3rem/@f solid greenyellow;
+    color: olivedrab;
+  }
+  100%{
+    border: 3rem/@f solid #ccc;
+    color: blue;
+  }
+}

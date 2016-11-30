@@ -1,0 +1,296 @@
+@charset "UTF-8";
+//函数,rem适配
+@function torem($px){
+  @return $px / 75px * 1rem;
+}
+body {
+  background: #cccccc;
+}
+/*header begin*/
+header {
+  width: 100%;
+  height: torem(703px);
+}
+.head {
+  width: 100%;
+  height: torem(66px);
+  background: rgba(255,255,221,0);
+  padding: 0 torem(30px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  input {
+    border-radius: 5px;
+  }
+  .search {
+    position: absolute;
+    left: torem(30px);
+    bottom: 0;
+    width: torem(615px);
+    height: torem(46px);
+    i {
+      background: url("../images/headsp.png") 0 torem(-23px);
+      background-size: torem(161px) torem(59px);
+      display: inline-block;
+      width: torem(13px);
+      height: torem(23px);
+      position: absolute;
+      right: torem(11px);
+      top: torem(14px);
+    }
+    s {
+      background: url("../images/headsp.png") 0 0;
+      background-size: torem(161px) torem(59px);
+      display: inline-block;
+      width: torem(23px);
+      height: torem(23px);
+      position: absolute;
+      left: torem(19px);
+      top: torem(12px);
+    }
+    input:nth-child(1) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: torem(615px);
+      height: torem(46px);
+      padding-left: torem(55px);
+      padding-right: torem(27px);
+      color: #cccccc;
+      font-size: torem(23px);
+      font-family: "ＭＳ ゴシ...";
+    }
+  }
+  .scan {
+    position: absolute;
+    right: torem(30px);
+    bottom: 0;
+    width: torem(46px);
+    height: torem(46px);
+    span {
+      background: url("../images/headsp.png") torem(-23px) 0;
+      background-size: torem(161px) torem(59px);
+      display: inline-block;
+      width: torem(27px);
+      height: torem(21px);
+      position: absolute;
+      top: torem(13px);
+      left: torem(9px);
+      z-index: 9;
+    }
+    input:nth-child(2) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: torem(46px);
+      height: torem(46px);
+    }
+  }
+}
+.bg {
+  background: url("../images/canHome.png") no-repeat;
+  width: 100%;
+  height: torem(703px);
+  background-size: 100% torem(703px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cav {
+  width: 100%;
+  height: torem(703px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+/*header end*/
+/*section begin*/
+section {
+  width: torem(690px);
+  height: torem(411px);
+  background: #f4f4f4;
+  margin-top: torem(30px);
+  margin-left: torem(30px);
+  padding: torem(32px) 0;
+  li {
+    float: left;
+    width: torem(172px);
+    height: torem(168px);
+    position: relative;
+    a {
+      position: relative;
+      display: inline-block;
+      width: torem(172px);
+      height: torem(168px);
+    }
+    i {
+      position: absolute;
+      width: torem(69px);
+      height: torem(52px);
+      background: pink;
+      left: torem(53px);
+      top:torem(42px);
+    }
+    span {
+      position: absolute;
+      left: torem(58px);
+      bottom: torem(30px);
+      //background: pink;
+      font-size: torem(28px);
+      text-align: center;
+      line-height: torem(28px);
+      font-family: "STHeitiSC";
+      color: #5780c4;
+    }
+  }
+  .i1 {
+    background: url("../images/home2.png") 0 0;
+    background-size: torem(580px) torem(560px);
+  }
+  .i2 {
+    background: url("../images/home2.png") torem(-179px) 0;
+    background-size: torem(580px) torem(560px);
+  }
+  .i3 {
+    background: url("../images/home2.png") torem(-342px) 0;
+    background-size: torem(580px) torem(560px) ;
+  }
+  .i4 {
+    background: url("../images/home2.png") torem(-511px) 0;
+    background-size: torem(580px) torem(560px);
+  }
+  .i5 {
+    background: url("../images/home2.png") 0 torem(-175px);
+    background-size: torem(580px) torem(560px);
+  }
+  .i6 {
+    background: url("../images/home2.png") torem(-179px) torem(-175px);
+    background-size: torem(580px) torem(560px);
+  }
+  .i7 {
+    background: url("../images/home2.png") torem(-342px) torem(-175px);
+    background-size: torem(580px) torem(560px);
+  }
+  .i8 {
+    background: url("../images/home2.png") torem(-511px) torem(-175px);
+    background-size: torem(580px) torem(560px);
+  }
+  .other {
+    border-right: solid 1px #cccccc;
+  }
+  .show {
+    border-bottom: solid 1px #cccccc;
+  }
+
+
+}
+/*section end*/
+/*footer begin*/
+footer {
+  //width: 100%;
+  width: 100%;
+  height: torem(115px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  //background: pink;
+  padding: 0 torem(32px);
+
+  .tab-item {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    width: torem(137.2px);
+    height: torem(130px);
+    font-size: torem(20px);
+    color: #777777;
+    font-family: "STHeitiSC";
+    text-align: center;
+    background: white;
+    .tab-label {
+      display: inline-block;
+      margin-top:torem(63px);
+    }
+    .icon-order {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: torem(29px);
+      height: torem(38px);
+      background:url("../images/footersp.png") 0 torem(-19px);
+      -webkit-background-size: torem(584px) torem(101px);
+      background-size: torem(584px) torem(101px);
+    }
+    .icon-collect {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: torem(39px);
+      height: torem(38px);
+      background:url("../images/footersp.png") torem(-133px) torem(-17px);
+      -webkit-background-size: torem(584px) torem(101px);
+      background-size: torem(584px) torem(101px);
+    }
+    .icon-home {
+      border: solid 1px red;
+      display: inline-block;
+      position: absolute;
+      top: torem(-40px);
+      left: 0;
+      width: torem(137.2px);
+      height: torem(137.2px);
+      padding: torem(44.6px) torem(44.1px);
+      background:url("../images/footersp.png") torem(-267px) 0;
+      -webkit-background-size: torem(584px) torem(101px);
+      background-size: torem(584px) torem(101px);
+      border-radius: torem(68.6px);
+      background-origin: content-box;
+      background-clip: content-box;
+      //background: white;
+    }
+    i {
+      border: solid 1px red;
+      display: inline-block;
+      width: torem(137.2px);
+      height: torem(137.2px);
+      position: absolute;
+      top: torem(-40px);
+      left: 0;
+      border-radius: torem(68.6px);
+      background: white;
+    }
+    .icon-class {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: torem(35px);
+      height: torem(34px);
+      background:url("../images/footersp.png") torem(-412px) torem(-19px);
+      -webkit-background-size: torem(584px) torem(101px);
+      background-size: torem(584px) torem(101px);
+    }
+    .icon-me {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: torem(33px);
+      height: torem(34px);
+      background:url("../images/footersp.png") torem(-550px) torem(-19px);
+      -webkit-background-size: torem(584px) torem(101px);
+      background-size: torem(584px) torem(101px);
+    }
+    .icon {
+      top:torem(15px);
+      left: torem(55px);
+    }
+
+  }
+}
+/*footer end*/

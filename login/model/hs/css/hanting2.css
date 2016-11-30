@@ -1,0 +1,487 @@
+body {
+  font-size: 0.37333rem;
+  font-family: 'microsoft yahei';
+  color: #333; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.bbb {
+  height: 2.93333rem; }
+
+.ht_header {
+  width: 10rem;
+  height: 1.2rem;
+  background-color: #4DB9FF;
+  position: relative; }
+
+.ht_header .icon_left {
+  width: 0.18667rem;
+  height: 0.33333rem;
+  background: url("../images/hanting2.png") no-repeat 0rem -0.01333rem;
+  background-size: 8.8rem 5.86667rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem; }
+
+.ht_header p {
+  font-size: 0.45333rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  width: 10rem;
+  text-align: center;
+  font-family: 'songti';
+  color: #fff; }
+
+.ht_header .icon_heart {
+  width: 0.41333rem;
+  height: 0.36rem;
+  background: url("../images/hanting2.png") no-repeat;
+  background-position: -0.33333rem 0rem;
+  background-size: 8.8rem 5.86667rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 1.13333rem; }
+
+.ht_header .icon_return {
+  width: 0.52rem;
+  height: 0.38667rem;
+  background: url("../images/hanting2.png") no-repeat -0.82667rem -0.02667rem;
+  background-size: 8.8rem 5.86667rem;
+  position: absolute;
+  top: 0.37333rem;
+  right: 0.4rem; }
+
+.ht_appraise {
+  width: 10rem;
+  height: 5.24rem;
+  position: relative; }
+
+.ht_appraise .logo {
+  background: url("../images/hanting2.png") no-repeat 0rem -0.82667rem;
+  background-size: 8.8rem 5.86667rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0.26667rem;
+  right: 0.66667rem; }
+
+.ht_appraise .details {
+  height: 5.24rem; }
+
+.ht_appraise .details .de1 {
+  position: absolute;
+  left: 0.66667rem;
+  top: 0.8rem;
+  border-bottom: 0.01333rem solid #E7E7E7; }
+
+.ht_appraise .details .de11 {
+  position: relative;
+  height: 0.53333rem;
+  width: 5.86667rem; }
+
+.ht_appraise .details .de1_1 {
+  font-size: 0.37333rem;
+  color: #4DB9FF;
+  position: absolute;
+  left: 0.26667rem;
+  bottom: 0rem; }
+
+.ht_appraise .details .de1_2 {
+  font-size: 0.26667rem;
+  color: #999999;
+  position: absolute;
+  left: 2.13333rem;
+  bottom: 0rem; }
+
+.ht_appraise .details .de1_3 {
+  font-size: 0.37333rem;
+  color: #C55F6F;
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0rem; }
+
+.ht_appraise .details .de1_4, .de2_3 {
+  background: url("../images/hanting2.png") no-repeat -1.44rem -0.02667rem;
+  background-size: 8.8rem 5.86667rem;
+  width: 0.29333rem;
+  height: 0.37333rem;
+  position: absolute;
+  left: 5.73333rem;
+  top: 0.08rem; }
+
+.ht_appraise .details .de2 {
+  height: 0.53333rem;
+  width: 8.26667rem;
+  position: absolute;
+  left: 0.66667rem;
+  top: 2rem;
+  border-bottom: 0.01333rem solid #E7E7E7; }
+
+.ht_appraise .details .de22 {
+  height: 0.53333rem;
+  width: 8.26667rem;
+  position: relative; }
+
+.ht_appraise .details .de2_1 {
+  font-size: 0.26667rem;
+  color: #333333;
+  position: absolute;
+  left: 0.26667rem;
+  bottom: 0rem; }
+
+.ht_appraise .details .de2_2 {
+  font-size: 0.37333rem;
+  color: #C55F6F;
+  position: absolute;
+  left: 4rem;
+  bottom: 0rem; }
+
+.ht_appraise .details .de3 {
+  position: absolute;
+  left: 0.66667rem;
+  top: 3rem;
+  border-bottom: 0.01333rem solid #E7E7E7; }
+
+.ht_appraise .details .de33 {
+  height: 1rem;
+  width: 8.26667rem;
+  position: relative; }
+
+.ht_appraise .details .de3_1 {
+  font-size: 0.26667rem;
+  color: #333;
+  position: absolute;
+  left: 0.26667rem;
+  top: 0rem; }
+
+.ht_appraise .details .de3_2 {
+  font-size: 0.26667rem;
+  color: #777;
+  position: absolute;
+  left: 0.26667rem;
+  bottom: 0.06667rem; }
+
+.ht_appraise .details .de3_3 {
+  font-size: 0.37333rem;
+  color: #777;
+  float: right;
+  position: relative; }
+
+.map {
+  display: block;
+  background: url("../images/hanting2.png") no-repeat -2.21333rem 0rem;
+  background-size: 8.8rem 5.86667rem;
+  width: 0.34667rem;
+  height: 0.61333rem;
+  position: absolute;
+  right: -0.33333rem;
+  top: -0.13333rem; }
+
+@keyframes dump {
+  0% {
+    transform: translateY(0rem); }
+  50% {
+    transform: translateY(-0.13333rem); }
+  100% {
+    transform: translateY(0rem); } }
+.ht_appraise .details .de4 {
+  position: absolute;
+  left: 0.66667rem;
+  bottom: 0.56rem; }
+
+.ht_appraise .details .de44 {
+  position: relative;
+  line-height: 0.53333rem;
+  height: 0.53333rem;
+  width: 8.26667rem; }
+
+.ht_appraise .details .de4_1 {
+  font-size: 0.26667rem;
+  color: #777;
+  position: absolute;
+  left: 0.26667rem;
+  top: 0rem; }
+
+.ht_appraise .details .de4_1 {
+  font-size: 0.26667rem;
+  color: #777;
+  position: absolute;
+  left: 0.26667rem;
+  top: 0rem; }
+
+.ht_appraise .details .de4_2 {
+  position: absolute;
+  right: 0.66667rem; }
+
+.ht_appraise .details .de4_2 li {
+  float: left;
+  border-right: 0.04rem solid #ddd;
+  height: 0.53333rem;
+  width: 1.17333rem;
+  font-size: 0.29333rem; }
+  .ht_appraise .details .de4_2 li a {
+    display: block;
+    margin-left: 10px; }
+
+.ht_appraise .details .de4_2 li:nth-child(5) {
+  border-right: none; }
+
+.confirm {
+  width: 10rem;
+  height: 0.93333rem;
+  background: #CCCCCC; }
+
+.confirm .left {
+  width: 2.34667rem;
+  border-right: 0.02667rem solid #DDDDDD;
+  height: 0.93333rem;
+  float: left;
+  padding-top: 0.2rem; }
+  .confirm .left .demand {
+    width: 1.6rem;
+    height: 0.53333rem;
+    overflow: hidden;
+    border-radius: 0.06667rem;
+    background-color: #ccc;
+    position: absolute;
+    left: 0.37333rem; }
+    .confirm .left .demand span {
+      background: url("../images/hanting2.png") no-repeat -1.89333rem -0.02667rem;
+      background-size: 8.8rem 5.86667rem;
+      display: block;
+      width: 0.18667rem;
+      height: 0.16rem;
+      position: absolute;
+      right: 0.06667rem;
+      top: 0.17333rem; }
+    .confirm .left .demand div {
+      height: 0.53333rem;
+      line-height: 0.53333rem;
+      text-align: center; }
+    .confirm .left .demand p {
+      font-size: 0.26667rem;
+      color: #333;
+      position: relative; }
+
+.confirm .right {
+  width: 7.65333rem;
+  height: 0.93333rem;
+  padding: 0.17333rem 0.53333rem 0 0.26667rem; }
+  .confirm .right a {
+    background-color: #3B77DB;
+    font-size: 0.26667rem;
+    padding: 0.13333rem 0.13333rem;
+    border-radius: 0.26667rem;
+    color: #fff;
+    float: left;
+    margin-left: 0.13333rem; }
+  .confirm .right a:hover {
+    color: #C55F6F; }
+  .confirm .right a:nth-child(4) {
+    float: right;
+    padding-right: 0.33333rem;
+    position: relative; }
+  .confirm .right a:nth-child(4)::before {
+    content: '';
+    background: url("../images/hanting2.png") no-repeat -1.89333rem -0.02667rem;
+    background-size: 8.8rem 5.86667rem;
+    display: block;
+    width: 0.18667rem;
+    height: 0.16rem;
+    position: absolute;
+    right: 0.10667rem;
+    top: 0.21333rem; }
+
+.goodsBox {
+  height: 1.97333rem;
+  width: 10rem;
+  margin-top: 0.4rem;
+  overflow: hidden; }
+
+.top {
+  display: block;
+  height: 1.97333rem;
+  width: 10rem;
+  background-color: #E7E7E7;
+  padding: 0.16rem 0.66667rem 0; }
+  .top .imgBox {
+    background: url("../images/hanting2.png") no-repeat -4.97333rem 0rem;
+    background-size: 8.8rem 5.86667rem;
+    width: 1.88rem;
+    height: 1.66667rem; }
+  .top .imgBox2 {
+    background: url("../images/hanting2.png") no-repeat -2.74667rem -0.01333rem;
+    background-size: 8.8rem 5.86667rem;
+    width: 1.88rem;
+    height: 1.66667rem; }
+  .top .rightBox {
+    width: 6.49333rem;
+    height: 1.66667rem;
+    position: relative; }
+    .top .rightBox span {
+      position: absolute; }
+    .top .rightBox span:nth-child(1) {
+      left: 0px;
+      top: 0.2rem;
+      color: #333333; }
+    .top .rightBox span:nth-child(2) {
+      left: 0px;
+      top: 0.8rem;
+      font-size: 0.26667rem;
+      margin-left: 0.13333rem;
+      color: #777777; }
+    .top .rightBox span:nth-child(3) {
+      left: 0px;
+      top: 1.2rem;
+      font-size: 0.26667rem;
+      margin-left: 0.13333rem;
+      background-color: #A53646;
+      padding: 3px 5px;
+      color: #fff; }
+    .top .rightBox span:nth-child(4) {
+      right: 0.8rem;
+      top: 0.72rem;
+      color: #C45E6F; }
+    .top .rightBox span:nth-child(5) {
+      right: 0.46667rem;
+      top: 0.82667rem;
+      font-size: 0.26667rem; }
+    .top .rightBox .goodstb1 {
+      right: 0px;
+      background: url("../images/hanting2.png") no-repeat;
+      background-position: 0rem -3.37333rem;
+      background-size: 8.8rem 5.86667rem;
+      width: 0.33333rem;
+      height: 0.33333rem;
+      top: 0.82667rem; }
+    .top .rightBox .goodstb2 {
+      right: 0px;
+      background: url("../images/hanting2.png") no-repeat;
+      background-position: 0rem -3.37333rem;
+      background-size: 8.8rem 5.86667rem;
+      width: 0.33333rem;
+      height: 0.33333rem;
+      top: 0.82667rem; }
+
+.productBox {
+  display: block;
+  border-top: 1px solid black;
+  height: 1.97333rem;
+  width: 10rem;
+  background-color: #F3F3F3;
+  position: relative;
+  padding: 0.4rem 0.66667rem 0; }
+  .productBox span {
+    position: absolute;
+    font-size: 0.26667rem; }
+  .productBox span:nth-child(1) {
+    color: #333333; }
+  .productBox span:nth-child(2) {
+    color: #777777;
+    top: 0.8rem; }
+  .productBox span:nth-child(3) {
+    background-color: #A53545;
+    top: 1.16rem;
+    color: #fff; }
+  .productBox span:nth-child(4) {
+    color: #A75763;
+    right: 1.93333rem;
+    top: 0.72rem; }
+  .productBox span:nth-child(5) {
+    background-color: #A75763;
+    right: 0.8rem;
+    top: 0.72rem;
+    padding: 0.09333rem 0.17333rem;
+    color: #fffdef;
+    border-radius: 13px; }
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: none; }
+
+.mask .mask_box {
+  width: 60%;
+  background: #fff;
+  border-radius: 0.05333rem;
+  margin: 0 auto;
+  margin-top: 2.66667rem;
+  padding: 0 0.13333rem; }
+
+.mask .mask_box .text_box {
+  text-align: center;
+  font-size: 0.37333rem;
+  line-height: 1.4rem;
+  border-bottom: 0.01333rem solid #e0e0e0; }
+
+.mask .mask_box .btn_box {
+  padding: 0.13333rem 0; }
+
+.mask .mask_box .btn_box a {
+  width: 45%;
+  height: 1.01333rem;
+  line-height: 1.01333rem;
+  text-align: center;
+  float: left;
+  border-radius: 0.05333rem; }
+
+.mask .mask_box .btn_box .cancel {
+  margin-right: 10%;
+  border: 0.01333rem solid #e0e0e0; }
+
+.mask .mask_box .btn_box .submit {
+  background: #3B77DB;
+  color: #fff; }
+
+.mask .mask_box.bounceInDown {
+  animation: bounceInDown 1s;
+  -webkit-animation: bounceInDown 1s; }
+
+/*bounceInDown*/
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40rem);
+    transform: translateY(-40rem); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(0.33333rem);
+    transform: translateY(0.33333rem); }
+  75% {
+    -webkit-transform: translateY(-0.13333rem);
+    transform: translateY(-0.13333rem); }
+  90% {
+    -webkit-transform: translateY(0.06667rem);
+    transform: translateY(0.06667rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40rem);
+    transform: translateY(-40rem); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(0.33333rem);
+    transform: translateY(0.33333rem); }
+  75% {
+    -webkit-transform: translateY(-0.13333rem);
+    transform: translateY(-0.13333rem); }
+  90% {
+    -webkit-transform: translateY(0.06667rem);
+    transform: translateY(0.06667rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+/*# sourceMappingURL=hanting2.css.map */

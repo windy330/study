@@ -1,0 +1,47 @@
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*盒子的宽度从边框开始计算*/
+    -webkit-box-sizing: border-box;
+    /*兼容webkit内核浏览器厂商*/
+    box-sizing: border-box;
+    font-family: 'songti';
+}
+ol,ul{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    /*特殊的属性定义  清除浏览器给input自带的样式*/
+    -webkit-appearance: none;/*组件默认的样式空*/
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after,
+.clearfix::before{
+    content: '';
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.now{
+    background-color: #fff;
+}

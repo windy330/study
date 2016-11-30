@@ -1,0 +1,212 @@
+@font-size : 75px;
+
+//header {
+//  width: 750rem/@font-size;
+//  height: 750rem/@font-size;
+//  background: red;
+//}
+
+/*所有使用精灵图的 class  以icon_开始的所有class都有这些属性*/
+[class^="icon_"]{
+  background: url("img/paying-1.png") no-repeat;
+  /*压缩背景图*/
+  background-size: 400rem/@font-size 400rem/@font-size;
+}
+
+/*顶部通栏*/
+.topBar{
+  height: 325rem/@font-size;
+  background: #4DBAFF;
+  border-bottom: 1rem/@font-size solid #e0e0e0;
+  //position: absolute;
+  width: 100%;
+  padding: 30rem/@font-size;
+}
+
+.B_top{
+  height: 88rem/@font-size;
+  padding: 0 100rem/@font-size;
+  position: relative;
+}
+.topBar [class^="icon_"]{
+  position: absolute;
+  //width: 70rem/@font-size;
+  //height: 44rem/@font-size;
+  top: 20rem/@font-size;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.topBar .icon_back{
+  width: 60rem/@font-size;
+  height: 44rem/@font-size;
+  padding: 10rem/@font-size 8rem/@font-size 3rem/@font-size;
+  left: 15rem/@font-size;
+  background-position: 0 0;
+}
+.topBar .icon_menu{
+  width: 70rem/@font-size;
+height: 44rem/@font-size;
+  padding: 12rem/@font-size 8rem/@font-size 6rem/@font-size;
+  right: 15rem/@font-size;
+  background-position: -50rem/@font-size 0;
+}
+.topBar form{
+  width: 100%;
+  position: relative;
+  /*padding: 0 60px;*/
+
+}
+.topBar form input{
+  width: 100%;
+  height: 58rem/@font-size;
+  border: 1rem/@font-size solid #e0e0e0;
+  border-radius: 10rem/@font-size;
+  margin-top: 15rem/@font-size;
+  text-align: center;
+  min-width: 200rem/@font-size;
+}
+
+
+.topBar .icon_search {
+  height: 29rem/@font-size;
+  width: 29rem/@font-size;
+  background-position: 0 -40rem/@font-size;
+  position: absolute;
+  left: 125rem/@font-size;
+  top: 30rem/@font-size;
+}
+
+.topBar .B_foot{
+  width: 100%;
+  padding: 0 100rem/@font-size;
+  height: 198rem/@font-size;
+}
+
+.topBar .B_foot li:first-child{
+  float: left;
+//padding: 10rem/@font-size 62rem/@font-size;
+
+}
+
+.topBar .B_foot li:last-child{
+  float: right;
+  //padding: 10rem/@font-size 62rem/@font-size;
+
+}
+
+.topBar .B_foot li img:first-child{
+  width: 120rem/@font-size;
+  height: 120rem/@font-size;
+  display: block;
+  margin: 0 auto;
+}
+
+.topBar .B_foot li img:last-child{
+  width: 120rem/@font-size;
+  height: 120rem/@font-size;
+  display: block;
+  margin: 0 auto;
+}
+
+.topBar .B_foot li p {
+  font-size: 12rem/@font-size;
+  text-align: center;
+  color: #666;
+padding: 6rem/@font-size 0;
+}
+
+//列表栏
+.list{
+  height: 463rem/@font-size;
+  width: 100%;
+  padding: 30rem/@font-size;
+  overflow: hidden;
+}
+
+.list>ul:nth-child(1){
+  width: 200%;
+  -webkit-transform:translateX(-100%);
+  transform: translateX(-100%);
+
+}
+
+.list .uu ul{
+  width: 100%;
+  float: left;
+}
+
+.list .uu ul:last-child{
+  display: none;
+}
+
+
+.list ul>li{
+float: left;
+  width: 25%;
+  margin-top: 20rem/@font-size;
+}
+
+.list li a{
+  width: 100%;
+  display: block;
+}
+
+.list li a img{
+  width: 83rem/@font-size;
+  height: 84rem/@font-size;
+  margin:0 auto;
+display: block;
+}
+
+.list p{
+  font-size: 18rem/@font-size;
+  text-align: center;
+  padding: 6rem/@font-size 0;
+}
+
+.point{
+  margin-left: 45%;
+  margin-top: 30rem/@font-size;
+}
+.point div{
+  display: inline-block;
+  width: 20rem/@font-size;
+  height: 20rem/@font-size;
+  border-radius: 10rem/@font-size;
+  background:  #4DBAFF;
+  margin-left: 20rem/@font-size;
+  float: left;
+
+}
+
+
+//问题栏
+.ques{
+  height: 554rem/@font-size;
+  width: 100%;
+  background: #4DBAFF;
+  padding: 30rem/@font-size;
+}
+
+.ques .ques_box{
+  width: 100%;
+  height: 494rem/@font-size;
+  background: #fff;
+  border-radius: 10rem/@font-size;
+}
+
+.ques_box .ques_list li{
+height: 60rem/@font-size;
+border-bottom: 1rem/@font-size solid #CCCCCC;
+  padding: 10rem/@font-size 20rem/@font-size;
+  position: relative;
+}
+
+.ques_box .ques_list li i{
+  color: #3C78DB;
+}
+
+.ques_box .ques_list li span{
+  position: absolute;
+  right: 10rem/@font-size;
+}

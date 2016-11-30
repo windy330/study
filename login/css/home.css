@@ -1,0 +1,255 @@
+@charset "UTF-8";
+body {
+  background: #cccccc; }
+
+/*header begin*/
+header {
+  width: 100%;
+  height: 9.37333rem; }
+
+.head {
+  width: 100%;
+  height: 0.88rem;
+  background: rgba(255, 255, 221, 0);
+  padding: 0 0.4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+  .head input {
+    border-radius: 5px; }
+  .head .search {
+    position: absolute;
+    left: 0.4rem;
+    bottom: 0;
+    width: 8.2rem;
+    height: 0.61333rem; }
+    .head .search i {
+      background: url("../images/headsp.png") 0 -0.30667rem;
+      background-size: 2.14667rem 0.78667rem;
+      display: inline-block;
+      width: 0.17333rem;
+      height: 0.30667rem;
+      position: absolute;
+      right: 0.14667rem;
+      top: 0.18667rem; }
+    .head .search s {
+      background: url("../images/headsp.png") 0 0;
+      background-size: 2.14667rem 0.78667rem;
+      display: inline-block;
+      width: 0.30667rem;
+      height: 0.30667rem;
+      position: absolute;
+      left: 0.25333rem;
+      top: 0.16rem; }
+    .head .search input:nth-child(1) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 8.2rem;
+      height: 0.61333rem;
+      padding-left: 0.73333rem;
+      padding-right: 0.36rem;
+      color: #cccccc;
+      font-size: 0.30667rem;
+      font-family: "ＭＳ ゴシ..."; }
+  .head .scan {
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0;
+    width: 0.61333rem;
+    height: 0.61333rem; }
+    .head .scan span {
+      background: url("../images/headsp.png") -0.30667rem 0;
+      background-size: 2.14667rem 0.78667rem;
+      display: inline-block;
+      width: 0.36rem;
+      height: 0.28rem;
+      position: absolute;
+      top: 0.17333rem;
+      left: 0.12rem;
+      z-index: 9; }
+    .head .scan input:nth-child(2) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0.61333rem;
+      height: 0.61333rem; }
+
+.bg {
+  background: url("../images/canHome.png") no-repeat;
+  width: 100%;
+  height: 9.37333rem;
+  background-size: 100% 9.37333rem;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.cav {
+  width: 100%;
+  height: 9.37333rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99; }
+
+/*header end*/
+/*section begin*/
+section {
+  width: 9.2rem;
+  height: 5.48rem;
+  background: #f4f4f4;
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+  padding: 0.42667rem 0; }
+  section li {
+    float: left;
+    width: 2.29333rem;
+    height: 2.24rem;
+    position: relative; }
+    section li a {
+      position: relative;
+      display: inline-block;
+      width: 2.29333rem;
+      height: 2.24rem; }
+    section li i {
+      position: absolute;
+      width: 0.92rem;
+      height: 0.69333rem;
+      background: pink;
+      left: 0.70667rem;
+      top: 0.56rem; }
+    section li span {
+      position: absolute;
+      left: 0.77333rem;
+      bottom: 0.4rem;
+      font-size: 0.37333rem;
+      text-align: center;
+      line-height: 0.37333rem;
+      font-family: "STHeitiSC";
+      color: #5780c4; }
+  section .i1 {
+    background: url("../images/home2.png") 0 0;
+    background-size: 7.73333rem 7.46667rem; }
+  section .i2 {
+    background: url("../images/home2.png") -2.38667rem 0;
+    background-size: 7.73333rem 7.46667rem; }
+  section .i3 {
+    background: url("../images/home2.png") -4.56rem 0;
+    background-size: 7.73333rem 7.46667rem; }
+  section .i4 {
+    background: url("../images/home2.png") -6.81333rem 0;
+    background-size: 7.73333rem 7.46667rem; }
+  section .i5 {
+    background: url("../images/home2.png") 0 -2.33333rem;
+    background-size: 7.73333rem 7.46667rem; }
+  section .i6 {
+    background: url("../images/home2.png") -2.38667rem -2.33333rem;
+    background-size: 7.73333rem 7.46667rem; }
+  section .i7 {
+    background: url("../images/home2.png") -4.56rem -2.33333rem;
+    background-size: 7.73333rem 7.46667rem; }
+  section .i8 {
+    background: url("../images/home2.png") -6.81333rem -2.33333rem;
+    background-size: 7.73333rem 7.46667rem; }
+  section .other {
+    border-right: solid 1px #cccccc; }
+  section .show {
+    border-bottom: solid 1px #cccccc; }
+
+/*section end*/
+/*footer begin*/
+footer {
+  width: 100%;
+  height: 1.53333rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.42667rem; }
+  footer .tab-item {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 1.82933rem;
+    height: 1.73333rem;
+    font-size: 0.26667rem;
+    color: #777777;
+    font-family: "STHeitiSC";
+    text-align: center;
+    background: white; }
+    footer .tab-item .tab-label {
+      display: inline-block;
+      margin-top: 0.84rem; }
+    footer .tab-item .icon-order {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.38667rem;
+      height: 0.50667rem;
+      background: url("../images/footersp.png") 0 -0.25333rem;
+      -webkit-background-size: 7.78667rem 1.34667rem;
+      background-size: 7.78667rem 1.34667rem; }
+    footer .tab-item .icon-collect {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.52rem;
+      height: 0.50667rem;
+      background: url("../images/footersp.png") -1.77333rem -0.22667rem;
+      -webkit-background-size: 7.78667rem 1.34667rem;
+      background-size: 7.78667rem 1.34667rem; }
+    footer .tab-item .icon-home {
+      border: solid 1px red;
+      display: inline-block;
+      position: absolute;
+      top: -0.53333rem;
+      left: 0;
+      width: 1.82933rem;
+      height: 1.82933rem;
+      padding: 0.59467rem 0.588rem;
+      background: url("../images/footersp.png") -3.56rem 0;
+      -webkit-background-size: 7.78667rem 1.34667rem;
+      background-size: 7.78667rem 1.34667rem;
+      border-radius: 0.91467rem;
+      background-origin: content-box;
+      background-clip: content-box; }
+    footer .tab-item i {
+      border: solid 1px red;
+      display: inline-block;
+      width: 1.82933rem;
+      height: 1.82933rem;
+      position: absolute;
+      top: -0.53333rem;
+      left: 0;
+      border-radius: 0.91467rem;
+      background: white; }
+    footer .tab-item .icon-class {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.46667rem;
+      height: 0.45333rem;
+      background: url("../images/footersp.png") -5.49333rem -0.25333rem;
+      -webkit-background-size: 7.78667rem 1.34667rem;
+      background-size: 7.78667rem 1.34667rem; }
+    footer .tab-item .icon-me {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.44rem;
+      height: 0.45333rem;
+      background: url("../images/footersp.png") -7.33333rem -0.25333rem;
+      -webkit-background-size: 7.78667rem 1.34667rem;
+      background-size: 7.78667rem 1.34667rem; }
+    footer .tab-item .icon {
+      top: 0.2rem;
+      left: 0.73333rem; }
+
+/*footer end*/
+
+/*# sourceMappingURL=home.css.map */

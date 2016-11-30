@@ -1,0 +1,139 @@
+body {
+  background-color: #f4f4f4;
+  font-size: 0.21333333rem;
+}
+.hotel {
+  min-width: 4rem;
+  max-width: 10rem;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 1.2rem;
+  background-color: #4dbaff;
+  position: relative;
+}
+header .header_box {
+  min-width: 4rem;
+  max-width: 10rem;
+  height: 1.2rem;
+  position: relative;
+  margin: 0 auto;
+}
+header .icon_arrow {
+  background-size: 5.33333333rem 5.33333333rem;
+  background-position: 0 -0.01333333rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 0.42666667rem;
+  width: 0.18666667rem;
+  height: 0.37333333rem;
+}
+h4 {
+  line-height: 1.2rem;
+  font-size: 0.48rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+header .icon_drop {
+  background-size: 5.33333333rem 5.33333333rem;
+  background-position: 0 -0.44rem;
+  position: absolute;
+  width: 0.93333333rem;
+  height: 0.21333333rem;
+  right: 0.42666667rem;
+  top: 0.48rem;
+}
+nav {
+  width: 100%;
+  height: 0.72rem;
+  background-color: #e8e8e8;
+  padding-left: 0.66666667rem;
+}
+nav ul li {
+  float: left;
+  display: block;
+  line-height: 0.64rem;
+  text-align: center;
+  width: 25%;
+}
+nav li a {
+  display: block;
+  width: 1.57333333rem;
+  height: 0.69333333rem;
+  font-size: 0.34666667rem;
+}
+nav li a:hover {
+  border-bottom: 4px solid #3c78db;
+  color: #3c78db;
+}
+nav li .now {
+  border-bottom: 4px solid #3c78db;
+  color: #3c78db;
+}
+.product {
+  width: 100%;
+  padding-top: 0.33333333rem;
+  padding-left: 0.66666667rem;
+}
+.product .product_box {
+  width: 100%;
+  height: 3.34666667rem;
+  margin-bottom: 0.34666667rem;
+}
+.product .product_box_l {
+  width: 3.33333333rem;
+  height: 3.34666667rem;
+  overflow: hidden;
+}
+.product .product_box_l a {
+  display: block;
+}
+.product .product_box_l img {
+  width: 3.33333333rem;
+  height: 3.34666667rem;
+}
+.product_box_r {
+  width: 4.66666667rem;
+  height: 2.66666667rem;
+  margin-top: 0.66666667rem;
+  overflow: hidden;
+  position: relative;
+}
+.product_box_r a {
+  font-size: 0.34666667rem;
+}
+.product_box_r .good i {
+  font-size: 0.34666667rem;
+  color: #3D79DB;
+}
+.product_box_r .good b {
+  margin-left: 1.33333333rem;
+  font-size: 0.18666667rem;
+}
+.product_box_r .price {
+  margin-left: 1.4rem;
+}
+.product_box_r .price i {
+  font-size: 0.34666667rem;
+}
+.product_box_r .price b {
+  font-size: 0.18666667rem;
+}
+.product_box_r .buy {
+  display: block;
+  margin-left: 3rem;
+  width: 0.34666667rem;
+  height: 0.34666667rem;
+  background-color: #A63646;
+  text-align: center;
+  line-height: 0.34666667rem;
+}
+.product_box_r .buy a {
+  font-size: 0.21333333rem;
+  color: #fff;
+}
+.product_box_r .square {
+  margin-left: 2.8rem;
+}

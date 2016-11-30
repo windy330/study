@@ -1,0 +1,226 @@
+[class^="icon_"] {
+  background: url("img/paying-1.png") no-repeat;
+  background-size: 5.33333333rem 5.33333333rem;
+  position: absolute;
+}
+body {
+  background: #E8E8E8;
+}
+/*����ͨ��*/
+.topBar {
+  height: 1.2rem;
+  background: #4DBAFF;
+  border-bottom: 0.01333333rem solid #e0e0e0;
+  width: 100%;
+  padding: 0 0.4rem;
+}
+.icon_back {
+  width: 0.18666667rem;
+  height: 0.37333333rem;
+  padding: 0.16rem 0.13333333rem;
+  left: 0.4rem;
+  top: 0.42666667rem;
+  background-position: 0 0;
+}
+.topBar h3 {
+  line-height: 1.2rem;
+  font-size: 0.48rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+.top {
+  height: 1.46666667rem;
+  width: 100%;
+  padding: 0.13333333rem 0.4rem;
+}
+.top h3 {
+  font-size: 0.48rem;
+  font-weight: normal;
+}
+.top a {
+  color: #A3A3A3;
+}
+.product {
+  height: 14.05333333rem;
+  padding: 0 0.4rem;
+  width: 100%;
+}
+.buy {
+  height: 2.84rem;
+  width: 100%;
+  background: #F3F3F3;
+  border-radius: 0.33333333rem;
+}
+.buy_top {
+  border-bottom: 0.06666667rem solid #DDDDDD;
+  height: 1.76rem;
+  width: 100%;
+  padding: 0.26666667rem;
+}
+.buy_top p {
+  float: left;
+  margin-right: 1.33333333rem;
+}
+.buy_top .mon {
+  width: 1.6rem;
+  height: 1.22666667rem;
+  border-radius: 0.2rem;
+  float: left;
+  border: 0.05333333rem solid #3C78DB;
+  margin-right: 0.26666667rem;
+}
+.buy_foot {
+  width: 100%;
+  height: 1.04rem;
+  padding: 0.16rem 0.26666667rem;
+}
+.option .change_box {
+  float: right;
+}
+.option .change_box span {
+  float: right;
+  width: 0.74666667rem;
+  height: 0.65333333rem;
+  text-align: center;
+  line-height: rem / 75px;
+  border: 0.04rem solid #3C78DB;
+  margin-top: -0.46666667rem;
+}
+.option .change_box span:first-of-type {
+  border-radius: 0.02666667rem;
+}
+.option .change_box span:last-of-type {
+  border-radius: 0.02666667rem;
+}
+.option .change_box input {
+  float: right;
+  width: 0.74666667rem;
+  height: 0.65333333rem;
+  text-align: center;
+  background: #F3F3F3;
+  line-height: 0.65333333rem;
+  border-bottom: 0.01333333rem solid #3C78DB;
+  border-top: 0.01333333rem solid #3C78DB;
+  margin-top: -0.46666667rem;
+}
+.other {
+  height: 1.38666667rem;
+  width: 100%;
+  background: #F3F3F3;
+  border-radius: 0.33333333rem;
+  margin-top: 0.18666667rem;
+  padding: 0.16rem 0.32rem;
+}
+.other p {
+  position: relative;
+  display: inline-block;
+  padding-left: 0.66666667rem;
+  line-height: 1.06666667rem;
+  color: #777777;
+}
+.other p::before {
+  content: "";
+  position: absolute;
+  background: url("img/w1.gif") no-repeat;
+  background-size: 0.57333333rem 0.42666667rem;
+  width: 0.56rem;
+  height: 0.42666667rem;
+  left: 0;
+  top: 0.24rem;
+}
+.other img {
+  background-size: 0.44rem 0.52rem;
+  width: 0.44rem;
+  height: 0.52rem;
+  float: right;
+  margin-top: 0.2rem;
+}
+.pp {
+  height: 0.78666667rem;
+  width: 100%;
+  color: #777777;
+  padding: 0.26666667rem;
+  position: relative;
+}
+.pp span:first--child {
+  position: absolute;
+  left: 0;
+}
+.pp span:last-child {
+  position: absolute;
+  right: 0;
+}
+.other1 {
+  height: 1.38666667rem;
+  width: 100%;
+  background: #F3F3F3;
+  border-radius: 0.33333333rem;
+  margin-top: 0.18666667rem;
+  padding: 0.16rem 0.32rem;
+}
+.other1 p {
+  position: relative;
+  display: inline-block;
+  padding-left: 0.66666667rem;
+  line-height: 1.06666667rem;
+  color: #777777;
+}
+.other1 p::before {
+  content: "";
+  position: absolute;
+  background: url("img/w2.gif") no-repeat;
+  background-size: 0.57333333rem 0.42666667rem;
+  width: 0.56rem;
+  height: 0.42666667rem;
+  left: 0;
+  top: 0.24rem;
+}
+.top span:first-child {
+  font-size: 0.48rem;
+  font-weight: normal;
+  text-align: center;
+}
+.top span:last-child {
+  color: #777777;
+  padding-left: 0.24rem;
+  text-align: center;
+}
+.foot {
+  height: 3.22666667rem;
+  width: 100%;
+  background: #F3F3F3;
+  border-radius: 0.33333333rem;
+  padding: 0.26666667rem;
+}
+.foot_top {
+  border-bottom: 0.05333333rem solid #DDDDDD;
+  height: 0.86666667rem;
+  width: 100%;
+}
+.foot_foo {
+  height: 2.06666667rem;
+  width: 100%;
+  padding-top: 0.30666667rem;
+  position: relative;
+}
+.foot_foo span:first-child {
+  font-size: 0.48rem;
+  color: red;
+}
+.foot_foo span:nth-child(2) {
+  position: absolute;
+  left: 5.33333333rem;
+  padding-top: 0.10666667rem;
+  color: #969696;
+}
+.foot_foo button {
+  width: 1.46666667rem;
+  height: 0.65333333rem;
+  background: #3B77DB;
+  border-style: none;
+  position: absolute;
+  right: 0;
+  padding: 0.12rem 0.18666667rem;
+  color: #fff;
+}

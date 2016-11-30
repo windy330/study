@@ -1,0 +1,154 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'songti'; }
+
+header {
+  height: 1.22667rem;
+  line-height: 1.22667rem;
+  background-color: #4DB9FF;
+  width: 100%;
+  position: relative;
+  font-size: 0.45333rem;
+  text-align: center; }
+
+.h_left {
+  width: 0.18667rem;
+  height: 0.33333rem;
+  background: url("../images/hanting2.png") no-repeat 0rem -0.01333rem;
+  background-size: 8.8rem 5.86667rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem; }
+
+.h_title {
+  color: #fff; }
+
+.h_right {
+  width: 0.93333rem;
+  height: 0.21333rem;
+  background: url("../images/hanting2.png") no-repeat -2.88rem -1.8rem;
+  background-size: 8.8rem 5.86667rem;
+  position: absolute;
+  top: 0.53333rem;
+  right: 0.4rem; }
+
+/*banner B*/
+.kuan {
+  overflow: hidden; }
+
+.to_banner {
+  width: 10rem;
+  overflow: hidden;
+  position: relative; }
+
+.to_banner ul:nth-child(1) {
+  width: 70rem; }
+
+.to_banner ul:nth-child(1) li {
+  float: left;
+  width: 10rem; }
+
+.to_banner ul:nth-child(1) li img {
+  display: block;
+  width: 100%;
+  height: 4.66667rem; }
+
+.to_banner ul:nth-child(2) {
+  width: 1.70667rem;
+  height: 0.08rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0.13333rem;
+  margin-left: -0.85333rem; }
+
+.to_banner ul:nth-child(2) li {
+  width: 0.08rem;
+  height: 0.08rem;
+  border-radius: 50%;
+  float: left;
+  margin-left: 0.13333rem;
+  border: 0.01333rem solid #fff; }
+
+.now {
+  background-color: #fff; }
+
+/*banner E*/
+.info {
+  width: 8.66667rem;
+  height: 4.53333rem;
+  border: 0.01333rem solid #DDDDDD;
+  margin: 0 auto;
+  margin-top: 0.13333rem;
+  font-size: 0.4rem;
+  overflow: hidden; }
+  .info div {
+    color: #333333; }
+    .info div span {
+      display: block;
+      background: url("../images/hanting2.png") no-repeat;
+      background-size: 8.8rem 5.86667rem;
+      float: left; }
+    .info div .s3 {
+      width: 0.41333rem;
+      height: 0.41333rem;
+      background-position: -7.05333rem -0.02667rem; }
+    .info div .s2 {
+      width: 0.33333rem;
+      height: 0.45333rem;
+      background-position: -7.05333rem -0.61333rem; }
+    .info div .s1 {
+      width: 0.41333rem;
+      height: 0.41333rem;
+      background-position: -7.05333rem -1.21333rem; }
+  .info div:nth-child(1) {
+    font-size: 0.45333rem;
+    margin-top: 0.2rem; }
+  .info div:nth-child(2) {
+    font-size: 0.45333rem;
+    margin-top: 0.2rem; }
+  .info div:nth-child(3) {
+    font-size: 0.45333rem;
+    margin-top: 0.2rem; }
+  .info div:nth-child(4) {
+    margin-top: 0.2rem; }
+  .info div:nth-child(5) {
+    margin-top: 0.2rem; }
+  .info div:nth-child(6) {
+    margin-top: 0.2rem; }
+
+.synopsis {
+  width: 8.66667rem;
+  height: 2.21333rem;
+  border: 0.01333rem solid #DDDDDD;
+  margin: 0 auto;
+  margin-top: 0.13333rem; }
+  .synopsis div {
+    color: #333333; }
+  .synopsis .top {
+    font-size: 0.45333rem;
+    float: left;
+    margin-top: 0.13333rem; }
+  .synopsis .bottom {
+    font-size: 0.4rem;
+    float: left;
+    margin-top: 0.2rem; }
+
+.assess {
+  width: 8.66667rem;
+  height: 3.01333rem;
+  border: 0.01333rem solid #DDDDDD;
+  margin: 0 auto;
+  margin-top: 0.13333rem; }
+  .assess div {
+    color: #333333; }
+  .assess .top {
+    font-size: 0.45333rem;
+    float: left;
+    margin-top: 0.13333rem; }
+  .assess .bottom {
+    font-size: 0.4rem;
+    float: left;
+    margin-top: 0.2rem; }
+
+/*# sourceMappingURL=tower.css.map */

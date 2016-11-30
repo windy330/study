@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@f : 75px;
+body{
+  //background: red;
+  min-width: 320rem/@f;
+  max-width: 750rem/@f;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*头部 end*/
+
+/*头部最大的父盒子*/
+.head{
+  width: 750rem/@f;
+  //height: 84rem/@f;
+  background: skyblue;
+  position: relative;
+}
+/*左边子盒子*/
+.head .head_left{
+  width: 15rem/@f;
+  height: 27rem/@f;
+  background: url(img/sprite.png) no-repeat 0 0;
+  background-size: 8.8rem 5.86666667rem;
+  margin: 30rem/@f 30rem/@f;
+  display: inline-block;
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
+/*中间标题的子盒子样式*/
+.head .head_one a{
+  color: white;
+}
+.head .head_one{
+  float: right;
+  display: inline-block;
+  margin-right: 350rem/@f;
+  margin-top: 15rem/@f;
+  text-align: center;
+  line-height: 56rem/@f;
+  //border-radius: 3rem 0 0 3rem;
+  font-size: 40rem/@f;
+}
+/*右边三个小圆点样式子盒子*/
+.head .head_right {
+  width: 70rem/@f;
+  height: 16rem/@f;
+  background: url(img/sprite.png) no-repeat -16rem/@f 0;
+  background-size: 664rem/@f 440rem/@f;
+  margin-right: 20rem/@f;
+  margin-top: 28rem/@f;
+  display: inline-block;
+  float: right;
+  line-height: 16rem/@f;
+  position: absolute;
+  top: 10rem/@f;
+  right: 20rem/@f;
+}
+/*头部 begin*/
+
+/*导航 begin*/
+
+/*父盒子样式*/
+.nav{
+  width: 751rem/@f;
+  height: 346rem/@f;
+  text-align: center;
+}
+/*父盒子下面的ul样式*/
+.nav ul{
+  padding-top: 20rem/@f !important;
+  height: 100%;
+  padding: 0 30rem/@f;
+}
+/*父盒子下面的里li样式*/
+.nav li {
+  width: 25%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 42rem/@f;
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
+/*导航下面的图片的高和宽*/
+.nav li img{
+  width: 99rem/@f;
+  height: 99rem/@f;
+}
+.nav li{
+  padding-top: 10rem/@f;
+  color: black;
+  position: relative;
+}
+/*文字的样式*/
+.nav li p{
+  position: absolute;
+  bottom: 4rem/@f;
+  left: 22%;
+  font-size: 25rem/@f;
+}
+/*导航 end*/
+
+/*轮播图 begin*/
+.banner{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20rem/@f;
+  margin-bottom: 20rem/@f;
+  background: #E8E8E8;
+}
+.banner ul:nth-child(1){
+  /*这个时候我们需要放下10张图片  我们宽度就要是父容器宽度的10倍*/
+  width: 1000%;
+  -webkit-transform:translateX(-10%);
+  transform: translateX(-10%);
+}
+.banner ul:nth-child(1) li{
+  width: 10%;
+  float: left;
+}
+.banner ul:nth-child(1) li a{
+  width: 100%;
+  display: block;
+}
+.banner ul:nth-child(1) li a img{
+  width: 100%;
+  display: block;/*清除间距*/
+}
+.banner ul:nth-child(2){
+  position: absolute;
+  /*绝对定位的盒子怎么居中 left 50% maegin-left 一半的宽度 而且是负的*/
+  width: 118px;
+  height: 6px;
+  left: 50%;
+  bottom: 5px;
+  margin-left: -59px;
+}
+.banner ul:nth-child(2) li{
+  float: left;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.banner ul:nth-child(2) li.now{
+  background: #fff;
+}
+.banner ul:nth-child(2) li:first-child{
+  margin-left: 0;
+}
+/*轮播图 end*/
+
+/*玩乐 begin*/
+/*父盒子样式*/
+.play{
+  margin: 0 auto;
+}
+/*父盒子下面的li的样式*/
+.play li{
+  width: 33%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10rem/@f;
+}
+.play li{
+  font-size: 25rem/@f;
+  margin-top: 10rem/@f;
+  color: black;
+}
+/*图片的样式*/
+.play li img{
+  width: 200rem/@f;
+  height: 200rem/@f;
+}
+/*文字的样式*/
+.play li p{
+  font-size: 25rem/@f;
+}
+/*玩乐 end*/

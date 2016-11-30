@@ -1,0 +1,215 @@
+@charset "utf-8";
+@font-size : 75px;
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+
+  /*在移动端特殊的设置*/
+  /*清除点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+  /*设置所有的盒子的宽度以边框开始计算*/
+  -webkit-box-sizing: border-box;
+  /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background: #E8E8E8;
+  font-size: 14rem/@font-size;
+  color: #333;
+  font-family: "MicroSoft YaHei", "sans-serif"; /*是设备默认的字体*/
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  /*特殊的属性定义  清除浏览器给input自带的样式*/
+  -webkit-appearance: none; /*组件默认的样式空*/
+}
+
+/*common css  也就是我们公用的css*/
+.f_left {
+  float: left;
+}
+
+.f_right {
+  float: right;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.m_r10 {
+  margin-right: 10rem/@font-size;
+}
+
+.m_l10 {
+  margin-left: 10rem/@font-size;
+}
+
+.m_t10 {
+  margin-top: 10rem/@font-size;
+}
+
+.m_b10 {
+  margin-bottom: 10rem/@font-size;
+}
+
+.mianColor {
+  color: #d8505c;
+}
+
+
+
+//顶部通栏
+/*所有使用精灵图的 class  以icon_开始的所有class都有这些属性*/
+[class^="icon_"] {
+  background: url("../images/smart.png") no-repeat;
+  /*压缩背景图*/
+  background-size: 660rem/@font-size 440rem/@font-size;
+}
+//头部
+.cls_topBar {
+  height: 88rem/@font-size;
+  background: #4DB9FF;
+  position: relative;
+  width: 100%;
+}
+
+.cls_topBar .icon_back{
+  width: 88rem/@font-size;
+  height: 88rem/@font-size;
+  position: absolute;
+  top: 0;
+  background-origin: content-box;/*定位以内容开始定位*/
+  background-clip: content-box;/*显示背景 从内容开始显示*/
+  padding: 32rem/@font-size 0 32rem/@font-size 30rem/@font-size;
+  left: 0;
+  background-position: 0 -30rem/@font-size;
+}
+.cls_topBar h3{
+  margin: 0;
+  text-align: center;
+  line-height: 88rem/@font-size;
+  font-weight: normal;
+  font-size: 40rem/@font-size;
+  color: #fff;
+}
+//主体
+.cls_content{
+  position: relative;
+  height: 100%;
+}
+
+.cls_content li{
+  height: 295rem/@font-size;
+  display: block;
+  position: relative;
+}
+.cls_content li .cls_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+}
+.cls_content li .cls_box img{
+  position: relative;
+  left: -50%;
+}
+
+.cls_content li:nth-child(1){
+  background: #C6DFFF;
+}
+.cls_content li:nth-child(1) div img{
+  width: 149rem/@font-size;
+  height: 106rem/@font-size;
+  margin-top: -53rem/@font-size;
+}
+
+.cls_content li:nth-child(4){
+  background: #C6DFFF;
+}
+.cls_content li:nth-child(4) div img{
+  width: 137rem/@font-size;
+  height: 82rem/@font-size;
+  margin-top: -41rem/@font-size;
+}
+.cls_content li:nth-child(3){
+  background: #9FC5F9;
+}
+.cls_content li:nth-child(3) div img{
+  width: 94rem/@font-size;
+  height: 120rem/@font-size;
+  margin-top: -60rem/@font-size;
+}
+.cls_content li:nth-child(6){
+  background: #9FC5F9;
+}
+.cls_content li:nth-child(6) div img{
+  width: 82rem/@font-size;
+  height: 82rem/@font-size;
+  margin-top: -41rem/@font-size;
+}
+.cls_content li:nth-child(5){
+  background: #79ADF9;
+}
+.cls_content li:nth-child(5) div img{
+  width: 67rem/@font-size;
+  height: 103rem/@font-size;
+  margin-top: -51rem/@font-size;
+}
+.cls_content li:nth-child(8){
+  background: #79ADF9;
+}
+.cls_content li:nth-child(8) div img{
+  width: 90rem/@font-size;
+  height: 87rem/@font-size;
+  margin-top: -43rem/@font-size;
+}
+.cls_content li:nth-child(7){
+  background: #5897F3;
+}
+.cls_content li:nth-child(7) div img{
+  width: 121rem/@font-size;
+  height: 82rem/@font-size;
+  margin-top: -41rem/@font-size;
+}
+.cls_content li:nth-child(2){
+  background: rgba(230,241,255,1);
+}
+.cls_content li:nth-child(2) div img{
+  width: 108rem/@font-size;
+  height: 113rem/@font-size;
+  margin-top: -56rem/@font-size;
+}
+.cls_content li:nth-child(2).now{
+  background: #FF5057;
+}
+.cls_content li:hover{
+  background: #FF5057;
+}

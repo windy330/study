@@ -1,0 +1,172 @@
+body {
+  background-color: #E8E8E8;
+}
+.hotel {
+  min-width: 4rem;
+  max-width: 10rem;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 1.2rem;
+  background-color: #4dbaff;
+  position: relative;
+}
+header .header_box {
+  min-width: 4rem;
+  max-width: 10rem;
+  height: 1.2rem;
+  position: relative;
+  margin: 0 auto;
+}
+header .icon_arrow {
+  background-size: 5.33333333rem 5.33333333rem;
+  background-position: 0 -0.01333333rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 0.42666667rem;
+  width: 0.18666667rem;
+  height: 0.37333333rem;
+}
+h4 {
+  line-height: 1.2rem;
+  font-size: 0.48rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+nav {
+  width: 100%;
+  height: 0.98666667rem;
+  padding-left: 0.66666667rem;
+}
+nav ul li {
+  float: left;
+  display: block;
+  line-height: 0.98666667rem;
+  text-align: center;
+  width: 25%;
+}
+nav li a {
+  display: block;
+  width: 1.57333333rem;
+  height: 0.98666667rem;
+  font-size: 0.34666667rem;
+}
+nav li a:hover {
+  border-bottom: 4px solid #3c78db;
+  color: #3c78db;
+}
+nav li .now {
+  border-bottom: 4px solid #3c78db;
+  color: #3c78db;
+}
+.search {
+  height: 1.2rem;
+  width: 100%;
+  background-color: #DDD;
+}
+.search form {
+  width: 100%;
+  padding-left: 0.88rem;
+  padding-right: 0.88rem;
+  position: relative;
+}
+.search form input {
+  width: 100%;
+  border-radius: 0.13333333rem;
+  height: 0.73333333rem;
+  margin-top: 0.24rem;
+  padding-left: 2.46666667rem;
+  font-size: 0.24rem;
+}
+.search form .icon_search {
+  background-size: 5.33333333rem 5.33333333rem;
+  background-position: 0 -1.36rem;
+  height: 0.38666667rem;
+  width: 0.38666667rem;
+  position: absolute;
+  left: 2.93333333rem;
+  top: 0.42666667rem;
+}
+.product {
+  height: 100%;
+  padding: 0.4rem;
+}
+.product .product_box {
+  height: 2.96rem;
+  background-color: #F3F3F3;
+  border-radius: 0.13333333rem;
+}
+.product .product_box .product_box_l {
+  width: 3.2rem;
+  height: 2.50666667rem;
+  float: left;
+  position: relative;
+  margin-left: 0.26666667rem;
+  margin-top: 0.24rem;
+}
+.product_box .product_box_l h4 {
+  height: 0.4rem;
+  width: 100%;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  padding-left: 0.05333333rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.product_box .product_box_l img {
+  width: 3.2rem;
+  height: 2.50666667rem;
+}
+.product_box .product_box_r {
+  overflow: hidden;
+  height: 2.50666667rem;
+  margin-left: 0.26666667rem;
+  margin-top: 0.26666667rem;
+}
+.product_box_r a {
+  font-size: 0.34666667rem;
+}
+.product_box_r ul {
+  margin-top: 0.66666667rem;
+}
+.product_box_r li {
+  float: left;
+  font-size: 0.21333333rem;
+  margin-left: 0.10666667rem;
+}
+.product_box .product_box_r .icon-s {
+  background-size: 5.33333333rem 5.33333333rem;
+  display: block;
+  height: 0.33333333rem;
+  width: 0.4rem;
+  background-position: -0.53333333rem 0;
+}
+.product_box .product_box_r .icon-s1 {
+  background-size: 5.33333333rem 5.33333333rem;
+  display: block;
+  height: 0.33333333rem;
+  width: 0.4rem;
+  background-position: -1.05333333rem 0;
+}
+.product_box .product_box_r .icon-s2 {
+  background-size: 5.33333333rem 5.33333333rem;
+  display: block;
+  height: 0.33333333rem;
+  width: 0.4rem;
+  background-position: -1.58666667rem 0;
+}
+.product_box_r ul li:last-child {
+  margin-left: 0.53333333rem;
+}
+.product_box_r .salet {
+  font-size: 0.21333333rem;
+  margin-top: 1.53333333rem;
+}
+.product_box_r .salet span:first-child {
+  margin-right: 0.4rem;
+}

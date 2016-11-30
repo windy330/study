@@ -1,0 +1,115 @@
+@function p($px){//$px为需要转换的字号
+  @return $px / 75px * 1rem; //40px为根字体大小
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #E8E8E8;
+}
+.or_header{
+  width: p(750px);
+  height: p(90px);
+  background-color: #4DB9FF;
+  position: relative;
+}
+.or_header .icon_left{
+  width: p(14px);
+  height: p(25px);
+  background: url("../images/hanting2.png") no-repeat p(0px) p(-1px);
+  background-size: p(660px) p(440px);
+  position: absolute;
+  top: p(30px);
+  left: p(30px);
+}
+.or_header p{
+  font-size: p(34px);
+  height: p(90px);
+  line-height: p(90px);
+  width: p(750px);
+  text-align: center;
+  font-family: 'songti';
+  color: #fff;
+}
+.indent_box{
+  width: p(690px);
+  height: p(270px);
+  margin: 0 auto;
+  background-color: #F4F4F4;
+  margin-top: p(18px);
+  border-radius: p(15px);
+  //padding: p(10px) p(20px) 0;
+  .top{
+    border-bottom: 1px solid #DDDDDD;
+    height: p(60px);
+    padding: p(10px) p(20px) 0;
+    font-size: p(28px);
+    .sign1{
+       width: p(40px);
+       height: p(40px);
+       background: url("../images/hanting2.png") no-repeat;
+       background-position:  p(-157px) p(-117px);
+       background-size: p(660px) p(440px);
+       display: inline-block;
+       float: left;
+     }
+    .sign2{
+      width: p(42px);
+      height: p(46px);
+      background: url("../images/hanting2.png") no-repeat;
+      background-position:  p(-156px) p(-58px);
+      background-size: p(660px) p(440px);
+      display: inline-block;
+      float: left;
+    }
+    .hotle{
+      margin-left: p(15px);
+      color: #777777;
+    }
+    .separator{
+      height: p(21px);
+      width: p(1px);
+      background-color: #DDDDDD;
+      margin: p(4px) p(18px);
+    }
+    .OK{
+      color: #FF3A42;
+    }
+    .cal{
+      color: #666!important;
+    }
+    .price{
+      color: #FF3A42;
+      font-size: p(30px);
+    }
+  }
+  .bottom{
+    height: p(210px);
+    padding: p(18px) p(20px) 0;
+    font-size: p(22px);
+    p:nth-child(1){
+      font-size: p(30px);
+      color: #333333;
+    }
+    p:nth-child(2){
+      color: #777;
+      margin-top: p(20px);
+    }
+    p:nth-child(3){
+      color: #777;
+      margin-top: p(20px);
+    }
+    div{
+      width: p(88px);
+      height: p(42px);
+      line-height: p(42px);
+      text-align: center;
+      border: p(1px) solid #4DBAFF;
+      color: #4DBAFF;
+      border-radius: p(10px);
+    }
+    .share{
+      margin-left: p(20px);
+    }
+  }
+}

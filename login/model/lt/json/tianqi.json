@@ -1,0 +1,113 @@
+{
+ "resultcode":"200",
+ "reason":"successed!",
+ "result":
+ {
+  "sk": {
+   "temp":"21",
+   "wind_direction":"东北风",
+   "wind_strength":"3级",
+   "humidity":"66%",
+   "time":"14:00"
+  },
+  "today": {
+   "temperature":"17℃~22℃",
+   "weather":"阴",
+   "weather_id": {
+    "fa":"02",
+    "fb":"02"
+   },
+   "wind":"东北风3-4 级",
+   "week":"星期三",
+   "city":"无锡",
+   "date_y":"2016年10月12日",
+   "dressing_index":"较舒适",
+   "dressing_advice":"建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等。",
+   "uv_index":"最弱",
+   "comfort_index":"",
+   "wash_index":"较适宜",
+   "travel_index":"较适宜",
+   "exercise_index":"较适宜",
+   "drying_index":""
+  },
+  "future":{
+   "day_20161012":{
+    "temperature":"17℃~22℃",
+    "weather":"阴",
+    "weather_id":{
+     "fa":"02",
+     "fb":"02"
+    },
+    "wind":"东北风3-4 级",
+    "week":"星期三",
+    "date":"20161012"
+   },
+   "day_20161013":{
+    "temperature":"17℃~21℃",
+    "weather":"阴",
+    "weather_id":{
+     "fa":"02",
+     "fb":"02"
+    },
+    "wind":"东北风3-4 级",
+    "week":"星期四",
+    "date":"20161013"
+   },
+   "day_20161014":{
+    "temperature":"18℃~22℃",
+    "weather":"阵雨",
+    "weather_id":{
+     "fa":"03",
+     "fb":"03"
+    },
+    "wind":"东北风3-4 级",
+    "week":"星期五",
+    "date":"20161014"
+   },
+   "day_20161015":{
+    "temperature":"17℃~22℃",
+    "weather":"阵雨",
+    "weather_id":{
+     "fa":"03",
+     "fb":"03"
+    },
+    "wind":"东北风3-4 级",
+    "week":"星期六",
+    "date":"20161015"
+   },
+   "day_20161016":{
+    "temperature":"17℃~24℃",
+    "weather":"阴",
+    "weather_id":{
+     "fa":"02",
+     "fb":"02"
+    },
+    "wind":"东北风3-4 级",
+    "week":"星期日",
+    "date":"20161016"
+   },
+   "day_20161017":{
+    "temperature":"17℃~21℃",
+    "weather":"阴",
+    "weather_id":{
+     "fa":"02",
+     "fb":"02"
+    },
+    "wind":"东北风3-4 级",
+    "week":"星期一",
+    "date":"20161017"
+   },
+   "day_20161018":{
+    "temperature":"17℃~21℃",
+    "weather":"阴",
+    "weather_id":{
+     "fa":"02",
+     "fb":"02"
+    },
+    "wind":"东北风3-4 级",
+    "week":"星期二",
+    "date":"20161018"
+   }
+  }
+ },
+ "error_code":0}

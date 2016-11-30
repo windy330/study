@@ -1,0 +1,80 @@
+/*����ʹ�þ���ͼ�� class  ��icon_��ʼ������class������Щ����*/
+[class^="icon_"] {
+  background: url("../image/ditu.png") no-repeat;
+  /*ѹ������ͼ*/
+  background-size: 14.56rem 6.76rem;
+}
+.bbb {
+  border-bottom: 0.05333333rem solid #3D78DC;
+  color: #3D78DC!important;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  max-width: 10rem;
+  min-width: 4.26666667rem;
+  position: relative;
+}
+.wifi {
+  width: 100%;
+  height: 1.2rem;
+  background-color: #4DBAFF;
+  padding: 0 0.4rem;
+}
+.wifi li {
+  font-size: 0.45333333rem;
+  float: left;
+  font-weight: 900;
+  padding-top: 0.26666667rem;
+}
+.wifi li a {
+  padding: 0.28rem 0.24rem;
+  color: #fff;
+}
+.wifi1 {
+  width: 100%;
+  height: 0.72rem;
+  background-color: #E8E8E8;
+  padding: 0 0.4rem;
+}
+.wifi1 li {
+  font-size: 0.32rem;
+  float: left;
+  font-weight: 500;
+  padding-top: 0.13333333rem;
+}
+.wifi1 li a {
+  padding: 0.10666667rem 0.74666667rem;
+  color: #000;
+}
+.wifi2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wifi2 .icon_img {
+  background-position: -5.01333333rem 0;
+  width: 5.52rem;
+  height: 4.8rem;
+  position: absolute;
+  top: 1.33333333rem;
+  left: 2.13333333rem;
+}
+.wifi2 .cc {
+  position: absolute;
+  top: 6.8rem;
+  left: 2.48rem;
+  font-size: 0.8rem;
+}
+.wifi2 a .icon_imgs {
+  position: absolute;
+  top: 9.06666667rem;
+  left: 3.81333333rem;
+  background-position: -10.53333333rem 0;
+  width: 2.21333333rem;
+  height: 2.21333333rem;
+  animation: poo 2s infinite linear;
+}

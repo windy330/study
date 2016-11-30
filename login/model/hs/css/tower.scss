@@ -1,0 +1,182 @@
+@function p($px){//$px为需要转换的字号
+  @return $px / 75px * 1rem; //40px为根字体大小
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: 'songti';
+}
+
+header{
+  height: p(92px);
+  line-height: p(92px);
+  background-color: #4DB9FF;
+  width: 100%;
+  position: relative;
+  font-size: p(34px);
+  text-align: center;
+}
+
+.h_left{
+  width: p(14px);
+  height: p(25px);
+  background: url("../images/hanting2.png") no-repeat p(0px) p(-1px);
+  background-size: p(660px) p(440px);
+  position: absolute;
+  top: p(30px);
+  left: p(30px);
+}
+.h_title{
+  color: #fff;
+}
+.h_right{
+  width: p(70px);
+  height: p(16px);
+  background: url("../images/hanting2.png") no-repeat p(-216px) p(-135px);
+  background-size: p(660px) p(440px);
+  position: absolute;
+  top: p(40px);
+  right: p(30px);
+}
+
+
+
+/*banner B*/
+.kuan{
+  overflow: hidden;
+
+}
+.to_banner{
+  width: p(750px);
+  overflow: hidden;
+  position: relative;
+}
+.to_banner ul:nth-child(1){
+  width: p(5250px);
+}
+.to_banner ul:nth-child(1) li{
+  float: left;
+  width: p(750px);
+}
+.to_banner ul:nth-child(1) li img{
+  display: block;
+  width: 100%;
+  height: p(350px);
+}
+.to_banner ul:nth-child(2){
+  width: p(128px);
+  height: p(6px);
+  position: absolute;
+  left: 50%;
+  bottom: p(10px);
+  margin-left: p(-64px);
+}
+.to_banner ul:nth-child(2) li{
+  width: p(6px);
+  height: p(6px);
+  border-radius: 50%;
+  float: left;
+  margin-left: p(10px);
+  border: p(1px) solid #fff;
+}
+.now{
+  background-color: #fff;
+}
+/*banner E*/
+.info{
+  width: p(650px);
+  height: p(340px);
+  border: p(1px) solid #DDDDDD;
+  margin: 0 auto;
+  margin-top: p(10px);
+  font-size: p(30px);
+  overflow: hidden;
+
+  div{
+    color: #333333;
+    span{
+      display: block;
+      background: url("../images/hanting2.png") no-repeat;
+      background-size: p(660px) p(440px);
+      float: left;
+    }
+    .s3{
+      width: p(31px);
+      height: p(31px);
+      background-position: p(-529px) p(-2px);
+    }
+    .s2{
+      width: p(25px);
+      height: p(34px);
+      background-position: p(-529px) p(-46px);
+    }
+    .s1{
+      width: p(31px);
+      height: p(31px);
+      background-position: p(-529px) p(-91px);
+    }
+  }
+  div:nth-child(1){
+    font-size: p(34px);
+    margin-top: p(15px);
+  }
+  div:nth-child(2){
+    font-size: p(34px);
+    margin-top: p(15px);
+  }
+  div:nth-child(3){
+    font-size: p(34px);
+    margin-top: p(15px);
+  }
+  div:nth-child(4){
+    margin-top: p(15px);
+  }
+  div:nth-child(5){
+    margin-top: p(15px);
+  }
+  div:nth-child(6){
+    margin-top: p(15px);
+  }
+
+}
+.synopsis{
+  width: p(650px);
+  height: p(166px);
+  border: p(1px) solid #DDDDDD;
+  margin: 0 auto;
+  margin-top: p(10px);
+  div{
+    color: #333333;
+  }
+  .top{
+    font-size: p(34px);
+    float: left;
+    margin-top: p(10px);
+  }
+  .bottom{
+    font-size: p(30px);
+    float: left;
+    margin-top: p(15px);
+  }
+}
+.assess{
+  width: p(650px);
+  height: p(226px);
+  border: p(1px) solid #DDDDDD;
+  margin: 0 auto;
+  margin-top: p(10px);
+  div{
+    color: #333333;
+  }
+  .top{
+    font-size: p(34px);
+    float: left;
+    margin-top: p(10px);
+  }
+  .bottom{
+    font-size: p(30px);
+    float: left;
+    margin-top: p(15px);
+  }
+}

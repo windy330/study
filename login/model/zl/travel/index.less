@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@l : 75px;
+
+html{
+  height: 115%;
+}
+body html{
+  min-width: 320rem/@l;
+  max-width: 750rem/@l;
+  background: red;
+  height: 138%;
+  width: 750rem/@l;
+  height: 1334rem/@l;
+  margin: 0 auto;
+}
+ul{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+/*父盒子样式*/
+.travel_movie{
+  width: 750rem/@l;
+  height: 1294rem/@l;
+  margin: 0 auto;
+}
+
+/*头部 begin*/
+/*头部父盒子样式*/
+.head{
+  height: 84rem/@l;
+  background: skyblue;
+  position: relative;
+  padding-top: 10rem/@l;
+}
+
+/*头部左边子盒子样式*/
+.head .head_left{
+  width: 15rem/@l;
+  height: 27rem/@l;
+  background: url(img/sprite.png) no-repeat 0 0;
+  background-size: 8.8rem 5.86666667rem;
+  margin: 20rem/@l 30rem/@l 0 30rem/@l;
+  display: inline-block;
+  float: left;
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*中间标题一样式*/
+.head .head_one a{
+  color: white;
+}
+.head .head_one{
+  width: 147rem/@l;
+  height: 56rem/@l;
+  background: blue;
+  float: left;
+  display: inline-block;
+  margin-left: 150rem/@l;
+  margin-top: 2rem/@l;
+  text-align: center;
+  line-height: 56rem/@l;
+  border-radius: 28rem/@l 0 0 28rem/@l;
+  font-size: 28rem/@l;
+}
+
+/*中间标题二样式*/
+.head .head_two a {
+  color: blue;
+}
+.head .head_two{
+  width: 147rem/@l;
+  height: 56rem/@l;
+  background: white;
+  float: left;
+  display: inline-block;
+  margin-right: 5rem/@l;
+  margin-top: 2rem/@l;
+  text-align: center;
+  line-height: 56rem/@l;
+  border-radius: 0 28rem/@l 28rem/@l 0;
+  font-size: 28rem/@l;
+}
+
+/*右边子盒子样式*/
+.head .head_right {
+  width: 70rem/@l;
+  height: 16rem/@l;
+  background: url(img/sprite.png) no-repeat -16rem/@l 0;
+  background-size: 660rem/@l 440rem/@l;
+  margin-right: 0.26666667rem;
+  margin-top: 0.4rem;
+  display: inline-block;
+  float: right;
+  line-height: 0.36rem;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.2rem;
+}
+/*头部 end*/
+
+/*轮播图 begin*/
+.banner{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner ul:nth-child(1){
+  /*这个时候我们需要放下10张图片  我们宽度就要是父容器宽度的10倍*/
+  width: 1000%;
+  -webkit-transform:translateX(-10%);
+  transform: translateX(-10%);
+}
+.banner ul:nth-child(1) li{
+  width: 10%;
+  float: left;
+}
+.banner ul:nth-child(1) li a{
+  width: 100%;
+  display: block;
+}
+.banner ul:nth-child(1) li a img{
+  width: 100%;
+  display: block;/*清除间距*/
+}
+.banner ul:nth-child(2){
+  position: absolute;
+  /*绝对定位的盒子怎么居中 left 50% maegin-left 一半的宽度 而且是负的*/
+  width: 118px;
+  height: 6px;
+  left: 50%;
+  bottom: 5px;
+  margin-left: -59px;
+}
+.banner ul:nth-child(2) li{
+  float: left;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.banner ul:nth-child(2) li.now{
+  background: #fff;
+}
+.banner ul:nth-child(2) li:first-child{
+  margin-left: 0;
+}
+/*轮播图 end*/
+
+/*导航栏 begin*/
+/*导航栏 图片样式*/
+.nav img{
+  width: 92rem/@l;
+  height: 92rem/@l;
+}
+
+/*导航栏 li样式*/
+.nav li{
+  //width: 18%;
+  //float: left;
+  display: inline-block;
+  padding: 0.44rem;
+  text-align: center;
+}
+
+/*导航栏文字的样式*/
+.nav li p{
+  font-size: 25rem/@l;
+  margin-top: 12rem/@l;
+  color: black;
+}
+
+/*导航栏 end*/
+
+/*电影 begin*/
+/*电影父盒子的样式*/
+.movie{
+  margin: 0 auto;
+  height: 50rem/@l;
+}
+
+/*图片的样式*/
+.movie img{
+  width: 207rem/@l;
+  height: 356rem/@l;
+}
+
+.movie li{
+  display: inline-block;
+  margin-top: 15rem/@l;
+  text-align: center;
+  padding: 0 2rem/@l;
+}
+/*文字样式*/
+.movie li p {
+  font-size: 30rem/@l;
+  margin-top: 12rem/@l;
+  color: black;
+  text-align: center;
+}
+
+.movie ul{
+  padding-bottom: 10rem/@l;
+}
+
+/*电影 end*/
+

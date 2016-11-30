@@ -1,0 +1,26 @@
+[
+  {
+    "img":"images/product1.graphic.png",
+    "price":"589"
+  },
+  {
+    "img":"images/product2.graphic.png"
+    "price":"699"
+  },
+  {
+    "img":"images/product3.graphic.png"
+    "price":"548"
+  },
+  {
+    "img":"images/product4.graphic.png"
+    "price":"659"
+  },
+  {
+    "img":"images/product5.graphic.png"
+    "price":"799"
+  },
+  {
+    "img":"images/product6.graphic.png"
+    "price":"559"
+  }
+]

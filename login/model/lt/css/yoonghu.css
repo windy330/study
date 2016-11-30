@@ -1,0 +1,212 @@
+/*所有使用精灵图的 class  以icon_开始的所有class都有这些属性*/
+[class^="icon_"] {
+  background: url("../image/ditu.png") no-repeat;
+  /*压缩背景图*/
+  background-size: 14.56rem 6.76rem;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  max-width: 10rem;
+  min-width: 4.26666667rem;
+  background-color: #E8E8E8;
+  position: relative;
+}
+header {
+  width: 10rem;
+  position: relative;
+}
+.yyy {
+  padding: 0 0.4rem;
+}
+.yh .yh1 {
+  width: 100%;
+  height: 1.06666667rem;
+  background-color: #4DBAFF;
+}
+.yh .yh1 .icon_img {
+  display: block;
+  background-position: 0 -1.38666667rem;
+  width: 0.41333333rem;
+  height: 0.41333333rem;
+  float: right;
+  margin: 0.32rem 0;
+}
+.yh .yh2 {
+  width: 100%;
+  height: 1.78666667rem;
+  position: relative;
+  background-color: #F4F4F4;
+}
+.yh2 .yh_1 img {
+  width: 1.94666667rem;
+  height: 1.94666667rem;
+  border-radius: 50%;
+  border: 0.08rem solid #fff;
+  margin-top: -0.66666667rem;
+}
+.yh2 .yh_2 {
+  color: #A9A9A9;
+  font-size: 0.24rem;
+  display: block;
+  width: 1.86666667rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  padding-left: 0.58666667rem;
+  position: absolute;
+  top: 0.66666667rem;
+  left: 1.6rem;
+  border-radius: 0.2rem;
+  background-color: #fff;
+}
+.yh2 .yh_2 .icon_imgs {
+  display: block;
+  background-position: -0.74666667rem -1.42666667rem;
+  width: 0.26666667rem;
+  height: 0.26666667rem;
+  position: absolute;
+  left: 0.18666667rem;
+  top: 0.05333333rem;
+}
+.yh2 .yh_3 {
+  font-size: 0.26666667rem;
+  color: #A9A9A9;
+  position: absolute;
+  top: 0.18666667rem;
+  left: 2.53333333rem;
+}
+.yh2 .yh_3 a {
+  color: #A9A9A9;
+}
+.yh2 .yh_3 a:hover {
+  color: coral;
+}
+.yh2 .icon_imgss {
+  display: block;
+  background-position: -0.41333333rem -1.4rem;
+  width: 0.33333333rem;
+  height: 0.33333333rem;
+  position: absolute;
+  bottom: 0.58666667rem;
+  right: 0.4rem;
+}
+.yh .yh3 {
+  width: 100%;
+  height: 0.72rem;
+  position: relative;
+  background-color: #F5EBEA;
+}
+.yh3 .icon_img {
+  display: block;
+  background-position: -1.02666667rem -1.4rem;
+  width: 0.33333333rem;
+  height: 0.25333333rem;
+  position: absolute;
+  top: 0.24rem;
+}
+.yh3 .yh_1 {
+  font-size: 0.32rem;
+  color: #FC3B40;
+  position: absolute;
+  top: 0.10666667rem;
+  left: 0.90666667rem;
+}
+.yh4 {
+  width: 100%;
+  height: 0.32rem;
+  background-color: #E8E8E8;
+}
+.yh5 {
+  width: 100%;
+  position: relative;
+}
+.yh5 li {
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+  background-color: #F4F4F4;
+}
+.yh5 li a {
+  display: block;
+  width: 100%;
+  padding: 0.46666667rem 0;
+  font-size: 0.34666667rem;
+  position: relative;
+  padding-left: 1.06666667rem;
+}
+.yh5 li a:hover {
+  background-color: #fff;
+}
+.yh5 li a i {
+  display: block;
+  background-position: -0.05333333rem -1.92rem;
+  width: 0.17333333rem;
+  height: 0.32rem;
+  position: absolute;
+  right: 0.50666667rem;
+  top: 0.48rem;
+}
+.yh5 li:nth-child(1) .icon_img {
+  display: block;
+  background-position: -1.36rem -1.42666667rem;
+  width: 0.42666667rem;
+  height: 0.56rem;
+  position: absolute ;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+.yh5 li:nth-child(2) .icon_imgs {
+  display: block;
+  background-position: -1.8rem -1.42666667rem;
+  width: 0.53333333rem;
+  height: 0.36rem;
+  position: absolute ;
+  top: 0.50666667rem;
+  left: 0.4rem;
+}
+.yh5 li:nth-child(3) .icon_imgss {
+  display: block;
+  background-position: -2.34666667rem -1.42666667rem;
+  width: 0.50666667rem;
+  height: 0.48rem;
+  position: absolute ;
+  top: 0.45333333rem;
+  left: 0.4rem;
+}
+.yh5 li:nth-child(4) .icon_imgsss {
+  display: block;
+  background-position: -2.88rem -1.42666667rem;
+  width: 0.52rem;
+  height: 0.49333333rem;
+  position: absolute ;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+.yh5 li:nth-child(5) .icon_imges {
+  display: block;
+  background-position: -3.41333333rem -1.42666667rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  position: absolute ;
+  top: 0.48rem;
+  left: 0.4rem;
+}
+.yh_bottom {
+  width: 100%;
+  height: 0.53333333rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+.yh_bottom .icon_img {
+  display: block;
+  background-position: -3.93333333rem -1.46666667rem;
+  width: 0.69333333rem;
+  height: 0.26666667rem;
+  position: absolute;
+  top: 0.13333333rem;
+  left: 45%;
+}

@@ -1,0 +1,103 @@
+@font-size : 75px;
+
+[class^="icon_"]{
+  background: url("img/paying-1.png") no-repeat;
+  background-size: 400rem/@font-size 400rem/@font-size;
+  position: absolute;
+}
+
+
+/*顶部通栏*/
+.top{
+  width: 100%;
+  height: 88rem/@font-size;
+  background: #4DB9FF;
+  padding: 16rem/@font-size 160rem/@font-size;
+}
+
+.icon_back{
+  width: 14rem/@font-size;
+  height: 35rem/@font-size;
+  padding: 12rem/@font-size 10rem/@font-size;
+  left: 30rem/@font-size;
+  top: 30rem/@font-size;
+  background-position: 0 0;
+}
+
+.b_top{
+
+}
+
+.topBar form{
+  width: 100%;
+  position: relative;
+}
+
+.top form input{
+  width: 100%;
+  height: 55rem/@font-size;
+  border: 1rem/@font-size solid #e0e0e0;
+  border-radius: 10rem/@font-size;
+  text-align: center;
+  min-width: 200rem/@font-size;
+}
+
+.icon_search {
+  height: 29rem/@font-size;
+  width: 29rem/@font-size;
+  background-position: 0 -87rem/@font-size;
+  position: absolute;
+  top: 30rem/@font-size;
+  right: 190rem/@font-size;
+}
+
+//三张图
+.pic{
+  width: 100%;
+  height: 430rem/@font-size;
+  background-size:750rem/@font-size 430rem/@font-size;
+  position: relative;
+}
+
+.pic img{
+  width: 100%;
+}
+
+.pic .bac{
+  width: 576rem/@font-size;
+  height: 100rem/@font-size;
+  position: absolute;
+  right: 0;
+  top: 162rem/@font-size;
+  background: rgba(75,90,90,0.3);
+  padding-left: 56rem/@font-size;
+}
+
+.pic .bac span{
+  line-height: 100rem/@font-size;
+  font-size: 69rem/@font-size;
+  font-weight: 900;
+}
+
+//箭头的动画效果
+.pic .bac .move{
+  position: absolute;
+  color:#FFF;
+  animation: pooos 2s infinite linear;
+}
+@-webkit-keyframes pooos {
+  0%{
+    transform: translatex(0rem/@font-size);
+  }
+  50%{
+    transform: translatex(50rem/@font-size);
+    opacity: 0.5;
+  }
+  100%{
+    transform: translatex(90rem/@font-size);
+    opacity: 0;
+  }
+}
+
+
+

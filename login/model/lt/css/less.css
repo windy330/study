@@ -1,0 +1,190 @@
+/*����ʹ�þ���ͼ�� class  ��icon_��ʼ������class������Щ����*/
+[class^="icon_"] {
+  background: url("../image/ditu.png") no-repeat;
+  /*ѹ������ͼ*/
+  background-size: 14.56rem 6.76rem;
+}
+body {
+  max-width: 10rem;
+  min-width: 4.26666667rem;
+}
+header {
+  width: 10rem;
+  padding: 0.13333333rem 0.4rem 0;
+  position: absolute;
+  z-index: 10;
+}
+.map_head a .icon_img {
+  display: block;
+  background-position: -1.45333333rem -0.01333333rem;
+  width: 0.38666667rem;
+  height: 0.41333333rem;
+  position: absolute;
+  left: 0.50666667rem;
+  top: 0.32rem;
+  z-index: 10;
+}
+.map_head form {
+  display: block;
+  width: 100%;
+  height: 0.82666667rem;
+  z-index: 10;
+}
+.map_head input {
+  display: block;
+  width: 100%;
+  height: 0.82666667rem;
+  border: 0.01333333rem solid #ccc;
+  border-radius: 0.13333333rem;
+  font-size: 0.4rem;
+  padding-left: 0.58666667rem;
+  padding-right: 1.06666667rem;
+  z-index: 10;
+}
+.map_head .you {
+  height: 0.48rem;
+  border-left: 0.01333333rem solid #ccc;
+  position: absolute;
+  right: 1.33333333rem;
+  top: 0.32rem;
+  z-index: 10;
+}
+.map_head .icon_imgs {
+  display: block;
+  background-position: -2.24rem 0;
+  width: 0.24rem;
+  height: 0.48rem;
+  position: absolute;
+  right: -0.53333333rem;
+  top: 0rem;
+  z-index: 10;
+}
+.map_head .icon_imgss {
+  display: block;
+  background-position: -1.98666667rem 0;
+  width: 0.16rem;
+  height: 0.16rem;
+  position: absolute;
+  right: -0.18666667rem;
+  top: -0.10666667rem;
+  z-index: 10;
+}
+.map_secti {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.map_secti .icon_img {
+  background-position: -4.29333333rem -0.53333333rem;
+  width: 0.72rem;
+  height: 0.86666667rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 1.33333333rem;
+}
+.map_secti .icon_imgs {
+  background-position: -1.45333333rem -0.53333333rem;
+  width: 0.89333333rem;
+  height: 0.89333333rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 1.33333333rem;
+  z-index: 1;
+}
+.map_secti .icon_imgss {
+  background-position: -2.37333333rem -0.53333333rem;
+  width: 0.89333333rem;
+  height: 0.89333333rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 2.53333333rem;
+  z-index: 1;
+}
+.map_secti .icon_imgsss {
+  background-position: -3.29333333rem -0.52rem;
+  width: 0.89333333rem;
+  height: 0.89333333rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 3.73333333rem;
+  z-index: 1;
+}
+.map_bottom {
+  width: 10rem;
+  position: absolute;
+  bottom: 0;
+  padding: 0 0.4rem 0.4rem;
+  z-index: 10;
+}
+.map_bottom ul {
+  width: 9.18666667rem;
+  height: 0.98666667rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.map_bottom ul a {
+  display: block;
+  height: 0.98666667rem;
+  font-size: 0.4rem;
+  padding: 0 0.73333333rem 0;
+  line-height: 0.98666667rem;
+  position: relative;
+}
+.map_bottom .icon_img {
+  display: block;
+  background-position: 0 0;
+  width: 0.29333333rem;
+  height: 0.4rem;
+  position: absolute;
+  left: 0.26666667rem;
+  top: 0.29333333rem;
+}
+.map_bottom .icon_imgs {
+  display: block;
+  background-position: -0.33333333rem 0;
+  width: 0.42666667rem;
+  height: 0.45333333rem;
+  position: absolute;
+  left: 0.21333333rem;
+  top: 0.24rem;
+}
+.map_bottom .icon_imgss {
+  display: block;
+  background-position: -3.86666667rem -0.01333333rem;
+  width: 0.44rem;
+  height: 0.37333333rem;
+  position: absolute;
+  left: 0.21333333rem;
+  top: 0.29333333rem;
+}
+.map_bottom .icon_imgsss {
+  display: block;
+  background-position: -0.86666667rem 0;
+  width: 0.50666667rem;
+  height: 0.16rem;
+  position: absolute;
+  left: 0.13333333rem;
+  top: 0.42666667rem;
+}
+.map_bottom .icon_imgssss {
+  display: block;
+  background-position: -1.98666667rem 0;
+  width: 0.16rem;
+  height: 0.16rem;
+  position: absolute;
+  right: 0.53333333rem;
+  top: 0.13333333rem;
+}
+.map_bottom .icon_imgsssss {
+  display: block;
+  background-position: 0rem -0.49333333rem;
+  width: 0.89333333rem;
+  height: 0.89333333rem;
+  position: absolute;
+  left: 0.4rem;
+  bottom: 1.6rem;
+}
+#allmap .BMap_stdMpType4 .BMap_stdMpZoom {
+  top: -1.33333333rem;
+  left: -0.26666667rem;
+}

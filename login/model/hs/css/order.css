@@ -1,0 +1,97 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #E8E8E8; }
+
+.or_header {
+  width: 10rem;
+  height: 1.2rem;
+  background-color: #4DB9FF;
+  position: relative; }
+
+.or_header .icon_left {
+  width: 0.18667rem;
+  height: 0.33333rem;
+  background: url("../images/hanting2.png") no-repeat 0rem -0.01333rem;
+  background-size: 8.8rem 5.86667rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem; }
+
+.or_header p {
+  font-size: 0.45333rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  width: 10rem;
+  text-align: center;
+  font-family: 'songti';
+  color: #fff; }
+
+.indent_box {
+  width: 9.2rem;
+  height: 3.6rem;
+  margin: 0 auto;
+  background-color: #F4F4F4;
+  margin-top: 0.24rem;
+  border-radius: 0.2rem; }
+  .indent_box .top {
+    border-bottom: 1px solid #DDDDDD;
+    height: 0.8rem;
+    padding: 0.13333rem 0.26667rem 0;
+    font-size: 0.37333rem; }
+    .indent_box .top .sign1 {
+      width: 0.53333rem;
+      height: 0.53333rem;
+      background: url("../images/hanting2.png") no-repeat;
+      background-position: -2.09333rem -1.56rem;
+      background-size: 8.8rem 5.86667rem;
+      display: inline-block;
+      float: left; }
+    .indent_box .top .sign2 {
+      width: 0.56rem;
+      height: 0.61333rem;
+      background: url("../images/hanting2.png") no-repeat;
+      background-position: -2.08rem -0.77333rem;
+      background-size: 8.8rem 5.86667rem;
+      display: inline-block;
+      float: left; }
+    .indent_box .top .hotle {
+      margin-left: 0.2rem;
+      color: #777777; }
+    .indent_box .top .separator {
+      height: 0.28rem;
+      width: 0.01333rem;
+      background-color: #DDDDDD;
+      margin: 0.05333rem 0.24rem; }
+    .indent_box .top .OK {
+      color: #FF3A42; }
+    .indent_box .top .cal {
+      color: #666 !important; }
+    .indent_box .top .price {
+      color: #FF3A42;
+      font-size: 0.4rem; }
+  .indent_box .bottom {
+    height: 2.8rem;
+    padding: 0.24rem 0.26667rem 0;
+    font-size: 0.29333rem; }
+    .indent_box .bottom p:nth-child(1) {
+      font-size: 0.4rem;
+      color: #333333; }
+    .indent_box .bottom p:nth-child(2) {
+      color: #777;
+      margin-top: 0.26667rem; }
+    .indent_box .bottom p:nth-child(3) {
+      color: #777;
+      margin-top: 0.26667rem; }
+    .indent_box .bottom div {
+      width: 1.17333rem;
+      height: 0.56rem;
+      line-height: 0.56rem;
+      text-align: center;
+      border: 0.01333rem solid #4DBAFF;
+      color: #4DBAFF;
+      border-radius: 0.13333rem; }
+    .indent_box .bottom .share {
+      margin-left: 0.26667rem; }
+
+/*# sourceMappingURL=order.css.map */

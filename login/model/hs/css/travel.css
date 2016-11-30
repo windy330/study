@@ -1,0 +1,163 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'songti'; }
+
+a:hover {
+  color: #fffdef; }
+
+.active {
+  color: #3B77DB;
+  border-bottom: 0.05333rem solid #3B77DB; }
+
+.check {
+  color: #3B77DB !important; }
+
+header {
+  padding: 0 0.66667rem;
+  height: 1.2rem;
+  background-color: #4DB9FF; }
+  header div {
+    width: 25%;
+    float: left;
+    text-align: center; }
+  header a {
+    margin: 0 auto;
+    font-size: 0.45333rem;
+    color: #fff;
+    display: block;
+    height: 1.2rem;
+    line-height: 1.2rem; }
+
+.tr_header {
+  background-color: #E7E7E7;
+  height: 0.72rem;
+  padding: 0 0.66667rem; }
+  .tr_header div {
+    width: 33.3%;
+    float: left;
+    text-align: center; }
+  .tr_header a {
+    display: block;
+    color: #333;
+    display: block;
+    height: 0.72rem;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 0.72rem;
+    font-size: 0.37333rem; }
+
+.scenic {
+  display: block; }
+  .scenic .scenic_box {
+    margin-top: 0.49333rem;
+    height: 3.33333rem;
+    padding: 0 0.66667rem; }
+    .scenic .scenic_box .scenic_box_img {
+      float: left;
+      width: 3.33333rem;
+      height: 3.33333rem;
+      background-size: 9.33333rem 9.33333rem !important; }
+    .scenic .scenic_box .sbImg1 {
+      background: url("../images/scenic.png") no-repeat 0rem 0rem; }
+    .scenic .scenic_box .sbImg2 {
+      background: url("../images/scenic.png") no-repeat 0rem -3.98667rem; }
+    .scenic .scenic_box .sbImg3 {
+      background: url("../images/scenic.png") no-repeat -3.53333rem -3.98667rem; }
+    .scenic .scenic_box .sbImg4 {
+      background: url("../images/scenic.png") no-repeat -3.53333rem 0rem; }
+    .scenic .scenic_box .scenic_box_info {
+      float: right;
+      width: 5.33333rem;
+      padding-right: 0.37333rem;
+      padding-left: 0.21333rem; }
+      .scenic .scenic_box .scenic_box_info p {
+        margin-top: 0.21333rem;
+        display: inline-block; }
+      .scenic .scenic_box .scenic_box_info p:nth-of-type(1) {
+        width: 100%;
+        float: left;
+        margin-top: 0.49333rem;
+        font-size: 0.4rem;
+        color: #333333; }
+      .scenic .scenic_box .scenic_box_info p:nth-of-type(2) {
+        float: left;
+        font-size: 0.29333rem;
+        color: #333333;
+        background-color: #4DB9FF;
+        padding: 0.16rem 0.21333rem;
+        border-radius: 0.13333rem;
+        color: #fffdef; }
+      .scenic .scenic_box .scenic_box_info p:nth-of-type(3) {
+        float: left;
+        font-size: 0.29333rem;
+        color: #777777; }
+
+.path {
+  display: none; }
+  .path .arrange {
+    width: 8.66667rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    overflow: hidden; }
+    .path .arrange div {
+      width: 100%;
+      height: 0.37333rem;
+      line-height: 0.37333rem;
+      margin-top: 0.26667rem;
+      font-size: 0.29333rem; }
+    .path .arrange span {
+      margin-right: 0.29333rem; }
+    .path .arrange span:nth-of-type(1) {
+      margin: 0; }
+    .path .arrange span:nth-of-type(2) {
+      background-color: #4DB9FF;
+      padding: 0.04rem 0.04rem;
+      border-radius: 0.06667rem; }
+    .path .arrange span:hover, .path .arrange span:focus {
+      background-color: #4DB9FF;
+      padding: 0.04rem 0rem;
+      border-radius: 0.06667rem; }
+    .path .arrange span:nth-child(1):hover, .path .arrange span:nth-child(1):focus {
+      background-color: transparent;
+      padding: 0; }
+  .path .journey {
+    height: 3.33333rem;
+    width: 8.66667rem;
+    margin: 0.33333rem auto; }
+    .path .journey .journey_img {
+      float: left;
+      width: 3.33333rem;
+      height: 3.33333rem;
+      background-size: 9.33333rem 9.33333rem !important; }
+    .path .journey .jImg1 {
+      background: url("../images/path.png") no-repeat 0rem 0rem; }
+    .path .journey .jImg2 {
+      background: url("../images/path.png") no-repeat -3.53333rem 0rem; }
+    .path .journey .jImg3 {
+      background: url("../images/path.png") no-repeat 0rem -3.48rem; }
+    .path .journey .journey_info {
+      float: right;
+      width: 5.33333rem;
+      height: 3.33333rem;
+      font-size: 0.29333rem;
+      padding-left: 0.26667rem; }
+      .path .journey .journey_info p:nth-of-type(1) {
+        font-size: 0.4rem;
+        color: #333333;
+        margin-top: 0.32rem; }
+      .path .journey .journey_info p:nth-of-type(2) {
+        color: #7E7E7E;
+        margin-top: 0.37333rem; }
+      .path .journey .journey_info p:nth-of-type(3) {
+        color: #7E7E7E;
+        margin-top: 0.37333rem; }
+      .path .journey .journey_info p:nth-of-type(4) {
+        float: right;
+        padding: 0.10667rem 0.16rem;
+        border-radius: 0.10667rem;
+        color: #FFF;
+        margin-top: 0.37333rem;
+        background-color: #4DB9FF; }
+
+/*# sourceMappingURL=travel.css.map */

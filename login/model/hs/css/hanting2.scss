@@ -1,0 +1,569 @@
+@function p($px){//$px为需要转换的字号
+  @return $px / 75px * 1rem; //40px为根字体大小
+}
+
+body{
+  font-size: p(28px);
+  font-family: 'microsoft yahei';
+  color: #333;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.bbb{
+  height: p(220px);
+}
+.ht_header{
+  width: p(750px);
+  height: p(90px);
+  background-color: #4DB9FF;
+  position: relative;
+}
+.ht_header .icon_left{
+  width: p(14px);
+  height: p(25px);
+  background: url("../images/hanting2.png") no-repeat p(0px) p(-1px);
+  background-size: p(660px) p(440px);
+  position: absolute;
+  top: p(30px);
+  left: p(30px);
+}
+.ht_header p{
+  font-size: p(34px);
+  height: p(90px);
+  line-height: p(90px);
+  width: p(750px);
+  text-align: center;
+  font-family: 'songti';
+  color: #fff;
+}
+.ht_header .icon_heart{
+   width: p(31px);
+   height: p(27px);
+   background: url("../images/hanting2.png") no-repeat;
+   background-position:  p(-25px) p(-0px);
+   background-size: p(660px) p(440px);
+   position: absolute;
+   top: p(30px);
+   right: p(85px);
+  //transition: all 0.5s;
+ }
+.ht_header .icon_return{
+  width: p(39px);
+  height: p(29px);
+  background: url("../images/hanting2.png") no-repeat p(-62px) p(-2px);
+  background-size: p(660px) p(440px);
+  position: absolute;
+  top: p(28px);
+  right: p(30px);
+}
+
+
+.ht_appraise {
+  width: p(750px);
+  height: p(393px);
+  position: relative;
+}
+.ht_appraise .logo{
+  background: url("../images/hanting2.png") no-repeat p(0px) p(-62px);
+  background-size: p(660px) p(440px);
+  width: p(150px);
+  height: p(150px);
+  position: absolute;
+  top: p(20px);
+  right: p(50px);
+}
+.ht_appraise .details{
+  height: p(393px);
+}
+.ht_appraise .details .de1{
+  position: absolute;
+  left: p(50px);
+  top: p(60px);
+  border-bottom: p(1px) solid #E7E7E7;
+}
+.ht_appraise .details .de11{
+  position: relative;
+  height: p(40px);
+  width: p(440px);
+}
+.ht_appraise .details .de1_1{
+  font-size: p(28px);
+  color: #4DB9FF;
+  position: absolute;
+  left: p(20px);
+  bottom: p(0px);
+}
+.ht_appraise .details .de1_2{
+  font-size: p(20px);
+  color: #999999;
+  position: absolute;
+  left: p(160px);
+  bottom: p(0px);
+}
+.ht_appraise .details .de1_3{
+  font-size: p(28px);
+  color: #C55F6F;
+  position: absolute;
+  right: p(15px);
+  bottom: p(0px);
+}
+.ht_appraise .details .de1_4,.de2_3{
+  background: url("../images/hanting2.png") no-repeat p(-108px) p(-2px);
+  background-size: p(660px) p(440px);
+  width: p(22px);
+  height: p(28px);
+  position: absolute;
+  left: p(430px);
+  top: p(6px);
+}
+.ht_appraise .details .de2{
+  height: p(40px);
+  width: p(620px);
+  position: absolute;
+  left: p(50px);
+  top: p(150px);
+  border-bottom: p(1px) solid #E7E7E7;
+}
+.ht_appraise .details .de22{
+  height: p(40px);
+  width: p(620px);
+  position: relative;
+}
+.ht_appraise .details .de2_1{
+  font-size: p(20px);
+  color: #333333;
+  position: absolute;
+  left: p(20px);
+  bottom: p(0px);
+}
+.ht_appraise .details .de2_2{
+  font-size: p(28px);
+  color: #C55F6F;
+  position: absolute;
+  left: p(300px);
+  bottom: p(0px);
+}
+//de2_3在上面和de1_4取相同样式
+.ht_appraise .details .de3{
+  position: absolute;
+  left: p(50px);
+  top: p(225px);
+  border-bottom: p(1px) solid #E7E7E7;
+}
+.ht_appraise .details .de33{
+  height: p(75px);
+  width: p(620px);
+  position: relative;
+}
+.ht_appraise .details .de3_1{
+  font-size: p(20px);
+  color: #333;
+  position: absolute;
+  left: p(20px);
+  top: p(0px);
+}
+.ht_appraise .details .de3_2{
+  font-size: p(20px);
+  color: #777;
+  position: absolute;
+  left: p(20px);
+  bottom: p(5px);
+}
+.ht_appraise .details .de3_3{
+  font-size: p(28px);
+  color: #777;
+  float: right;
+  position: relative;
+}
+.map{
+  display: block;
+  background: url("../images/hanting2.png") no-repeat p(-166px) p(-0px);
+  background-size: p(660px) p(440px);
+  width: p(26px);
+  height: p(46px);
+  position: absolute;
+  right: p(-25px);
+  top: p(-10px);
+  //animation: dump 0.5s infinite;
+}
+@keyframes dump {
+  0%{
+    transform: translateY(p(0px));
+  }
+  50%{
+    transform: translateY(p(-10px));
+  }
+  100%{
+    transform: translateY(p(0px));
+  }
+}
+.ht_appraise .details .de4{
+  position: absolute;
+  left: p(50px);
+  bottom: p(42px);
+}
+.ht_appraise .details .de44{
+  position: relative;
+  line-height: p(40px);
+  height: p(40px);
+  width: p(620px);
+}
+.ht_appraise .details .de4_1{
+  font-size: p(20px);
+  color: #777;
+  position: absolute;
+  left: p(20px);
+  top: p(0px);
+}
+.ht_appraise .details .de4_1{
+  font-size: p(20px);
+  color: #777;
+  position: absolute;
+  left: p(20px);
+  top: p(0px);
+}
+.ht_appraise .details .de4_2{
+  position: absolute;
+  right: p(50px);
+}
+.ht_appraise .details .de4_2 li{
+  float: left;
+  border-right: p(3px) solid #ddd;
+  height: p(40px);
+  width: p(88px);
+  font-size: p(22px);
+  a{
+    display: block;
+    margin-left: 10px;
+  }
+  //a:hover{
+  //  color: #3B77DB;
+  //}
+}
+.ht_appraise .details .de4_2 li:nth-child(5){
+  border-right: none;
+}
+
+.confirm{
+  width: p(750px);
+  height: p(70px);
+  background: #CCCCCC;
+}
+.confirm .left{
+  width: p(176px);
+  border-right: p(2px) solid #DDDDDD;
+  height: p(70px);
+  float: left;
+  padding-top: p(15px);
+  .demand{
+    width: p(120px);
+    height: p(40px);
+    overflow: hidden;
+    border-radius: p(5px);
+    background-color: #ccc;
+    position: absolute;
+    left: p(28px);
+    span{
+      background: url("../images/hanting2.png") no-repeat p(-142px) p(-2px);
+      background-size: p(660px) p(440px);
+      display: block;
+      width: p(14px);
+      height: p(12px);
+      position: absolute;
+      right: p(5px);
+      top: p(13px);
+    }
+    div{
+      height: p(40px);
+      line-height: p(40px);
+      text-align: center;
+    }
+    p{
+      font-size: p(20px);
+      color: #333;
+      position: relative;
+    }
+  }
+
+
+
+}
+.confirm .right{
+  width: p(574px);
+  height: p(70px);
+  padding: p(13px) p(40px) 0 p(20px);
+    a{
+      background-color: #3B77DB;
+      font-size: p(20px);
+      padding: p(10px) p(10px);
+      border-radius: p(20px);
+      color: #fff;
+      float: left;
+      margin-left: p(10px);
+    }
+  a:hover{
+      color: #C55F6F;
+  }
+    a:nth-child(4){
+      float: right;
+      padding-right: p(25px);
+      position: relative;
+    }
+  a:nth-child(4)::before{
+    content: '';
+    background: url("../images/hanting2.png") no-repeat p(-142px) p(-2px);
+    background-size: p(660px) p(440px);
+    display: block;
+    width: p(14px);
+    height: p(12px);
+    position: absolute;
+    right: p(8px);
+    top: p(16px);
+  }
+}
+.goodsBox{
+  height: p(148px);
+  width: p(750px);
+  margin-top: p(30px);
+  overflow: hidden;
+}
+
+.top{
+  display: block;
+  height: p(148px);
+  width: p(750px);
+  background-color: #E7E7E7;
+  padding: p(12px) p(50px) 0;
+  .imgBox{
+    background: url("../images/hanting2.png") no-repeat p(-373px) p(0px);
+    background-size: p(660px) p(440px);
+    width: p(141px);
+    height: p(125px);
+  }
+  .imgBox2{
+    background: url("../images/hanting2.png") no-repeat p(-206px) p(-1px);
+    background-size: p(660px) p(440px);
+    width: p(141px);
+    height: p(125px);
+  }
+  .rightBox{
+    width: p(487px);
+    height: p(125px);
+    position: relative;
+    span{
+      position: absolute;
+    }
+    span:nth-child(1){
+      left: 0px;
+      top: p(15px);
+      color: #333333;
+    }
+    span:nth-child(2){
+      left: 0px;
+      top: p(60px);
+      font-size: p(20px);
+      margin-left: p(10px);
+      color: #777777;
+    }
+    span:nth-child(3){
+      left: 0px;
+      top: p(90px);
+      font-size: p(20px);
+      margin-left: p(10px);
+      background-color: #A53646;
+      padding: 3px 5px;
+      color: #fff;
+    }
+    span:nth-child(4){
+      right: p(60px);
+      top: p(54px);
+      color: #C45E6F;
+    }
+    span:nth-child(5){
+      right: p(35px);
+      top: p(62px);
+      font-size: p(20px);
+    }
+    .goodstb1{
+      right: 0px;
+      background: url("../images/hanting2.png") no-repeat;
+      background-position:  p(0px) p(-253px);
+      background-size: p(660px) p(440px);
+      width: p(25px);
+      height: p(25px);
+      top: p(62px);
+    }
+    .goodstb2{
+      right: 0px;
+      background: url("../images/hanting2.png") no-repeat;
+      background-position:  p(0px) p(-253px);
+      background-size: p(660px) p(440px);
+      width: p(25px);
+      height: p(25px);
+      top: p(62px);
+    }
+  }
+}
+
+.productBox{
+  display: block;
+  border-top: 1px solid black;
+  height: p(148px);
+  width: p(750px);
+  background-color: #F3F3F3;
+  position: relative;
+  padding: p(30px) p(50px) 0;
+  span{
+    position: absolute;
+    font-size: p(20px);
+  }
+  span:nth-child(1){
+    color: #333333;
+  }
+  span:nth-child(2){
+    color: #777777;
+    top: p(60px);
+  }
+  span:nth-child(3){
+    background-color: #A53545;
+    top: p(87px);
+    color: #fff;
+  }
+  span:nth-child(4){
+    color: #A75763;
+    right: p(145px);
+    top: p(54px);
+  }
+  span:nth-child(5){
+    background-color: #A75763;
+    right: p(60px);
+    top: p(54px);
+    padding: p(7px) p(13px);
+    color: #fffdef;
+    border-radius: 13px;
+  }
+}
+
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  display: none;
+}
+.mask .mask_box{
+  width: 60%;
+  background: #fff;
+  border-radius: p(4px);
+  margin: 0 auto;
+  margin-top: p(200px);
+  padding: 0 p(10px);
+}
+.mask .mask_box .text_box{
+  text-align: center;
+  font-size: p(28px);
+  line-height: p(105px);
+  border-bottom: p(1px) solid #e0e0e0;
+}
+.mask .mask_box .btn_box{
+  padding: p(10px) 0;
+}
+.mask .mask_box .btn_box a{
+  width: 45%;
+  height: p(76px);
+  line-height: p(76px);
+  text-align: center;
+  float: left;
+  border-radius: p(4px);
+}
+.mask .mask_box .btn_box .cancel{
+  margin-right: 10%;
+  border: p(1px) solid #e0e0e0;
+
+}
+.mask .mask_box .btn_box .submit{
+  background: #3B77DB;
+  color: #fff;
+}
+.mask .mask_box.bounceInDown{
+  animation: bounceInDown 1s;
+  -webkit-animation: bounceInDown 1s;
+}
+
+/*bounceInDown*/
+@keyframes bounceInDown {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(p(-3000px));
+    transform: translateY(p(-3000px));
+  }
+  60%{
+    opacity: 1;
+    -webkit-transform: translateY(p(25px));
+    transform: translateY(p(25px));
+  }
+  75%{
+    -webkit-transform: translateY(p(-10px));
+    transform: translateY(p(-10px));
+  }
+  90%{
+    -webkit-transform: translateY(p(5px));
+    transform: translateY(p(5px));
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform:none;
+    transform:none;
+  }
+}
+@-webkit-keyframes bounceInDown {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(p(-3000px));
+    transform: translateY(p(-3000px));
+  }
+  60%{
+    opacity: 1;
+    -webkit-transform: translateY(p(25px));
+    transform: translateY(p(25px));
+  }
+  75%{
+    -webkit-transform: translateY(p(-10px));
+    transform: translateY(p(-10px));
+  }
+  90%{
+    -webkit-transform: translateY(p(5px));
+    transform: translateY(p(5px));
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform:none;
+    transform:none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

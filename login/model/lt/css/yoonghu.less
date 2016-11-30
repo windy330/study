@@ -1,0 +1,242 @@
+@f : 75px;
+/*所有使用精灵图的 class  以icon_开始的所有class都有这些属性*/
+[class^="icon_"]{
+  background: url("../image/ditu.png") no-repeat;
+  /*压缩背景图*/
+  background-size: 1092rem/@f 507rem/@f;
+}
+//设置高宽铺满
+html,body{
+  height: 100%;
+  width: 100%;
+}
+//最大宽度以及最小宽度
+body{
+  max-width: 750rem/@f;
+  min-width: 320rem/@f;
+  background-color: #E8E8E8;
+  position: relative;
+}
+//设置头部宽度与高度
+header{
+  width: 750rem/@f;
+  position: relative;
+}
+.yyy{
+  padding: 0 30rem/@f;//设置蓝色区域左右内边距
+}
+//设置头部蓝色框区域
+.yh .yh1{
+  width: 100%;
+  height: 80rem/@f;
+  background-color: #4DBAFF;
+}
+//设置标签图标
+.yh .yh1 .icon_img{
+  display: block;
+  background-position: 0 -104rem/@f;
+  width: 31rem/@f;
+  height: 31rem/@f;
+  float: right;
+  margin: 24rem/@f 0;
+}
+//用户部分  头像  粉丝  设置
+.yh .yh2{
+  width: 100%;
+  height: 134rem/@f;
+  position: relative;
+  background-color: #F4F4F4;
+}
+//用户头像的样式
+.yh2 .yh_1 img{
+  width: 146rem/@f;
+  height: 146rem/@f;
+  border-radius: 50%;
+  border: 6rem/@f solid #fff;
+  margin-top: -50rem/@f;
+}
+//设置用户头像的标签样式
+.yh2 .yh_2{
+  color: #A9A9A9;
+  font-size: 18rem/@f;
+  display: block;
+  width: 140rem/@f;
+  height: 30rem/@f;
+  line-height: 30rem/@f;
+  padding-left:44rem/@f ;
+  position: absolute;
+  top: 50rem/@f;
+  left: 120rem/@f;
+  border-radius: 15rem/@f;
+  background-color: #fff;
+}
+//设置标签样式图标
+.yh2 .yh_2 .icon_imgs{
+  display: block;
+  background-position: -56rem/@f -107rem/@f;
+  width: 20rem/@f;
+  height: 20rem/@f;
+  position: absolute;
+  left: 14rem/@f;
+  top: 4rem/@f;
+}
+//关注与粉丝部分
+.yh2 .yh_3{
+  font-size: 20rem/@f;
+  color: #A9A9A9;
+  position: absolute;
+  top: 14rem/@f;
+  left: 190rem/@f;
+}
+//设置粉丝与关注的字体样式
+.yh2 .yh_3 a{
+  color: #A9A9A9;
+}
+//设置粉丝与关注被触碰后的的字体样式
+.yh2 .yh_3 a:hover{
+  color: coral;
+}
+//设置钢笔图标的位置
+.yh2 .icon_imgss{
+  display: block;
+  background-position: -31rem/@f -105rem/@f;
+  width: 25rem/@f;
+  height: 25rem/@f;
+  position: absolute;
+  bottom: 44rem/@f;
+  right: 30rem/@f;
+}
+//私信部分样式
+.yh .yh3{
+  width: 100%;
+  height: 54rem/@f;
+  position: relative;
+  background-color: #F5EBEA;
+}
+//私信小图标
+.yh3 .icon_img{
+  display: block;
+  background-position: -77rem/@f -105rem/@f;
+  width: 25rem/@f;
+  height: 19rem/@f;
+  position: absolute;
+  top: 18rem/@f;
+}
+//私信字体颜色
+.yh3 .yh_1{
+  font-size: 24rem/@f;
+  color: #FC3B40;
+  position: absolute;
+  top: 8rem/@f;
+  left: 68rem/@f;
+}
+//上下内容间的间隔样式
+.yh4{
+  width: 100%;
+  height: 24rem/@f;
+  background-color: #E8E8E8;
+}
+//设置与内容之间的样式
+//设置父盒子的默认宽度，高度由内容撑开
+.yh5{
+  width: 100%;
+  position: relative;
+}
+//设置li标签的固定高度
+.yh5 li{
+  width: 100%;
+  //height: 90rem/@f;
+  border-bottom: 1px solid #DDDDDD;
+  background-color: #F4F4F4;
+}
+//设置li标签A的大小
+.yh5 li a{
+  display: block;
+  width: 100%;
+  padding: 35rem/@f 0;
+  font-size: 26rem/@f;
+  position: relative;
+  padding-left: 80rem/@f;
+}
+.yh5 li a:hover{
+  background-color: #fff;
+}
+//设置li标签a里面的箭头
+.yh5 li a i{
+  display: block;
+  background-position: -4rem/@f -144rem/@f;
+  width: 13rem/@f;
+  height: 24rem/@f;
+  position: absolute;
+  right: 38rem/@f;
+  top: 36rem/@f;
+}
+//设置第一个样式的图标
+.yh5 li:nth-child(1) .icon_img{
+  display: block;
+  background-position: -102rem/@f -107rem/@f;
+  width: 32rem/@f;
+  height: 42rem/@f;
+  position:absolute ;
+  top: 30rem/@f;
+  left: 30rem/@f;
+}
+//设置第二个样式的图标
+.yh5 li:nth-child(2) .icon_imgs{
+  display: block;
+  background-position: -135rem/@f -107rem/@f;
+  width: 40rem/@f;
+  height: 27rem/@f;
+  position:absolute ;
+  top: 38rem/@f;
+  left: 30rem/@f;
+}
+//设置第三个样式的图标
+.yh5 li:nth-child(3) .icon_imgss{
+  display: block;
+  background-position: -176rem/@f -107rem/@f;
+  width: 38rem/@f;
+  height: 36rem/@f;
+  position:absolute ;
+  top: 34rem/@f;
+  left: 30rem/@f;
+}
+//设置第四个样式的图标
+.yh5 li:nth-child(4) .icon_imgsss{
+  display: block;
+  background-position: -216rem/@f -107rem/@f;
+  width: 39rem/@f;
+  height: 37rem/@f;
+  position:absolute ;
+  top: 30rem/@f;
+  left: 30rem/@f;
+}
+//设置第五个样式的图标
+.yh5 li:nth-child(5) .icon_imges{
+  display: block;
+  background-position: -256rem/@f -107rem/@f;
+  width: 36rem/@f;
+  height: 36rem/@f;
+  position:absolute ;
+  top: 36rem/@f;
+  left: 30rem/@f;
+}
+//设置底部栏样式
+.yh_bottom{
+  width: 100%;
+  height: 40rem/@f;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+//图标的位置
+.yh_bottom .icon_img{
+  display: block;
+  background-position: -295rem/@f -110rem/@f;
+  width: 52rem/@f;
+  height: 20rem/@f;
+  position: absolute;
+  top: 10rem/@f;
+  left: 45%;
+}
