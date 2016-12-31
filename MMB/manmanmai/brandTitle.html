@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>class1</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/class.css"/>
+</head>
+<script src = "lib/jquery.min.js"></script>
+<script src="lib/fixScreen750.js"></script>
+<script src="lib/template-native.js"></script>
+<script src="js/class1.js"></script>
+<body>
+<!-- header B -->
+<header>
+    <a href="index.html"><div class="logo fl"></div></a>
+    <a class="app fr"></a>
+</header>
+<!-- header E -->
+<!-- search B -->
+<div class="search">
+    <input type="search" class="sou fl" placeholder="请输入你想比价的商品"/>
+    <input type="button" class="an fr" value="搜索"/>
+</div>
+<!-- search E -->
+<!-- topOne B -->
+<div class="topOne">
+    首页&gt;全部分类&gt;
+</div>
+<!-- topOne E -->
+<!-- topTwo B -->
+
+<!-- topTwo E -->
+<!-- brand B -->
+<div class="brand">
+
+</div>
+<!-- brand E -->
+</body>
+<script type="text/template" id="msg">
+    <div class="topTwo">
+        热门品牌排行
+    </div>
+    <% for(var i=0; i<result.length; i++){ %>
+    <a class="mbrand" href="classz.html?id=<%= result[i].brandTitleId %>">
+        <%= result[i].brandTitle %>
+        <div class="more"></div>
+    </a>
+    <% } %>
+</script>
+<script type="text/template" id="msg2">
+    <div class="topTwo">
+        那个牌子好
+    </div>
+    <% for(var i=0; i<result.length; i++){ %>
+    <div class="mbrandlist">
+        <div class="num fl" style="background: <%= result[i].brandColor %>"><%= i+1 %></div>
+        <div class="introduce">
+            <p class="TV fl"><%= result[i].brandName %></p>
+            <p class="sales fl"><%= result[i].brandInfo %></p>
+        </div>
+        <div class="more fr">&gt;</div>
+    </div>
+    <% } %>
+</script>
+</html>

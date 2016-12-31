@@ -1,0 +1,209 @@
+@function p($px){//$px为需要转换的字号
+  @return $px / 37.5px * 1rem; //40px为根字体大小
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+/*header B*/
+header{
+  height: p(50px);
+  width: 100%;
+  background-color: #FF841D;
+  border-bottom: 1px solid #E6E6E6;
+  .logo{
+    width: p(185px);
+    height: p(25px);
+    background: url("../images/header_logo.png") no-repeat;
+    background-size: p(185px) p(25px);
+    margin-top: p(12px);
+    margin-left: p(15px);
+  }
+  .app{
+    width: p(50px);
+    height: p(50px);
+    background: url("../images/header_app.png") no-repeat;
+    background-origin: content-box;
+    padding: p(8px);
+    background-size: p(34px) p(34px);
+  }
+}
+/*header E*/
+
+/*search B*/
+.search{
+  height: p(50px);
+  width: 100%;
+  padding: 0 p(10px);
+  border-bottom: 1px solid #E6E6E6;
+  .sou{
+    width: p(284px);
+    height: p(30px);
+    border-radius: p(15px);
+    margin-top: p(10px);
+    font-size: p(16px);
+    padding: 0 p(20px);
+    background-color: #F1F1F1!important;
+  }
+  .an{
+    width: p(63px);
+    height: p(30px);
+    margin-top: p(10px);
+    background-color: #FF841D;
+    color: #fff;
+    border-radius: p(15px);
+    font-size: p(16px);
+  }
+}
+/*search E*/
+
+
+/*topOne B*/
+.topOne{
+  font-size: p(16px);
+  height: p(40px);
+  line-height: p(40px);
+  font-family: "songti";
+  padding-left: p(10px);
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  background-image: linear-gradient(180deg, #fff 15%, #EBEBEB 100%);
+}
+/*topOne E*/
+
+/*topTwo B*/
+.topTwo{
+  height: p(40px);
+  line-height: p(40px);
+  width: 98%;
+  padding-left: p(8px);
+  border: 1px solid #CCCCCC;
+  background-color: #EEEEEE;
+  margin: p(10px) auto;
+  color: #874604;
+  font-size: p(16px);
+}
+/*topTwo E*/
+
+/*brand B*/
+.brand{
+  .sort{
+    display: block;
+    height: p(40px);
+    line-height: p(40px);
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    background-color: #EEEEEE;
+    color: #000000;
+    font-size: p(16px);
+    padding: 0 p(15px);
+    position: relative;
+  }
+  .mbrand{
+    display: block;
+    height: p(40px);
+    line-height: p(40px);
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    background-color: #EEEEEE;
+    color: #000000;
+    font-size: p(16px);
+    padding: 0 p(15px);
+    position: relative;
+    .more{
+      width: p(22px);
+      height: p(12px);
+      //background-color: pink;
+      position: absolute;
+      right: p(15px);
+      top: p(15px);
+      background: url(../images/icon_bar.png) no-repeat;
+      background-size: p(440px) p(264px);
+      background-position: p(-352px) p(0px);
+    }
+  }
+  .mbrandlist{
+
+    display: block;
+    height: p(60px);
+    width: 100%;
+    border-bottom: 1px solid #E7E7E7;
+    font-size: p(16px);
+    padding: p(10px) p(10px) 0;
+    position: relative;
+    .num{
+      width: p(20px);
+      height: p(20px);
+      line-height: p(20px);
+      text-align: center;
+      background-color: #C9C9C9;//灰
+      color: #fff;
+    }
+    .TV{
+      color: #000;
+      position: absolute;
+      top: p(8px);
+      left: p(40px);
+    }
+    .sales{
+      color: #999;
+      position: absolute;
+      top: p(30px);
+      left: p(40px);
+    }
+    .more{
+      font-family: "songti";
+      height: p(50px);
+      line-height: p(50px);
+      font-size: p(24px);
+      font-weight: 900;
+      color: #A9B7B7;
+      position: absolute;
+      top: p(10px);
+      right: p(10px);
+    }
+  }
+  .mbrandproductlist{
+    display: block;
+    height: p(118px);
+    padding: 0 p(10px);
+    border-bottom: 1px solid #999;
+    .img{
+      width: p(110px);
+      height: p(117px);
+      //background-color: pink;
+      img{
+        margin-left: p(10px);
+        margin-top: p(10px);
+      }
+    }
+    .info{
+      width: p(245px);
+      height: p(118px);
+      div{
+        margin-top: p(7px);
+      }
+      .TVname{
+        font-size: p(14px);
+      }
+      .price{
+        font-size: p(16px);
+        font-weight: 900;
+        color: #EA394F;
+        span{
+          color: #FF9000;
+          float: right;
+        }
+      }
+      .msg{
+        font-size: p(12px);
+        color: #A1A1A1;
+      }
+    }
+  }
+
+}
+
+/*brand E*/
+

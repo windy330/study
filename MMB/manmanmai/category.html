@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>比较搜索分类页面</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/categorys.css"/>
+    <script src='js/fixScreen750.js'></script>
+
+</head>
+<body>
+<!-- 头部 B -->
+<header>
+    <a href="index.html"><div class="logo fl"></div></a>
+    <a class="app fr"></a>
+</header>
+<!-- 头部 E -->
+<!-- 搜索 B -->
+<div class="search">
+    <input type="search" class="sou fl" placeholder="请输入你想比价的商品"/>
+    <input type="button" class="an fr" value="搜索"/>
+</div>
+<!-- 搜索 E -->
+<!-- 下拉菜单 B -->
+<section id="category">
+    <div class="row clearfix">
+        <ul class="categroys-title">
+            <!--<li class="sec">-->
+                <!--<a class="row-a" >大家电<i></i></a>-->
+                <!--<ul class="category-list clearfix">-->
+                    <!--<li><a href="#">电视</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</section>
+<!-- 下拉菜单 E -->
+<!--底部 B-->
+<footer>
+    <div class="foot-top">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"> <img src="http://www.zuyushop.com/wap/images/top.jpg">返回顶部</a>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="" class="ap">手机APP下载</a>
+            <a href="">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+<!--底部 E-->
+
+</body>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+<!--<script src="js/template.js"></script>-->
+<script src="js/category.js"></script>
+
+<!--<script type="text/template" id="msg">-->
+    <!--<% for(var i=0;i<result.length;i++){ %>-->
+    <!--<li >-->
+    <!--<a class="row-a" ><%= result[i].title%><i></i></a>-->
+    <!--<ul class="category-list clearfix">-->
+    <!--<li><a href="#">电视</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+    <!--<% } %>-->
+<!--</script>-->
+
+<script type="text/html" id="title1">
+    {{each result as value i}}
+    <li class="sec">
+        <a class="row-a" href="#" fa="{{value.titleId}}">{{value.title}}<i></i></a>
+    </li>
+    {{/each}}
+</script>
+
+<script type="text/html" id="title2">
+    <ul class="category-list clearfix">
+        {{each result as value i}}
+            <li><a href="#">{{value.category}}</a></li>
+        {{/each}}
+    </ul>
+</script>
+
+</html>

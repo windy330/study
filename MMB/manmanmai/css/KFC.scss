@@ -1,0 +1,259 @@
+@function p($px){//zheng ban ye mian da xiao yang shi tong yi
+  @return $px / 37.5px * 1rem;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+/*header B*/
+header{
+  height: p(50px);
+  width: 100%;
+  background-color: #F4483E;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+//tou bu nei rong zi ti yang shi
+header .youh{
+  display:inline-block;
+  text-align: center;
+  font-size: p(20px);
+  line-height: p(50px);
+  position: absolute;
+  top: p(0px);
+  left: 34%;
+  color: #fff;
+}
+header .logo{
+  width: p(11px);
+  height: p(20px);
+  background: url("../images/jt.png") no-repeat;
+  background-size:p(11px) p(20px);
+  margin-top: p(14px);
+  margin-left: p(20px);
+}
+header .app{
+  width: p(50px);
+  height: p(50px);
+  background: url("../images/header_app.png") no-repeat;
+  background-origin: content-box;
+  padding: p(8px);
+}
+//zhu ti nei rong shang ping jie shao
+//zi ti yang si
+.centent .p{
+  text-align: center;
+  color: #ccc;
+  font-size: p(12px);
+  font-family: "ËÎÌå";
+  margin-top: p(6px);
+}
+//shang ping zhan shi
+.centent{
+  margin-top: p(56px);
+}
+.centent .one{
+  height: p(158px);
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+}
+.centent .one .imgs{
+  height: 100%;
+  width: p(116px);
+  float: left;
+}
+.centent .one .imgs a{
+  display: block;
+  width: p(100px);
+  height: p(80px);
+  margin-top: p(20px);
+  margin-left: p(8px);
+}
+.centent .one .imgs a img{
+  width: p(100px);
+  height: p(80px);
+
+}
+.centent .one .wenzi{
+  height: 100%;
+  width: p(235px);
+  font-size: p(14px);
+  font-family: 'Î¢ÈíÑÅºÚ';
+  float: left;
+  padding-top: p(16px);
+}
+.centent .one .wenzi p:nth-child(2){
+  margin-top: p(10px);
+  font-size: p(16px);
+  font-weight: 900;
+}
+.centent .one .wenzi p:nth-child(3){
+  position: absolute;
+  bottom: p(10px);
+  color: #EE7700;
+}
+.centent .one .jlt{
+  width: p(24px);
+  height: 100%;
+  float: right;
+  position: relative;
+}
+.centent .one .jlt b{
+  display: inline-block;
+  width: p(10px);
+  height: p(18px);
+  background:url("../imges/jj.png") no-repeat;
+  background-size:p(10px) p(18px);
+  position: absolute;
+  top: 42%;
+  left: 30%;
+
+}
+.centent .di{
+  height: p(150px);
+  width: 100%;
+  background: #fff;
+}
+.centent .dianji{
+  text-align: center;
+  color: #ccc;
+  font-size: p(12px);
+  font-family: "ËÎÌå";
+  margin-top: p(6px);
+  margin: p(10px) 0;
+}
+.benti{
+  position: fixed;
+  top: p(50px);
+  width: 100%;
+  height:70%;
+  background: #000;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+}
+.on{
+  display: block;
+}
+.off {
+  display: none;
+}
+
+.benti b:nth-child(2){
+  width: p(110px);
+  height: p(146px);
+  padding-left: 6%;
+  padding-top: 12%;
+  position: fixed;
+  top: 29%;
+  left: 0;
+  color: #fff;
+}
+.benti b:nth-child(4){
+  width: p(110px);
+  height: p(146px);
+  padding-left: 14%;
+  padding-top: 12%;
+  position: fixed;
+  top: 29%;
+  right: 0;
+  color: #fff;
+}
+.benti ul li{
+  width: p(160px);
+  height: p(160px);
+  float: left;
+}
+.benti ul li img {
+  width: p(160px);
+  height: p(160px);
+
+
+}
+.benti .quan{
+  display: block;
+  width: p(160px);
+  height: p(160px);
+  overflow: hidden;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.benti ul{
+  width: p(640px);
+  height: p(160px);
+  position: absolute !important;
+  left: 0;
+}
+.benti ul li{
+  float: left;
+}
+.benti .tops{
+  width: 100%;
+  height:30%;
+}
+.benti .bottoms{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:38%;
+}
+  //di bu nei rong
+.bottom{
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: p(150px);
+  width: 100%;
+}
+.bottom .return{
+  height: p(32px);
+  font-size: p(14px);
+  line-height: p(32px);
+  padding-left: p(8px);
+  background-color: #F2F2F2;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.bottom .enter{
+  height: p(35px);
+  margin-top: p(25px);
+  background-color: #F2F2F2;
+}
+.bottom .enter ul li{
+  float: left;
+  border: 1px solid #ccc;
+  height: p(35px);
+  width: 33.333%;
+  font-size: p(14px);
+  text-align: center;
+  line-height: p(35px);
+}
+.bottom .website{
+  font-size: p(12px);
+  background-color: #F2F2F2;
+  height: p(58px);
+}
+.bottom .website{
+  //border: 1px solid #000;
+  padding-top: p(14px);
+}
+.bottom .website span{
+  padding-top: p(14px);
+}
+.bottom .website span:nth-child(1){
+  margin-left: p(70px);
+  color: black;
+}
+.bottom .website span:nth-child(1) a{
+  color: red;
+}
+.bottom .website span:nth-child(1) b{
+  color: #ccc;
+}
+.bottom .website span:nth-child(3){
+  margin-left: p(134px);
+  color: #ccc;
+}

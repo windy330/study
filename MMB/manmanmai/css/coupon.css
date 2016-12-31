@@ -1,0 +1,122 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+/*header B*/
+header {
+  height: 1.33333rem;
+  width: 100%;
+  background-color: #F4483E;
+  position: relative; }
+
+header .youh {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.53333rem;
+  line-height: 1.33333rem;
+  position: absolute;
+  top: 0rem;
+  left: 42%;
+  color: #fff; }
+
+header .logo {
+  width: 0.29333rem;
+  height: 0.53333rem;
+  background: url("../images/jt.png") no-repeat;
+  background-size: 0.29333rem 0.53333rem;
+  margin-top: 0.37333rem;
+  margin-left: 0.53333rem; }
+
+header .app {
+  width: 1.33333rem;
+  height: 1.33333rem;
+  background: url("../images/header_app.png") no-repeat;
+  background-origin: content-box;
+  padding: 0.21333rem; }
+
+.content ul {
+  margin-top: 0.18667rem; }
+
+.content ul li {
+  float: left;
+  margin-top: 0.13333rem;
+  margin-right: 0.13333rem; }
+
+.content ul li:nth-child(1) a img {
+  width: 3.09333rem;
+  height: 2.13333rem;
+  border: 1px solid #ccc;
+  margin-left: 0.21333rem; }
+
+.content ul li:nth-child(2) a img {
+  width: 3.12rem;
+  height: 2.13333rem;
+  border: 1px solid #ccc; }
+
+.content ul li:nth-child(3) a img {
+  width: 3.09333rem;
+  height: 2.13333rem;
+  border: 1px solid #ccc; }
+
+.content ul li:nth-child(4) a img {
+  width: 3.09333rem;
+  height: 2.13333rem;
+  border: 1px solid #ccc;
+  margin-left: 0.21333rem; }
+
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 4rem;
+  width: 100%; }
+
+.bottom .return {
+  height: 0.85333rem;
+  font-size: 0.37333rem;
+  line-height: 0.85333rem;
+  padding-left: 0.21333rem;
+  background-color: #F2F2F2;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+
+.bottom .enter {
+  height: 0.93333rem;
+  margin-top: 0.66667rem;
+  background-color: #F2F2F2; }
+
+.bottom .enter ul li {
+  float: left;
+  border: 1px solid #ccc;
+  height: 0.93333rem;
+  width: 33.333%;
+  font-size: 0.37333rem;
+  text-align: center;
+  line-height: 0.93333rem; }
+
+.bottom .website {
+  font-size: 0.32rem;
+  background-color: #F2F2F2;
+  height: 1.54667rem; }
+
+.bottom .website {
+  padding-top: 0.37333rem; }
+
+.bottom .website span {
+  padding-top: 0.37333rem; }
+
+.bottom .website span:nth-child(1) {
+  margin-left: 1.86667rem;
+  color: black; }
+
+.bottom .website span:nth-child(1) a {
+  color: red; }
+
+.bottom .website span:nth-child(1) b {
+  color: #ccc; }
+
+.bottom .website span:nth-child(3) {
+  margin-left: 3.57333rem;
+  color: #ccc; }
+
+/*# sourceMappingURL=coupon.css.map */

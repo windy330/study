@@ -1,0 +1,152 @@
+@function p($px){//zheng ban ye mian da xiao yang shi tong yi
+  @return $px / 37.5px * 1rem;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+/*header B*/
+header{
+  height: p(50px);
+  width: 100%;
+  background-color: #F4483E;
+  position: relative;
+}
+//tou bu nei rong zi ti yang shi
+header .youh{
+  display:inline-block;
+  text-align: center;
+  font-size: p(20px);
+  line-height: p(50px);
+  position: absolute;
+  top: p(0px);
+  left: 42%;
+  color: #fff;
+}
+header .logo{
+  width: p(11px);
+  height: p(20px);
+  background: url("../images/jt.png") no-repeat;
+  background-size:p(11px) p(20px);
+  margin-top: p(14px);
+  margin-left: p(20px);
+}
+header .app{
+  //display: inline-block;
+  width: p(50px);
+  height: p(50px);
+  background: url("../images/header_app.png") no-repeat;
+  background-origin: content-box;
+  padding: p(8px);
+}
+//zhu ti nei rong yang shi
+.content ul{
+  margin-top: p(7px);
+}
+.content ul li{
+  float: left;
+  margin-top:p(5px);
+  margin-right:p(5px);
+}
+.content ul li:nth-child(1) a img{
+  width: p(116px);
+  height: p(80px);
+  border: 1px solid #ccc;
+  margin-left: p(8px);
+}
+.content ul li:nth-child(2) a img{
+  width: p(117px);
+  height: p(80px);
+  border: 1px solid #ccc;
+}
+.content ul li:nth-child(3) a img{
+  width: p(116px);
+  height: p(80px);
+  border: 1px solid #ccc;
+}
+.content ul li:nth-child(4) a img{
+  width: p(116px);
+  height: p(80px);
+  border: 1px solid #ccc;
+  margin-left: p(8px);
+}
+//di bu nei rong
+.bottom{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: p(150px);
+  width: 100%;
+}
+.bottom .return{
+  height: p(32px);
+  font-size: p(14px);
+  line-height: p(32px);
+  padding-left: p(8px);
+  background-color: #F2F2F2;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.bottom .enter{
+  height: p(35px);
+  margin-top: p(25px);
+  background-color: #F2F2F2;
+}
+.bottom .enter ul li{
+  float: left;
+  border: 1px solid #ccc;
+  height: p(35px);
+  width: 33.333%;
+  font-size: p(14px);
+  text-align: center;
+  line-height: p(35px);
+}
+.bottom .website{
+  font-size: p(12px);
+  background-color: #F2F2F2;
+  height: p(58px);
+}
+.bottom .website{
+  //border: 1px solid #000;
+  padding-top: p(14px);
+}
+.bottom .website span{
+  padding-top: p(14px);
+}
+.bottom .website span:nth-child(1){
+  margin-left: p(70px);
+  color: black;
+}
+.bottom .website span:nth-child(1) a{
+  color: red;
+}
+.bottom .website span:nth-child(1) b{
+  color: #ccc;
+}
+.bottom .website span:nth-child(3){
+  margin-left: p(134px);
+  color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

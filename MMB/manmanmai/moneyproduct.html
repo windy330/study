@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <script src="js/fixScreen750.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/xiangqing.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/xiangqing.css"/>
+</head>
+<body>
+
+<!-- 头部begin-->
+<header id="header" class="header">
+    <div id="ctl00_headerApp" class="head">
+        <div class="back">
+            <a href="index.html" class="icon-back"><b></b></a>
+        </div>
+        <h1>
+            国内折扣
+        </h1>
+        <div class="home">
+            <a href="#"  class="icon-app"><b></b></a>
+        </div>
+    </div>
+</header>
+<!-- 头部end-->
+
+<div class="test">
+    <!--<p></p>-->
+    <!--<images src="" alt=""/>-->
+</div>
+
+<!--商品详情begin-->
+<div class="shangping"></div>
+<!--商品详情end-->
+
+<script type="test/tpl" id="tpl">
+        {{each items as value i}}
+             <p class="name-01">{{items[i].productName}}</p>
+
+             <p class="name-02">{{items[i].productFrom}}</p>
+
+             <p class="zl-time">{{items[i].productTime}}</p>
+
+             <p class="zuoze">{{items[i].productTips}}</p>
+
+             <span class="zl-piceture-01">{{# items[i].productImgSm}}</span>
+
+             <p class="wenzi-01">{{items[i].productInfo}}</p>
+
+             <p class="wenzi-02">{{items[i].productInfo1}}</p>
+
+             <span class="zl-piceture-02 clearfix">{{# items[i].productImgLg}}</span>
+
+             <span class="zl-city" study="height:55px">{{# items[i].productCity}}</span>
+
+             <!-- 购买按钮begin-->
+            <div class="goumai">
+                <a href="#">
+                    前往购买
+                </a>
+            </div>
+            <!-- 购买按钮end-->
+
+            <!-- 微信扫一扫begin-->
+            <div class="golink">
+                <img src="images/mmbweixin2.png" alt=""/>
+            </div>
+            <!-- 微信扫一扫end-->
+
+             <span>{{# items[i].productComment}}</span>
+
+        {{/each}}
+    </script>
+<!-- 底部begin-->
+<footer id="ctl00_foot">
+    <div class="foot_top">
+        <a href="login.aspx.htm">登录</a>
+        <a href="login.aspx.htm">注册</a>
+        <a href="#" style="width: 40%; border: 0;">
+            <img src="images/top.jpg" width="15" height="15">返回顶部</a>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="#" style="color: Red;">手机APP下载</a>
+            <a href="#">
+                慢慢买手机版</a> -- 掌上比价平台</p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+<!-- 底部end-->
+
+</body>
+</html>
+
+
+

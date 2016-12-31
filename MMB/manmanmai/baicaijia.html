@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="js/fixScreen750.js"></script>
+
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/baicaijia.css"/>
+    <title></title>
+</head>
+<body>
+<!--头头-->
+<header>
+        <a href="index.html" class="icon-back fl"></a>
+    <h3>
+        白菜价-淘宝内部券
+    </h3>
+
+        <a href="http://m.manmanbuy.com/?o=download" onclick="trackEvent('header部下载');" class="icon-app fr"></a>
+
+</header>
+
+
+<!--切换蓝-->
+<main class="coupon-title">
+    <div class="bcj-head-cat">
+        <!--tab栏-->
+        <div class="bcj-title"></div>
+    </div>
+
+<!--商品栏-->
+    <div class="bcj-list"></div>
+</main>
+
+<footer></footer>
+
+
+
+
+<script id="bcjTitle" type="text/html">
+        <ul class="tabs clearfix">
+           <%for(var i=0;i< result.length;i++){%>
+            <li titleId="<%=result[i].titleId%>" ><a href="javascript:;"> <%=result[i].title%></a></li>
+            <%}%>
+        </ul>
+        <a href="javascript:;"></a>
+</script>
+
+
+<script id="bcjProductList" type="text/html">
+<ul class="clearfix">
+    <% for(var i=0;i< items.length;i++){%>
+    <li class="tb">
+        <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx" target="_blank"></a>
+        <div class="pic"><i></i><%=#items[i].productImg%></div>
+        <div class="inf">
+            <div class="i">
+                <div class="t"><%=#items[i].productName%></div>
+                <div class="pr"><%=#items[i].productPrice%></div>
+            </div>
+            <div class="o">
+                <%=#items[i].productCouponRemain%>
+                <div class="b clearfix">
+                    <div class="q"><%=#items[i].productCoupon%></div>
+                    <div class="g"><%=#items[i].productHref%></div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <%}%>
+</ul>
+
+
+</script>
+
+
+
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/baicaijia.js"></script>
+<script src="js/template-native.js"></script>
+<script src="js/go-slider.js"></script>
+<script src="js/iconfont.js"></script>
+</body>
+</html>

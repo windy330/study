@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="js/--flexible_css.js,flexible.js"></script>
+    <title>凑单品</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/gsproduct.css"/>
+</head>
+<body>
+<!-- head Begin -->
+    <div class="head">
+        <a class="back fl" href="index.html"><i class="iconfont">&#xe600;</i></a>
+        <h3 class="fl">凑单品</h3>
+        <a class="down fr" href="javascript:;">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+<!-- head End and menu Begin-->
+    <div class="menu">
+        <div class="filter">
+            <ul>
+                <li id="shop" class="on"><a href="javascript:;">京东<i class="iconfont2">&#xe659;</i></a></li>
+                <li id="area" class=""><a href="javascript:;">华北<i class="iconfont2">&#xe659;</i></a></li>
+                <li id="price" class=""><a href="javascript:;">全部价格<i class="iconfont2">&#xe659;</i></a></li>
+                <li id="search" class=""><a href="javascript:;"><i class="iconfont3">&#xe62f;</i></a></li>
+            </ul>
+        </div>
+        <div class="shop clearfix">
+            <!--<li>京东<i class="iconfont4 fr">&#xe601;</i></li>-->
+        </div>
+        <div class="area">
+
+        </div>
+        <div class="price"></div>
+    </div>
+<!-- menu End and content Begin-->
+    <div class="content clearfix">
+        <!--<div class="items">-->
+            <!--<li class="space"></li>-->
+            <!--<li class="item">-->
+                <!--<div class="itemPic">-->
+                    <!--<img src="images/test.jpg" alt="test"/>-->
+                <!--</div>-->
+                <!--<p class="itemTit">干一颗</p>-->
+                <!--<div class="itemPri">-->
+                    <!--<span>￥0.50</span>-->
+                    <!--<a href="javascript:void(0);">去凑单</a>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="space"></li>-->
+        <!--</div>-->
+    </div>
+<!-- content End and footer Begin -->
+    <div class="footer">
+        <div class="list clearfix">
+            <li class="li1"><a href="#">登陆</a></li>
+            <li class="li2"><a href="#">注册</a></li>
+            <li class="li3"><a href="#"><i class="iconfont3">&#xe662;</i>返回顶部</a></li>
+        </div>
+        <div class="ps">
+            <br><span style="color: red">手机app下载</span>&nbsp;<span>慢慢买手机</span></br><span style="color: #DCDCDC">m.manmanbuy.com</span></p>
+        </div>
+    </div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/gsproduct.js"></script>
+<script type="text/templeta" id="tpl">
+    {{each items as value i}}
+         <li id="{{items[i].shopId}}">{{ items[i].shopName}}<i class="iconfont4 fr">&#xe601;</i></li>
+    {{/each}}
+</script>
+<script type="text/templeta" id="tpl2">
+    {{each items as value i}}
+         <div class="items" id={{items[i].productId}}>
+            <li class="space"></li>
+            <li class="item">
+                <div class="itemPic">
+                    <img src={{items[i].productImg}} alt="test"/>
+                </div>
+                <p class="itemTit">{{items[i].productName}}</p>
+                <div class="itemPri">
+                    <span>{{items[i].productPrice}}</span>
+                    <a href="javascript:void(0);">去凑单</a>
+                </div>
+            </li>
+            <li class="space"></li>
+        </div>
+    {{/each}}
+</script>
+</body>
+</html>

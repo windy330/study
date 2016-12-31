@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="js/fixScreen750.js"></script>
+    <title>慢慢买首页</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--head Begin-->
+    <div class="head">
+        <img class="lImg" src="images/header_logo.png" alt=""/>
+        <a class="rImg fr" href="javascript:;">
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+<!--head End and search Begin-->
+    <div class="search">
+        <div class="inpS fl">请输入你想比价的商品</div>
+        <div class="btnS fr">搜索</div>
+    </div>
+<!--search End and menu Begin-->
+    <div id="menu" class="menu clearfix">
+    </div>
+<!--menu End and recommend Begin-->
+    <div class="recomment">
+        <span>超值折扣推荐</span>
+        <img src="images/more.png" alt="more"/>
+    </div>
+<!--recommend End and content Begin-->
+    <div class="content">
+        <!--<div class="items">-->
+            <!--<div class="picC fl">-->
+                <!--<img src="images/test.jpg" alt="product"/>-->
+            <!--</div>-->
+            <!--<div class="introduceC fr">-->
+                <!--<div class="top">-->
+                    <!--<h3>移动端凑单品</h3>-->
+                    <!--<p><span class="sp1">1.28L</span><span class="sp2">10.9元</span></p>-->
+                <!--</div>-->
+                <!--<div class="bottom">-->
+                    <!--<div class="date fl">京东商城|10-25</div>-->
+                    <!--<div class="discuss fr"> <i class="icon iconfont">&#xe621;</i></div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+<!--content End and recomment Begin-->
+    <div class="recomment">
+        <span>品牌排行</span>
+        <img src="images/more.png" alt="more"/>
+    </div>
+<!--recomment End and footer Begin-->
+    <div class="footer">
+        <div class="list clearfix">
+            <li class="li1"><a href="#">登陆</a></li>
+            <li class="li2"><a href="#">注册</a></li>
+            <li class="li3"><a href="#"><i class="icon iconfont">&#xe662;</i>返回顶部</a></li>
+        </div>
+        <div class="ps">
+            <br><span style="color: red">手机app下载</span>&nbsp;<span>慢慢买手机</span></br><span style="color: #DCDCDC">m.manmanbuy.com</span></p>
+        </div>
+    </div>
+<!--模板引擎-->
+<!--{-->
+<!--"indexmenuId": 0,-->
+<!--"name": "比价搜索",-->
+<!--"img": "<img src=\"images/ic_search.png\" alt=\"比价搜索\">",-->
+<!--"titlehref": "category.html",-->
+<!--"_id": "580831702bcccb2c22ed4772",-->
+<!--"__v": 0-->
+<!--},-->
+<script type="text/template" id="tpl">
+    <% for(var i=0; i < items.length; i++) { %>
+    <a id=<%= items[i].indexmenuId %> class="aM" href=<%= items[i].titlehref %>>
+        <div class="part">
+            <%=#items[i].img%>
+            <p class="hM"><%= items[i].name %></p>
+        </div>
+    </a>
+    <% } %>
+</script>
+<!--{-->
+<!--"result": [{-->
+<!--"productId": "商品id",-->
+<!--"productName": "商品名称",-->
+<!--"productPinkage": "商品价格",-->
+<!--"productFrom": "商品来源",-->
+<!--"productTime": "商品发布事件",-->
+<!--"productImgSm": "商品图片小图",-->
+<!--"productComCount": "商品评论"-->
+<!--}]-->
+<!--}-->
+<!--http://study.com/MMBAPP/moneyproduct.html?productid=21-->
+<script type="text/template" id="moneyCtrl">
+    <% for(var i=0; i < items2.length; i++) { %>
+    <div class="items">
+        <a href="moneyproduct.html?productid=<%=items2[i].productId %>">
+            <div class="picC fl">
+                <%=#items2[i].productImgSm%>
+            </div>
+            <div class="introduceC fr">
+                <div class="top">
+                    <h3><%= items2[i].productName %><span class="sp2"><%= items2[i].productPinkage %></span></h3>
+                </div>
+                <div class="bottom">
+                    <div class="date fl"><%= items2[i].productFrom %>|<%= items2[i].productTime %></div>
+                    <div class="discuss fr"> <i class="icon iconfont">&#xe621;</i>&nbsp;&nbsp;<%= items2[i].productComCount %></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <% } %>
+</script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/index.js"></script>
+<!-- 引入模板引擎 -->
+<script src="./js/template-native.js"></script>
+<!--<script src="./js/template.js"></script>-->
+<script>
+
+
+</script>
+
+</body>
+</html>

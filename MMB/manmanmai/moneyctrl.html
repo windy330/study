@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="js/fixScreen750.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<!-- 省钱控页面 和海淘折扣页-->
+<body>
+<!--头部-->
+<header>
+    <a href="index.html" class="logo fl"></a>
+
+    <h3>省钱控-最新优惠</h3>
+    <a class="app fr"></a>
+</header>
+
+
+<!--商品列表-->
+<main>
+    <div class="cu-list"></div>
+
+    <!--实现上下页-->
+    <div class="page">
+        <button id="before" >上一页</button>
+            <span class="ww">
+	        <select id="selectPage" name="select">
+            </select>
+        </span>
+        <button id="behind" >下一页</button>
+    </div>
+</main>
+
+<!--底部-->
+<footer id="foot">
+    <div class="foot_top">
+        <a href="login.aspx.htm">登录</a>
+        <a href="login.aspx.htm">注册</a>
+        <a href="#" style="width: 40%; border: 0;">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部</a>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="javascript:0" style="color: Red;">手机APP下载</a> <a href="index.htm" tppabs="http://m.manmanbuy.com/">
+            慢慢买手机版</a> -- 掌上比价平台</p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+
+
+<script type="text/template" id="moneyCtrl">
+    <ul>
+        <% for(var i=0; i< items.length;i++) { %>
+        <li class="ui-list clearfix">
+            <a href="moneyproduct.html?productid=<%= items[i].productId%>">
+                <div class="pic"> <%=# items[i].productImgSm %> </div>
+                <div class="info">
+                    <div class="title"> <%= items[i].productName %> <span> <%= items[i].productPinkage %> </span></div>
+                    <div class="other">
+                        <span class="mall"> <%= items[i].productFrom %>|<%= items[i].productTime %> </span>
+                        <span class="comment"><i class="icon_comment"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-pinglun"></use>
+                        </svg></i><%=items[i].productComCount.replace("有","").replace("人评论","")%></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <%}%>
+    </ul>
+
+
+</script>
+
+
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/moneyctrl.js"></script>
+<script src="js/template-native.js"></script>
+<script src="js/iconfont.js"></script>
+
+</body>
+</html>

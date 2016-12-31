@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>classz</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/class.css"/>
+</head>
+<script src = "lib/jquery.min.js"></script>
+<script src="lib/fixScreen750.js"></script>
+<script src="lib/template-native.js"></script>
+<script src="js/classz.js"></script>
+<body>
+<!-- header B -->
+<header>
+    <!--<div class="logo fl"></div>-->
+    <a href="index.html"><div class="logo fl"></div></a>
+    <a class="app fr"></a>
+</header>
+<!-- header E -->
+<!-- search B -->
+<div class="search">
+    <input type="search" class="sou fl" placeholder="请输入你想比价的商品"/>
+    <input type="button" class="an fr" value="搜索"/>
+</div>
+<!-- search E -->
+<!-- topOne B -->
+<div class="topOne">
+    首页&gt;全部分类&gt;
+</div>
+<!-- topOne E -->
+<!-- topTwo B -->
+
+<!-- topTwo E -->
+<!-- brand B -->
+<div class="brand">
+
+</div>
+<!-- brand E -->
+</body>
+<script type="text/template" id="msg">
+    <div class="topTwo">
+        热门品牌排行
+    </div>
+    <% for(var i=0; i<result.length; i++){ %>
+    <a class="mbrand"  href="class2.html?id=<%= result[i].brandTitleId %>name">
+        <%= result[i].brandTitle %>
+        <div class="more"></div>
+    </a>
+    <% } %>
+</script>
+
+<script type="text/template" id="msg2">
+    <div class="topTwo">
+        哪个牌子好
+    </div>
+    <% for(var i=0; i<result.length; i++){ %>
+    <div class="mbrandlist">
+        <div class="num fl" style="background: <%= result[i].brandColor %>"><%= i+1 %></div>
+        <div class="introduce">
+            <p class="TV fl"><%= result[i].brandName %></p>
+            <p class="sales fl"><%= result[i].brandInfo %></p>
+        </div>
+        <div class="more fr">&gt;</div>
+    </div>
+    <% } %>
+</script>
+<script type="text/template" id="msg3">
+    <div class="topTwo">
+        销量排行
+    </div>
+    <% for(var i=0; i<result.length; i++){ %>
+    <a class="mbrandproductlist">
+        <div class="img fl"><%=# result[i].productImg %></div>
+        <div class="info fr">
+            <div class="TVname"><%= result[i].productName %></div>
+            <div class="price"><%= result[i].productPrice %><span>★★★★★</span></div>
+            <div class="msg"><span><%= result[i].productQuote %></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><%= result[i].productCom %></span></div>
+        </div>
+    </a>
+    <% } %>
+</script>
+<script type="text/template" id="msgz">
+    <a class="mass sort" href="class2.html?brandTitleId=<%= result[0].brandTitleId %>"><%= result[0].brandName.substr( result[0].brandName.length-4,result[0].brandName.length ) %>哪个牌子好</a>
+    <a class="rank sort" href="class3.html?class3Id=<%= result[0].brandTitleId %>"><%= result[0].brandName.substr( result[0].brandName.length-4,result[0].brandName.length ) %>销量排行</a>
+    <a class="comment sort" href="class4.html?class4Id=<%= result[0].brandTitleId %>"><%= result[0].brandName.substr( result[0].brandName.length-4,result[0].brandName.length ) %>最新评论</a>
+</script>
+</html>
+<!--?brandTitleId=<%= result[0].brandTitleId %>-->

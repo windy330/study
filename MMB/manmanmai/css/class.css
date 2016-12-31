@@ -1,0 +1,174 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+/*header B*/
+header {
+  height: 1.33333rem;
+  width: 100%;
+  background-color: #FF841D;
+  border-bottom: 1px solid #E6E6E6; }
+  header .logo {
+    width: 4.93333rem;
+    height: 0.66667rem;
+    background: url("../images/header_logo.png") no-repeat;
+    background-size: 4.93333rem 0.66667rem;
+    margin-top: 0.32rem;
+    margin-left: 0.4rem; }
+  header .app {
+    width: 1.33333rem;
+    height: 1.33333rem;
+    background: url("../images/header_app.png") no-repeat;
+    background-origin: content-box;
+    padding: 0.21333rem;
+    background-size: 0.90667rem 0.90667rem; }
+
+/*header E*/
+/*search B*/
+.search {
+  height: 1.33333rem;
+  width: 100%;
+  padding: 0 0.26667rem;
+  border-bottom: 1px solid #E6E6E6; }
+  .search .sou {
+    width: 7.57333rem;
+    height: 0.8rem;
+    border-radius: 0.4rem;
+    margin-top: 0.26667rem;
+    font-size: 0.42667rem;
+    padding: 0 0.53333rem;
+    background-color: #F1F1F1 !important; }
+  .search .an {
+    width: 1.68rem;
+    height: 0.8rem;
+    margin-top: 0.26667rem;
+    background-color: #FF841D;
+    color: #fff;
+    border-radius: 0.4rem;
+    font-size: 0.42667rem; }
+
+/*search E*/
+/*topOne B*/
+.topOne {
+  font-size: 0.42667rem;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  font-family: "songti";
+  padding-left: 0.26667rem;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  background-image: linear-gradient(180deg, #fff 15%, #EBEBEB 100%); }
+
+/*topOne E*/
+/*topTwo B*/
+.topTwo {
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  width: 98%;
+  padding-left: 0.21333rem;
+  border: 1px solid #CCCCCC;
+  background-color: #EEEEEE;
+  margin: 0.26667rem auto;
+  color: #874604;
+  font-size: 0.42667rem; }
+
+/*topTwo E*/
+/*brand B*/
+.brand .sort {
+  display: block;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+  background-color: #EEEEEE;
+  color: #000000;
+  font-size: 0.42667rem;
+  padding: 0 0.4rem;
+  position: relative; }
+.brand .mbrand {
+  display: block;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+  background-color: #EEEEEE;
+  color: #000000;
+  font-size: 0.42667rem;
+  padding: 0 0.4rem;
+  position: relative; }
+  .brand .mbrand .more {
+    width: 0.58667rem;
+    height: 0.32rem;
+    position: absolute;
+    right: 0.4rem;
+    top: 0.4rem;
+    background: url(../images/icon_bar.png) no-repeat;
+    background-size: 11.73333rem 7.04rem;
+    background-position: -9.38667rem 0rem; }
+.brand .mbrandlist {
+  display: block;
+  height: 1.6rem;
+  width: 100%;
+  border-bottom: 1px solid #E7E7E7;
+  font-size: 0.42667rem;
+  padding: 0.26667rem 0.26667rem 0;
+  position: relative; }
+  .brand .mbrandlist .num {
+    width: 0.53333rem;
+    height: 0.53333rem;
+    line-height: 0.53333rem;
+    text-align: center;
+    background-color: #C9C9C9;
+    color: #fff; }
+  .brand .mbrandlist .TV {
+    color: #000;
+    position: absolute;
+    top: 0.21333rem;
+    left: 1.06667rem; }
+  .brand .mbrandlist .sales {
+    color: #999;
+    position: absolute;
+    top: 0.8rem;
+    left: 1.06667rem; }
+  .brand .mbrandlist .more {
+    font-family: "songti";
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    font-size: 0.64rem;
+    font-weight: 900;
+    color: #A9B7B7;
+    position: absolute;
+    top: 0.26667rem;
+    right: 0.26667rem; }
+.brand .mbrandproductlist {
+  display: block;
+  height: 3.14667rem;
+  padding: 0 0.26667rem;
+  border-bottom: 1px solid #999; }
+  .brand .mbrandproductlist .img {
+    width: 2.93333rem;
+    height: 3.12rem; }
+    .brand .mbrandproductlist .img img {
+      margin-left: 0.26667rem;
+      margin-top: 0.26667rem; }
+  .brand .mbrandproductlist .info {
+    width: 6.53333rem;
+    height: 3.14667rem; }
+    .brand .mbrandproductlist .info div {
+      margin-top: 0.18667rem; }
+    .brand .mbrandproductlist .info .TVname {
+      font-size: 0.37333rem; }
+    .brand .mbrandproductlist .info .price {
+      font-size: 0.42667rem;
+      font-weight: 900;
+      color: #EA394F; }
+      .brand .mbrandproductlist .info .price span {
+        color: #FF9000;
+        float: right; }
+    .brand .mbrandproductlist .info .msg {
+      font-size: 0.32rem;
+      color: #A1A1A1; }
+
+/*brand E*/
+
+/*# sourceMappingURL=class.css.map */

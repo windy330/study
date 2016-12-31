@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/discount.css"/>
+    <script src='js/fixScreen750.js'></script>
+
+</head>
+<body>
+<!-- 头部 B -->
+    <header>
+        <a href="index.html" class="icon_left fl"><span>&lt;</span></a>
+        <h4>国内折扣</h4>
+        <a href="#" class="icon_right fr"><img src="images/header_app.png" alt=""/></a>
+    </header>
+<!-- 头部 E -->
+<!--商品部分B-->
+<main class="product clearfix">
+            <!--<div class="list_t"><a href="#"><img src="images/5666a182Nb6541dda.jpg" alt=""/></a></div>-->
+            <!--<div class="list_m">咖啡 白咖啡 三合一速溶咖啡单条装 15g/条</div>-->
+            <!--<div class="list_b">19.68元</div>-->
+            <!--<div class="list_s">京东商城|</div>-->
+</main>
+<!--商品部分 E-->
+<!--底部 B-->
+<footer class="foot">
+    <div class="foot-top">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"> <img src="http://www.zuyushop.com/wap/images/top.jpg">返回顶部</a>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="" class="ap">手机APP下载</a>
+            <a href="">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</footer>
+<!--底部 E-->
+</body>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/discount.js"></script>
+
+
+<script type="text/html" id="title">
+    {{each result as value i}}
+    <div class="list fl clearfix">
+        <div class="list_t"><a href="#">{{# value.productImg}}</a></div>
+        <div class="list_m">{{value.productName}}</div>
+        <div class="list_b">{{value.productPrice}}</div>
+        <div class="list_s">{{value.productFrom}}|{{value.productTime}}</div>
+    </div>
+    {{/each}}
+</script>
+
+</html>
